@@ -115,15 +115,7 @@ We present a method to build magnetized constant angular momentum disks around K
 
 \section{Introduction}
 
-\section{}
-
 \section{Framework}
-
-
-
-%%%%%%%%%%%%%%%%%%%%%
-%%%   RESULTS   %%%
-%%%%%%%%%%%%%%%%%%%%%
 
 We use the stationary and axisymmetric metric ansatz provided by\cite{Herdeiro:2014a}
 
@@ -143,7 +135,7 @@ This metric is a solution to the Einstein-Klein-Gordon field equations $R_{ab} -
 \end{split}
 \end{equation}
 
-where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^\mathrm{i}{m\phi - w t}$ where $w$ is the scalar field frequency and $m$ is the azimuthal harmonic index. Details about the obtention of the solution and the behaviour of the metric functions ${W, F_i}$ are presented in~\cite{Herdeiro:2015b}
+where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^{\mathrm{i}m\phi - w t}$ where $w$ is the scalar field frequency and $m$ is the azimuthal harmonic index. Details about the obtention of the solution and the behaviour of the metric functions ${W, F_i}$ are presented in~\cite{Herdeiro:2015b}
 
 \begin{figure*}
 \centering
@@ -268,7 +260,7 @@ where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^\
 \hspace{-0.3cm}
 \includegraphics[scale=0.12]{figures/fig5_VII__10.pdf}
 \hspace{-0.2cm}
-\caption{Gravitational mass density ($-T^t_t+T^i_i$) distribution for the torus (up) and the scalar field (down). From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Gravitational mass density distribution for the torus $\rho_{\mathrm{T}}$ (up) and the scalar field $\rho_{\mathrm{SF}}$ (down). From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
 \label{comparison_mass_density}
 \end{figure*}
 
@@ -287,7 +279,7 @@ where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^\
 \hspace{-0.4cm}
 \includegraphics[scale=0.12]{figures/fig6_VII__10.pdf}
 \hspace{-0.2cm}
-\caption{Gravitational mass density ($-T^t_t+T^i_i$) distribution for the torus (up) and the scalar field (down) using perimeteral coordinates. From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Gravitational mass density distribution for the torus $\rho_{\mathrm{T}}$ (up) and the scalar field $\rho_{\mathrm{SF}}$ (down) using perimeteral coordinates. From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
 \label{comparison_mass_density_peri}
 \end{figure*}
 
@@ -377,7 +369,6 @@ where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^\
 \end{figure*}
 
 \subsection{Distribution of angular momentum and equations of motion}
-
 We introduce the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
 \begin{equation}
 l = - \frac{u_{\phi}}{u_t}, \;\;\; \Omega = \frac{u^{\phi}}{u^t},
@@ -420,15 +411,12 @@ where $i = r, \theta$. Then, we rewrite this equation in terms of the specific a
 \end{equation}
 where $\mathcal{L} = g_{t\phi}^2 - g_{tt}g_{\phi\phi}$.
 
-\begin{equation}\label{eq:l}
-\mathcal{L} = g_{t\phi}^2 - g_{tt}g_{\phi\phi}.
-\end{equation}
 To integrate Eq.~\eqref{eq:diff_ver} we first assume a polytropic equation of state of the form
 \begin{equation}\label{eq:eos_fluid}
 p = K \rho^{\Gamma},
 \end{equation}
 with $K$ and $\Gamma$ constants.
-Then, we define the magnetic pressure as $p_{\mathrm{m}} = b^2/2$, and introduce the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$ and $\tilde{w} = \mathcal{L} w$, in order to write an analogous equation to Eq.~\eqref{eq:eos_fluid} for $\tilde{p}_{\mathrm{m}}$~\citep{Komissarov:2006}
+Then, we define the magnetic pressure as $p_{\mathrm{m}} = b^2/2$, the magnetization parameter $\beta_{\mathrm{m}} = p/p_{\mathrm{m}}$, and introduce the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$ and $\tilde{w} = \mathcal{L} w$, in order to write an analogous equation to Eq.~\eqref{eq:eos_fluid} for $\tilde{p}_{\mathrm{m}}$
 \begin{equation}\label{eq:eos_mag_tilde}
 \tilde{p}_{\mathrm{m}} = M \tilde{w}^q,
 \end{equation}
@@ -444,16 +432,15 @@ W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}\r
 where $W_{\mathrm{in}}$ is the potential at the inner edge of the disk.
 
 We also write the expressions of the total energy density for the torus $\rho_{\mathrm{T}}$:
-
 \begin{equation}\label{eq:torus_energy_density}
 \rho_{\mathrm{T}} = -T^t_t + T^i_i = \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
 \end{equation}
-
 and the total energy density for the scalar field $\rho_{\mathrm{SF}}$:
-
 \begin{equation}\label{eq:SF_energy_density}
 \rho_{\mathrm{SF}} = -(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i = 2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
 \end{equation}
+
+In this work, we set the mass of the scalar field $\mu = 1$, the angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EoS to $q = \Gamma = 4/3$, and the density at the disk centre $\rho_{\mathrm{c}} = 1$. Then, we leave the magnetization at the center $\beta_{\mathrm{m_c}}$ as a parameter (for each model of KBHSH). With this information we can compute all the relevant physical quantities.
 
 %--------------------------------------------------------------------
 \section{Method}
@@ -461,17 +448,34 @@ and the total energy density for the scalar field $\rho_{\mathrm{SF}}$:
 \subsection{Building the disk}
 
 To construct our models we take the following steps:
-First, we find the angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the value at the minimum and the location of said minimum outside the event horizon of equation~\eqref{eq:mb_ang_mom}. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$ and $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$.
-
-In this work, we use $q = \Gamma = 4/3$, the density at the disk centre $\rho_{\mathrm{c}} = 1$ and the angular momentum distribution gives us $W_{\mathrm{in}} = W_{\mathrm{cusp}} = 0$. With this information we can compute all the relevant physical quantities.
+First, we find the angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the value at the minimum and the location of said minimum outside the event horizon of equation~\eqref{eq:mb_ang_mom}. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$ and $W_{\mathrm{in}} = 0$ and then, we can compute the potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the center as
+\begin{equation}
+p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = K/\beta_{\mathrm{m_c}},
+\end{equation}
+where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}$. Replacing this into the equation~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
+\begin{equation}\label{eq:K_eq}
+W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
+\end{equation}
+Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
 
 \subsection{Numerical method}
+We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
 
 %--------------------------------------------------------------------
 \section{Results}
+In table~\ref{models_list} we show the different KBHsSH models we will use. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
 
-As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extrating information about the morphology of the disks from the 2-dimensional plots. This idea is discussed in appendix\ref{torus_embedding}.
+In figures~\ref{models_I} and~\ref{models_II} we show the rest-mass density distribution for all our KBHsSH models with 3 different values of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, namely $10^{10}$, $1$ and $10^{-10}$. In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same models, but using a perimeteral radial coordinate such as $R = e^{F_2} r$. Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). Tables~\ref{HBH_disk_parameters} and~\ref{KBH_disk_parameters} show the relevant physical quantities for both KBHSH and the same KBH cases we presented in the figures. First of all, it is worth to mention that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks exhibit a maximum for $|\Delta W|$ when the spin parameter $a$ approaches 1. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. The models V, VI and VII violate that bound. This is related, as we will see, with the maximum value of the specific enthalpy, pressure and magnetic pressure.
 
+In figure~\ref{comparison_mass_density} we show the total energy density of the torus $\rho_{\mathrm{T}}$ (superior half) and the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for 3 of the models (I, IV and VII) and 2 values of the magnetization parameter at the center ($10^{10}$ and $10^{-10}$). In figure~\ref{comparison_mass_density_peri}, we show the same, but using the perimeteral coordinate we defined earlier. The plots show that the maximum of the total energy density of the disk $\rho_{\mathrm{t}}$ is closer to the maximum of the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for increasing hair.
+
+The behaviour of the maximum specific enthalpy $h_{\mathrm{max}}$ and the maximum rest-mass density $\rho_{\mathrm{max}}$ is shown in figures~\ref{comparison_HBH_Kerr_dens_enth} for the models (I-VII) and for a sequence of increasing spin parameter KBHs, here we can see that, for both cases, an increase in $|\Delta W|$ implies higher values for $h_{\mathrm{max}}$ (low magnetization) and also higher values for $\rho_{\mathrm{max}}$ (high magnetization). However, there are differences between the two cases. For the enthalpy, the values of $h_{\mathrm{max}}$ reached for the KBHsSH are much higher than those of the KBH case. This fact tells us that, while the $w = \rho h \simeq \rho$ approximation (see \cite{Komissarov:2006} and \cite{Gimeno-Soler:2017}) is valid for magnetized flows ($\beta_{\mathrm{m_c}} \sim 1$) for reasonable values of the spin parameter ($a \sim 0.99$ or lower), that is not the case for KBHsSH. Also, for the rest-mass density we have a different behaviour: $\rho_{\mathrm{max}}$ for KBHsSH reach values only attainable by high spin parameter KBHs (between $a = 0.9$ and $a = 0.99999$ for the seven models we present here).
+
+Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the variation of the quotient of the perimeteral radius of the magnetic pressure maximum by the perimeteral radius of the disk center $R_{\mathrm{m, max}}/R_{\mathrm{c}}$ with the decimal logarithm of the magnetization parameter at the disk center $\log_{10} \beta_{\mathrm{m_c}}$ for the same KBHsSH and KBH cases as in figure~\ref{comparison_HBH_Kerr_dens_enth}. The inset shows a region around $\beta_{\mathrm{m_c}} = 3$ and $R_{\mathrm{m, max}}/R_{\mathrm{c}} = 1$, this is because for disks with $h = 1$, $R_{\mathrm{m, max}} = R_{\mathrm{c}}$ if $\beta_{\mathrm{m_c}} = 1 / \Gamma - 1$. As we can easily see, this condition is also fulfilled for the Kerr case, even $h \neq 1$ (with a slight deviation for very high spin parameter cases), but not quite for the KBHsSH cases.
+
+\sg{Include discussion about radial profiles.}
+
+As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extracting information about the morphology of the disks from 2-dimensional plots. This idea is discussed in appendix~\ref{torus_embedding}.
 
 \begin{table}
 \caption{List of models of KBHsSH.}        
@@ -499,6 +503,31 @@ VII & $0.975$ & $0.85$ & $0.018$ &  $0.002$  & $0.957$ & $0.848$ & $0.04$ \\
 \end{table}
 
 \begin{table}
+\caption{Values of the normalized spin parameter for the ADM quantities ($a_{\mathrm{ADM}}$), for the BH horizon quantities ($a_{\mathrm{H}}$), the horizon linear velocity ($v_{\mathrm{H}}$) and the spin parameter corresponding to a KBH with a linear velocity equal to $v_{\mathrm{H}}$, ($a_{\mathrm{H_{eq}}}$).}        
+\label{models_spin_vel}      
+\centering          
+\begin{tabular}{c c c c c}
+\hline\hline       
+ Model & $a_{\mathrm{ADM}}$ & $a_{\mathrm{H}}$ & $v_{\mathrm{H}}$ & $a_{\mathrm{H_{eq}}}$ \\ 
+\hline           
+I & $0.9987$ & $0.9712$ & $0.7685$ & $0.9663$ \\ 
+ \hline 
+II & $1.014$ & $0.3760$ & $0.6802$ & $0.9301$ \\
+ \hline 
+III & $0.9032$ & $1.295$ & $0.7524$ & $0.9608$ \\ 
+ \hline 
+IV & $0.8489$ & $2.082$ & $0.5635$ & $0.8554$ \\ 
+ \hline 
+V & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ \\ 
+ \hline 
+VI & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ \\ 
+ \hline 
+VII & $0.8941$ & $6.173$ & $0.09732$ & $0.1928$ \\ 
+\hline      
+\end{tabular}
+\end{table}
+
+\begin{table*}[t]
 \caption{Disk parameters and values of their relevant physical magnitudes. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ and $l = l_{\mathrm{mb}}$}        
 \label{HBH_disk_parameters}      
 \centering          
@@ -549,11 +578,11 @@ VII & $0.920$ & $-1.236$ & $0.18$ & $1.10$ & $10^{-10}$ & $3.44$ & $1.0$ & $0.61
  &  &  &  &  & $10^{-10}$ & $1.0$ & $10.42$ & $7.03 \times 10^{-10}$ & $2.44$ & $0.28$ & $0.30$\\ 
 \hline 
 \end{tabular}
-\end{table}
+\end{table*}
 
-\begin{table}
-\caption{Disc parameters and values of their relevant physical magnitudes for the KBH case. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ and $l = l_{\mathrm{mb}}$}        
-\label{HBH_disk_parameters}      
+\begin{table*}[t]
+\caption{Disc parameters and values of their relevant physical magnitudes for the KBH case. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ , $l = l_{\mathrm{mb}}$ and $M_{\mathrm{BH}} = 1$.}        
+\label{KBH_disk_parameters}      
 \centering          
 \begin{tabular}{c c c c c  c c c c c c c}
 \hline\hline       
@@ -584,45 +613,11 @@ $0.9999$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.0$ 
  &  &  &  &  & $10^{-10}$ & $1.0$ & $6.17$ & $1.22 \times 10^{-10}$ & $0.491$ & $2.0021$ & $2.0030$ \\ 
 \hline   
 \end{tabular}
-\end{table}
-
-\begin{table}
-\caption{Values of the normalized spin parameter for the ADM quantities ($a_{\mathrm{ADM}}$), for the BH horizon quantities ($a_{\mathrm{H}}$), the horizon linear velocity ($v_{\mathrm{H}}$) and the spin parameter corresponding to a KBH with a linear velocity equal to $v_{\mathrm{H}}$, ($a_{\mathrm{H_{eq}}}$).}        
-\label{models_spin_vel}      
-\centering          
-\begin{tabular}{c c c c c}
-\hline\hline       
- Model & $a_{\mathrm{ADM}}$ & $a_{\mathrm{H}}$ & $v_{\mathrm{H}}$ & $a_{\mathrm{H_{eq}}}$ \\ 
-\hline           
-I & $0.9987$ & $0.9712$ & $0.7685$ & $0.9663$ \\ 
- \hline 
-II & $1.014$ & $0.3760$ & $0.6802$ & $0.9301$ \\
- \hline 
-III & $0.9032$ & $1.295$ & $0.7524$ & $0.9608$ \\ 
- \hline 
-IV & $0.8489$ & $2.082$ & $0.5635$ & $0.8554$ \\ 
- \hline 
-V & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ \\ 
- \hline 
-VI & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ \\ 
- \hline 
-VII & $0.8941$ & $6.173$ & $0.09732$ & $0.1928$ \\ 
-\hline      
-\end{tabular}
-\end{table}
-
-
-\begin{figure}
-\hspace{-0.3cm}
-\includegraphics[scale=0.57]{figures/existence.eps}
-\hspace{-0.2cm}
-\caption{Location of the models in the domain of existence of KBHsSH solutions. \textbf{update names.}}
-\label{existance}
-\end{figure}
+\end{table*}
 
 %--------------------------------------------------------------------
 \section{Conclusions}
-
+Future work: Non-constant angular momentum case, Proca hair, shadows of the system HBH+disk.
 
 \begin{acknowledgements}
 
@@ -654,134 +649,17 @@ so we can write $g'^2$ as
 g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right) - e^{2 F_2} (F_2'r \sin \theta + r' \sin \theta + r \cos \theta)^2.
 \end{equation}
 This result tells us that the r.h.s. of~\eqref{eq:embedding_existance} must be $\geq 0$ in order to the embedding function to exist.
-This gives us the following results for the seven different cases of KBHsSH we have:
 
-\section{KBHsSH vs $h = 1$ approximation}\label{komissarov_appendix}
-
-In the figures \ref{comparison_alt_mag_1}, \ref{comparison_alt_mag_2}, \ref{comparison_alt_mag_3}, \ref{comparison_alt_radial_1}, \ref{comparison_alt_radial_2}, \ref{comparison_alt_radial_3} we show the comparison between the results for KBHsSH using \cite{Montero:2007} and \cite{Komissarov:2006}. The figures show good agreement for the highly magnetized case ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$) but not quite for the non-magnetized and mildly magnetized cases, especially for the model III. This is due to the $h = 1$ approximation breaking down. In the table~\ref{table:pot} we show the correlation between the value of the potential at the centre and the specific enthalpy at the centre. It is easy to note that for higher absolute values of $W_{\mathrm{c}}$ we get values of $h_{\mathrm{c}}$ further away from the case $h = 1$. This is interesting because these high values of $W_{\mathrm{c}}$ (particularly the one for the model III) is unattaniable for any KBH (as is shown by~\cite{Abramowicz:1978}, the maximum value of $W_{\mathrm{c}}$ for a KBH is $W_{\mathrm{c}} = 0.549$).
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.2]{figures/fig2_III_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig2_III_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig2_III_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig2_III_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig2_III_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig2_III_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Rest-mass density distribution for the model I. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_mag_1}
-% \end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.2]{figures/fig3_IV_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig3_IV_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig3_IV_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig3_IV_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig3_IV_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig3_IV_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Rest-mass density distribution for the model II. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_mag_2}
-% \end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.2]{figures/fig4_V_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig4_V_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig4_V_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig4_V_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.2]{figures/fig4_V_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.2]{figures/fig4_V_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Rest-mass density distribution for the model III. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_mag_3}
-% \end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.3]{figures/radial_III_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_III_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_III_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_III_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_III_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_III_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Radial rest-mass density distribution for the model I at the equatorial plane. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_radial_1}
-% \end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.3]{figures/radial_IV_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_IV_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_IV_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_IV_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_IV_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_IV_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Radial rest-mass density distribution for the model II at the equatorial plane. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_radial_2}
-% \end{figure*}
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.3]{figures/radial_V_HBH_3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_V_K_3.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_V_HBH_0.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_V_K_0.pdf}
-% \hspace{-0.2cm}
-% \\
-% \includegraphics[scale=0.3]{figures/radial_V_HBH__3.pdf}
-% \hspace{-0.3cm}
-% \includegraphics[scale=0.3]{figures/radial_V_K__3.pdf}
-% \hspace{-0.2cm}
-% \caption{Radial rest-mass density distribution for the model III at the equatorial plane. From top to bottom the rows correspond to the different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{3}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-3}$). The left column correspond to the KBHsSH model using~\cite{Montero:2007} and the right column correspond to the~\cite{Komissarov:2006} approximation.}
-% \label{comparison_alt_radial_3}
-% \end{figure*}
+\begin{figure*}
+\centering
+\includegraphics[scale=0.2]{figures/embedding.pdf}
+\hspace{0.5cm}
+\caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $\geq 0$ and red when is $\leq 0$.}
+\label{embedding_VII}
+\end{figure*}
 
 \section{Finding $l_{\mathrm{mb}}$ and $r_{\mathrm{mb}}$}\label{ang_mom_appendix}
-Proof.
+\sg{To do.}
 \end{appendix}     
 
 \end{document}
