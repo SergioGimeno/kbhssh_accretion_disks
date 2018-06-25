@@ -427,7 +427,7 @@ p_{\mathrm{m}} = M \mathcal{L}^{q-1} w^q,
 where $w = \rho h$ is the fluid enthaply density, and $M$ and $q$ are constants.
 If we define the potential as $W \equiv \ln |u_t|$, then we can integrate the equation~\eqref{eq:diff_ver} as
 \begin{equation}\label{eq:final}
-W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}\right) + \frac{q}{q-1}M(\mathcal{L}w)^{q-1}=0,
+W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}\right) + \frac{q}{q-1}M(\mathcal{L}w)^{q-1}=0,
 \end{equation}
 where $W_{\mathrm{in}}$ is the potential at the inner edge of the disk.
 
@@ -452,11 +452,11 @@ First, we find the angular momentum $l$ and the radius of the cusp $r_{\mathrm{c
 \begin{equation}
 p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = K/\beta_{\mathrm{m_c}},
 \end{equation}
-where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}$. Replacing this into the equation~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
+where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. Replacing this into the equation~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
 \begin{equation}\label{eq:K_eq}
 W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
 \end{equation}
-Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
+Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
 
 \subsection{Numerical method}
 We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
@@ -654,7 +654,7 @@ This result tells us that the r.h.s. of~\eqref{eq:embedding_existance} must be $
 \centering
 \includegraphics[scale=0.2]{figures/embedding.pdf}
 \hspace{0.5cm}
-\caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $\geq 0$ and red when is $\leq 0$.}
+\caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $> 0$ and red when is $\leq 0$.}
 \label{embedding_VII}
 \end{figure*}
 
