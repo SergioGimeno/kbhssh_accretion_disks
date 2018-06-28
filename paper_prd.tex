@@ -173,10 +173,10 @@ The KBHsSH models we use in this study are built following the procedure describ
 \mathrm{d}s^2 &=& e^{2F_1}\left(\frac{\mathrm{d}r^2}{N} + r^2\mathrm{d}\theta^2\right) +  e^{2F_2}r^2\sin^2 \theta(\mathrm{d}\phi-W\mathrm{d}t)^2 
 \nonumber \\ 
 &-&  e^{2F_0}N\mathrm{d}t^2\,,
-\\
-%\end{eqnarray}
-%\begin{eqnarray}
-\Psi &=& \phi(r, \theta) e^{\mathrm{i}(m\varphi - \omega t)} \,,
+\label{metric}
+\end{eqnarray}
+\begin{eqnarray}
+\Psi = \phi(r, \theta) e^{\mathrm{i}(m\varphi - \omega t)} \,,
 %\end{split}
 \end{eqnarray}
 with $N = 1 - r_H/r$, where $r_H$ is the radius of the event horizon of the BH, and $W$, $F_1$, $F_2$, $F_0$ are functions of $r$ and $\theta$. Moreover, $\omega$ is the scalar field frequency and $m$ is the azimuthal harmonic index.
@@ -189,7 +189,7 @@ The stationary and axisymmetric metric ansatz is a solution to the EKG field equ
 \end{eqnarray}
 where $\mu$ is the mass of the scalar field and $^*$ denotes complex conjugation. The interested reader is addressed to~\cite{Herdeiro:2015b} for details on the equations of motion for the scalar field $\Psi$ and the four metric functions ${W, F_i}$, along with their solution.
 
-Table~\ref{models_list} lists the seven KBHsSH models we use in this work. The models have been selected to span all regions of interest in the parameter space. Model I corresponds to a Kerr-like model, with almost all the mass and angular momentum stored in the BH, while model VII corresponds to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is worth mentioning that some of the models violate the Kerr bound (normalized sìn parameter larger than 1) in terms of both ADM or horizon quantities. This is not a source of concern because, as shown in~\cite{Herdeiro:2015c} the linear velocity of the horizon, $v_{\mathrm{H}}$, never exceeds $1$. For comparison, we also show in the last column the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with a horizon linear velocity $v_{\mathrm{H}}$. \tf{Further description of the table}. In addition, Figure~\ref{existence} plots the location of our models in  the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram. 
+Table~\ref{models_list} lists the seven KBHsSH models we use in this work. The models have been selected to span all regions of interest in the parameter space. Model I corresponds to a Kerr-like model, with almost all the mass and angular momentum stored in the BH, while model VII corresponds to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is worth mentioning that some of the models violate the Kerr bound (normalized sìn parameter larger than 1) in terms of both ADM or horizon quantities. This is not a source of concern because, as shown in~\cite{Herdeiro:2015c} the linear velocity of the horizon, $v_{\mathrm{H}}$, never exceeds $1$. For comparison, we also show in the last column of Table~\ref{models_list} the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with a horizon linear velocity $v_{\mathrm{H}}$. \tf{Further description of the table. Something must be said about the coordinates.}. In addition to the information provided in Table~\ref{models_list}, Figure~\ref{existence} plots the location of our models in  the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram. 
 
 
 
@@ -226,7 +226,6 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \label{existence}
 \end{figure}
 
-%HERE
 
 \begin{figure*}
 \centering
@@ -461,12 +460,14 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Distribution of angular momentum and equations of motion}
+\subsection{Distribution of angular momentum in the disk}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+Equilibrium models of disks around Kerr BHs are built assuming that the spacetime metric and the fluid fields are stationary and  axisymmetric.  This was the approach followed in~\cite{Gimeno-Soler:2017}. For KBHsSH we can follow the same approach as the metric ansatz given by Eq.~(\ref{metric}) is stationary and axisymmetric.
 
+%HERE
 
-We introduce the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
+We start by introducing the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
 \begin{equation}
 l = - \frac{u_{\phi}}{u_t}, \;\;\; \Omega = \frac{u^{\phi}}{u^t},
 \end{equation}
@@ -475,12 +476,12 @@ The relationship between $l$ and $\Omega$ is given by the equations
 \begin{equation}
 l = - \frac{\Omega g_{\phi\phi} + g_{t\phi}}{\Omega g_{t\phi} + g_{tt}}, \;\;\; \Omega = - \frac{l g_{tt} + g_{t\phi}}{l g_{t\phi} + g_{\phi\phi}},
 \end{equation}
-where we are assuming circular motion, i.e. the four-velocity can be written as
+where we are assuming circular motion, i.e.~the four-velocity can be written as
 \begin{equation}
 u^{\mu} = (u^t, 0, 0, u^{\phi})\,.
 \end{equation}
 
-We consider a constant angular momentum distribution $l(r,\theta) = \mathrm{cte}.$. The specific value of the angular momentum is computed as the minimum of the following equation
+In this work, for simplicity, we consider a constant angular momentum distribution, $l(r,\theta) = \mathrm{const}$. This is contrary to the approach we followed in~\cite{Gimeno-Soler:2017} where the angular momentum ansatz followed the approach of~\cite{Qian:2009}. \tf{We should explain/motivate why we change our approach in this paper.} The specific value of the angular momentum is computed as the minimum of the following equation
 \begin{equation}\label{eq:mb_ang_mom}
 l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi}\pm\left(\sqrt{g_{t\phi}^2-g_{tt}g_{\phi\phi}}\right)\sqrt{1+g_{tt}}}{-g_{tt}}
 \end{equation}
