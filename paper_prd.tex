@@ -56,12 +56,12 @@
 \author{Sergio Gimeno-Soler}
 \affiliation{Departamento de
   Astronom\'{\i}a y Astrof\'{\i}sica, Universitat de Val\`encia,
-  Dr. Moliner 50, 46100, Burjassot (Val\`encia), Spain}
+  C/ Dr. Moliner 50, 46100, Burjassot (Val\`encia), Spain}
 
 \author{Jos\'e A. Font}
 \affiliation{Departamento de
   Astronom\'{\i}a y Astrof\'{\i}sica, Universitat de Val\`encia,
-  Dr. Moliner 50, 46100, Burjassot (Val\`encia), Spain}
+  C/ Dr. Moliner 50, 46100, Burjassot (Val\`encia), Spain}
 \affiliation{Observatori Astron\`omic, Universitat de Val\`encia, C/ Catedr\'atico 
   Jos\'e Beltr\'an 2, 46980, Paterna (Val\`encia), Spain}
 
@@ -123,32 +123,104 @@ In addition, the detection of gravitational waves from binary BHs~\cite{Abbott20
 Regarding the latter, the source of light in a realistic situation is provided by material from an accretion disk crossing the event horizon of the BH, producing the shadow. Thick accretion disks (or tori) are common in astrophysics, either surrounding the central BHs of quasars and active galactic nuclei or, at a stellar scale, surrounding the compact objects in X-ray binaries, microquasars, and gamma-ray bursts. Motivated by this observational possibility, in this work we build equilibrium solutions of HBHs surrounded by magnetized accretion disks. Our procedure, which combines earlier approaches  
 by~\cite{Komissarov:2006,Qian:2009} was presented in~\cite{Gimeno-Soler:2017} for the Kerr BH case. In~\cite{Gimeno-Soler:2017} we built equilibrium sequences of accretion disks  endowed with a purely toroidal magnetic field, assuming a form of the angular momentum distribution that departs from the constant case considered by~\cite{Komissarov:2006} and from which the location and morphology of the equipotential surfaces can be numerically computed. Our immediate goal in the present work is to assess if and how the accretion disk morphology depends on the type of BH considered, either Kerr BHs of varying spins or Kerr BHs with scalar hair (KBHsSH). Moreover, we focus on disks with a constant distribution of specific angular momentum, presenting in a companion paper the non-constant (power-law) case. In subsequent investigations, we will analyze the shadows of the equilibrium models of KBHsSH presented in this work as well as in {\it dynamical} situations.
 
-The organization of this paper is as follows:
+The organization of this paper is as follows: Section~\ref{framework} presents  the  analytic  mathematical framework to build non-self-gravitating magnetized discs in the spacetime of KBHsSH. Section~\ref{procedure} discusses the corresponding numerical methodology. The sequences of equilibrium models are presented and  discussed in Section~\ref{results}. Finally, our conclusions  are  summarized  in  Section~\ref{conclusions}.  
  
 
 %HERE
 
+%%%%%%%%%%%
 \section{Framework}
+\label{framework}
+%%%%%%%%%%%
 
-We use the stationary and axisymmetric metric ansatz provided by\cite{Herdeiro:2014a}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Spacetime metric and KBHsSH models}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\begin{equation}
-\begin{split}
-\mathrm{d}s^2 = e^{2F_1}\left(\frac{\mathrm{d}r^2}{N} + r^2\mathrm{d}\theta^2\right) + \\ e^{2F_2}r^2\sin^2 \theta(\mathrm{d}\phi-W\mathrm{d}t)^2 -  e^{2F_0}N\mathrm{d}t^2,
-\end{split}
-\end{equation}
+The KBHsSH models we use in this study are built following the procedure described in~\cite{Herdeiro:2015b}. The underlying theoretical framework is the Einstein-Klein-Gordon (EKG) field theory, describing a massive complex scalar field $\Psi$ minimally coupled to Einstein gravity. KBHsSH solutions are obtained by using the following ansatz for the metric and the scalar field~\cite{Herdeiro:2014a}
+\begin{eqnarray}
+%\begin{split}
+\mathrm{d}s^2 &=& e^{2F_1}\left(\frac{\mathrm{d}r^2}{N} + r^2\mathrm{d}\theta^2\right) +  e^{2F_2}r^2\sin^2 \theta(\mathrm{d}\phi-W\mathrm{d}t)^2 
+\nonumber \\ 
+&-&  e^{2F_0}N\mathrm{d}t^2\,,
+\\
+%\end{eqnarray}
+%\begin{eqnarray}
+\Psi &=& \phi(r, \theta) e^{\mathrm{i}(m\varphi - \omega t)} \,,
+%\end{split}
+\end{eqnarray}
+with $N = 1 - r_H/r$, where $r_H$ is the radius of the event horizon of the BH, and $W$, $F_1$, $F_2$, $F_0$ are functions of $r$ and $\theta$. Moreover, $\omega$ is the scalar field frequency and $m$ is the azimuthal harmonic index.
 
-with $N = 1 - r_H/r$, where $r_H$ is the radius of the event horizon of the BH and $W$, $F_1$, $F_2$, $F_0$ are functions of $r$ and $\theta$.
+The stationary and axisymmetric metric ansatz is a solution to the EKG field equations $R_{ab} - \frac{1}{2}R g _{ab} = 8 \pi G (T_{\mathrm{SF}})_{ab}$ with 
+\begin{eqnarray}\label{eq:e-m_scalaf_field}
+(T_{\mathrm{SF}})_{ab} &=& \partial_a \Psi^* \partial_b \Psi + \partial_b \Psi^* \partial_a \Psi 
+\nonumber \\ 
+&-& g_{ab} \left(\frac{1}{2} g^{cd}(\partial_c \Psi^* \partial_d \Psi + \partial_d \Psi^* \partial_c \Psi) + \mu^2 \Psi^* \Psi \right),
+\end{eqnarray}
+where $\mu$ is the mass of the scalar field and $^*$ denotes complex conjugation. The interested reader is addressed to~\cite{Herdeiro:2015b} for details on the equations of motion for the scalar field $\Psi$ and the four metric functions ${W, F_i}$, along with their solution.
 
-This metric is a solution to the Einstein-Klein-Gordon field equations $R_{ab} - \frac{1}{2}R g _{ab} = 8 \pi G (T_{\mathrm{SF}})_{ab}$ with 
+Table~\ref{models_list} lists the seven KBHsSH models we use in this work. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
 
-\begin{equation}\label{eq:e-m_scalaf_field}
-\begin{split}
-(T_{\mathrm{SF}})_{ab} = \partial_a \Psi^* \partial_b \Psi + \partial_b \Psi^* \partial_a \Psi \\ - g_{ab} \left(\frac{1}{2} g^{cd}(\partial_c \Psi^* \partial_d \Psi + \partial_d \Psi^* \partial_c \Psi) + \mu^2 \Psi^* \Psi \right),
-\end{split}
-\end{equation}
+%%%%%%%%%%%%%%%%%%%
+\begin{table}
+\caption{List of models of KBHsSH.}        
+\label{models_list}      
+\centering          
+\begin{tabular}{c c c c  c c c c}
+\hline\hline       
+ Model & $M_{\mathrm{ADM}}$ & $J_{\mathrm{ADM}}$ & $M_{\mathrm{H}}$ &  $J_{\mathrm{H}}$ & $M_{\mathrm{SF}}$ & $J_{\mathrm{SF}}$ & $r_{\mathrm{H}}$ \\ 
+\hline           
+I & $0.415$ & $0.172$ & $0.393$ &  $0.15$  & $0.022$ & $0.022$ & $0.2$\\ 
+ \hline 
+II & $0.630$ & $0.403$ & $0.340$ &  $0.121$  & $0.063$ & $0.282$ & $0.221$ \\
+ \hline 
+III & $0.797$ & $0.573$ & $0.365$ &  $0.172$  & $0.573$ & $0.432$ & $0.111$ \\ 
+ \hline 
+IV & $0.933$ & $0.739$ & $0.234$ &  $0.114$  & $0.699$ & $0.625$ & $0.1$ \\ 
+ \hline 
+V & $0.940$ & $0.757$ & $0.159$ &  $0.076$  & $0.757$ & $0.781$ & $0.091$ \\ 
+ \hline 
+VI & $0.959$ & $0.795$ & $0.087$ &  $0.034$  & $0.872$ & $0.781$ & $0.088$ \\ 
+ \hline 
+VII & $0.975$ & $0.85$ & $0.018$ &  $0.002$  & $0.957$ & $0.848$ & $0.04$ \\ 
+\hline      
+\end{tabular}
+\end{table}
+%%%%%%%%%%%%%%%%%%%
 
-where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^{\mathrm{i}m\phi - w t}$ where $w$ is the scalar field frequency and $m$ is the azimuthal harmonic index. Details about the obtention of the solution and the behaviour of the metric functions ${W, F_i}$ are presented in~\cite{Herdeiro:2015b}
+\begin{table}
+\caption{Values of the normalized spin parameter for the ADM quantities ($a_{\mathrm{ADM}}$), for the BH horizon quantities ($a_{\mathrm{H}}$), the horizon linear velocity ($v_{\mathrm{H}}$) and the spin parameter corresponding to a KBH with a linear velocity equal to $v_{\mathrm{H}}$, ($a_{\mathrm{H_{eq}}}$).}        
+\label{models_spin_vel}      
+\centering          
+\begin{tabular}{c c c c c}
+\hline\hline       
+ Model & $a_{\mathrm{ADM}}$ & $a_{\mathrm{H}}$ & $v_{\mathrm{H}}$ & $a_{\mathrm{H_{eq}}}$ \\ 
+\hline           
+I & $0.9987$ & $0.9712$ & $0.7685$ & $0.9663$ \\ 
+ \hline 
+II & $1.014$ & $0.3760$ & $0.6802$ & $0.9301$ \\
+ \hline 
+III & $0.9032$ & $1.295$ & $0.7524$ & $0.9608$ \\ 
+ \hline 
+IV & $0.8489$ & $2.082$ & $0.5635$ & $0.8554$ \\ 
+ \hline 
+V & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ \\ 
+ \hline 
+VI & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ \\ 
+ \hline 
+VII & $0.8941$ & $6.173$ & $0.09732$ & $0.1928$ \\ 
+\hline      
+\end{tabular}
+\end{table}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.7]{figures/existence-eps-converted-to.pdf}
+\caption{The figure has to be redone to label the 7 models used in this work.}
+\label{existence}
+\end{figure}
+
+
 
 \begin{figure*}
 \centering
@@ -381,7 +453,13 @@ where $\Psi$ is a complex Klein-Gordon field such as $\Psi = \phi(r, \theta) e^{
 \label{models_Kerr_peri}
 \end{figure*}
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Distribution of angular momentum and equations of motion}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
 We introduce the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
 \begin{equation}
 l = - \frac{u_{\phi}}{u_t}, \;\;\; \Omega = \frac{u^{\phi}}{u^t},
@@ -403,7 +481,10 @@ l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi}\pm\left(\sqrt{g_{t\phi}^2-g_{t
 where the plus sign is for prograde orbits and the minus is for retrograde orbits.
 This expression is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary, axisymmetric spacetimes. For prograde motion, the function has a minimum outside the event horizon. The location of said minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the keplerian angular momentum $l_{\mathrm{mb}}$ at that point. We show the proof of this statement at appendix~\ref{ang_mom_appendix}. This choice of angular momentum distribution is motivated by its simplicity (for a first study of thick tori around KBHsSH) and for allowing the presence of a cusp (to allow matter accretion onto the black hole) and a centre.
 
+%%%%%%%%%%%%%%%%
 \subsection{Magnetized disks}
+%%%%%%%%%%%%%%%%
+
 We use the procedure described by~\cite{Montero:2007}, where we write the equations of ideal general relativistic MHD as the following conservation laws, $\nabla_{\mu} T^{\mu\nu} = 0$, $\nabla_{\mu} \,^\ast F^{\mu\nu} = 0$, and 
 $\nabla_{\mu} (\rho u^{\mu}) = 0$, 
 where $\nabla_{\mu}$ is the covariant derivative and
@@ -455,10 +536,14 @@ and the total energy density for the scalar field $\rho_{\mathrm{SF}}$:
 
 In this work, we set the mass of the scalar field $\mu = 1$, the angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EoS to $q = \Gamma = 4/3$, and the density at the disk centre $\rho_{\mathrm{c}} = 1$. Then, we leave the magnetization at the center $\beta_{\mathrm{m_c}}$ as a parameter (for each model of KBHSH). With this information we can compute all the relevant physical quantities.
 
-%--------------------------------------------------------------------
-\section{Method}
+%%%%%%%%%%%%
+\section{Methodology}
+\label{procedure}
+%%%%%%%%%%%%
 
+%%%%%%%%%%%%%%%%
 \subsection{Building the disk}
+%%%%%%%%%%%%%%%%
 
 To construct our models we take the following steps:
 First, we find the angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the value at the minimum and the location of said minimum outside the event horizon of equation~\eqref{eq:mb_ang_mom}. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$ and $W_{\mathrm{in}} = 0$ and then, we can compute the potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the center as
@@ -471,12 +556,18 @@ W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}
 \end{equation}
 Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
 
+%%%%%%%%%%%%%%%%%
 \subsection{Numerical method}
+%%%%%%%%%%%%%%%%%
+
 We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
 
-%--------------------------------------------------------------------
+%%%%%%%%%%
 \section{Results}
-In table~\ref{models_list} we show the different KBHsSH models we will use. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
+\label{results}
+%%%%%%%%%%
+
+%In table~\ref{models_list} we show the different KBHsSH models we will use. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
 
 In figures~\ref{models_I} and~\ref{models_II} we show the rest-mass density distribution for all our KBHsSH models with 3 different values of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, namely $10^{10}$, $1$ and $10^{-10}$. In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same models, but using a perimeteral radial coordinate such as $R = e^{F_2} r$. Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). Tables~\ref{HBH_disk_parameters} and~\ref{KBH_disk_parameters} show the relevant physical quantities for both KBHSH and the same KBH cases we presented in the figures. First of all, it is worth to mention that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks exhibit a maximum for $|\Delta W|$ when the spin parameter $a$ approaches 1. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. The models V, VI and VII violate that bound. This is related, as we will see, with the maximum value of the specific enthalpy, pressure and magnetic pressure.
 
@@ -490,55 +581,55 @@ Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the variation of the quotient of 
 
 As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extracting information about the morphology of the disks from 2-dimensional plots. This idea is discussed in appendix~\ref{torus_embedding}.
 
-\begin{table}
-\caption{List of models of KBHsSH.}        
-\label{models_list}      
-\centering          
-\begin{tabular}{c c c c  c c c c}
-\hline\hline       
- Model & $M_{\mathrm{ADM}}$ & $J_{\mathrm{ADM}}$ & $M_{\mathrm{H}}$ &  $J_{\mathrm{H}}$ & $M_{\mathrm{SF}}$ & $J_{\mathrm{SF}}$ & $r_{\mathrm{H}}$ \\ 
-\hline           
-I & $0.415$ & $0.172$ & $0.393$ &  $0.15$  & $0.022$ & $0.022$ & $0.2$\\ 
- \hline 
-II & $0.630$ & $0.403$ & $0.340$ &  $0.121$  & $0.063$ & $0.282$ & $0.221$ \\
- \hline 
-III & $0.797$ & $0.573$ & $0.365$ &  $0.172$  & $0.573$ & $0.432$ & $0.111$ \\ 
- \hline 
-IV & $0.933$ & $0.739$ & $0.234$ &  $0.114$  & $0.699$ & $0.625$ & $0.1$ \\ 
- \hline 
-V & $0.940$ & $0.757$ & $0.159$ &  $0.076$  & $0.757$ & $0.781$ & $0.091$ \\ 
- \hline 
-VI & $0.959$ & $0.795$ & $0.087$ &  $0.034$  & $0.872$ & $0.781$ & $0.088$ \\ 
- \hline 
-VII & $0.975$ & $0.85$ & $0.018$ &  $0.002$  & $0.957$ & $0.848$ & $0.04$ \\ 
-\hline      
-\end{tabular}
-\end{table}
-
-\begin{table}
-\caption{Values of the normalized spin parameter for the ADM quantities ($a_{\mathrm{ADM}}$), for the BH horizon quantities ($a_{\mathrm{H}}$), the horizon linear velocity ($v_{\mathrm{H}}$) and the spin parameter corresponding to a KBH with a linear velocity equal to $v_{\mathrm{H}}$, ($a_{\mathrm{H_{eq}}}$).}        
-\label{models_spin_vel}      
-\centering          
-\begin{tabular}{c c c c c}
-\hline\hline       
- Model & $a_{\mathrm{ADM}}$ & $a_{\mathrm{H}}$ & $v_{\mathrm{H}}$ & $a_{\mathrm{H_{eq}}}$ \\ 
-\hline           
-I & $0.9987$ & $0.9712$ & $0.7685$ & $0.9663$ \\ 
- \hline 
-II & $1.014$ & $0.3760$ & $0.6802$ & $0.9301$ \\
- \hline 
-III & $0.9032$ & $1.295$ & $0.7524$ & $0.9608$ \\ 
- \hline 
-IV & $0.8489$ & $2.082$ & $0.5635$ & $0.8554$ \\ 
- \hline 
-V & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ \\ 
- \hline 
-VI & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ \\ 
- \hline 
-VII & $0.8941$ & $6.173$ & $0.09732$ & $0.1928$ \\ 
-\hline      
-\end{tabular}
-\end{table}
+%\begin{table}
+%\caption{List of models of KBHsSH.}        
+%\label{models_list}      
+%\centering          
+%\begin{tabular}{c c c c  c c c c}
+%\hline\hline       
+% Model & $M_{\mathrm{ADM}}$ & $J_{\mathrm{ADM}}$ & $M_{\mathrm{H}}$ &  $J_{\mathrm{H}}$ & $M_{\mathrm{SF}}$ & $J_{\mathrm{SF}}$ & $r_{\mathrm{H}}$ \\ 
+%\hline           
+%I & $0.415$ & $0.172$ & $0.393$ &  $0.15$  & $0.022$ & $0.022$ & $0.2$\\ 
+% \hline 
+%II & $0.630$ & $0.403$ & $0.340$ &  $0.121$  & $0.063$ & $0.282$ & $0.221$ \\
+% \hline 
+%III & $0.797$ & $0.573$ & $0.365$ &  $0.172$  & $0.573$ & $0.432$ & $0.111$ \\ 
+% \hline 
+%IV & $0.933$ & $0.739$ & $0.234$ &  $0.114$  & $0.699$ & $0.625$ & $0.1$ \\ 
+% \hline 
+%V & $0.940$ & $0.757$ & $0.159$ &  $0.076$  & $0.757$ & $0.781$ & $0.091$ \\ 
+% \hline 
+%VI & $0.959$ & $0.795$ & $0.087$ &  $0.034$  & $0.872$ & $0.781$ & $0.088$ \\ 
+% \hline 
+%VII & $0.975$ & $0.85$ & $0.018$ &  $0.002$  & $0.957$ & $0.848$ & $0.04$ \\ 
+%\hline      
+%\end{tabular}
+%\end{table}
+%
+%\begin{table}
+%\caption{Values of the normalized spin parameter for the ADM quantities ($a_{\mathrm{ADM}}$), for the BH horizon quantities ($a_{\mathrm{H}}$), the horizon linear velocity ($v_{\mathrm{H}}$) and the spin parameter corresponding to a KBH with a linear velocity equal to $v_{\mathrm{H}}$, ($a_{\mathrm{H_{eq}}}$).}        
+%\label{models_spin_vel}      
+%\centering          
+%\begin{tabular}{c c c c c}
+%\hline\hline       
+% Model & $a_{\mathrm{ADM}}$ & $a_{\mathrm{H}}$ & $v_{\mathrm{H}}$ & $a_{\mathrm{H_{eq}}}$ \\ 
+%\hline           
+%I & $0.9987$ & $0.9712$ & $0.7685$ & $0.9663$ \\ 
+% \hline 
+%II & $1.014$ & $0.3760$ & $0.6802$ & $0.9301$ \\
+% \hline 
+%III & $0.9032$ & $1.295$ & $0.7524$ & $0.9608$ \\ 
+% \hline 
+%IV & $0.8489$ & $2.082$ & $0.5635$ & $0.8554$ \\ 
+% \hline 
+%V & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ \\ 
+% \hline 
+%VI & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ \\ 
+% \hline 
+%VII & $0.8941$ & $6.173$ & $0.09732$ & $0.1928$ \\ 
+%\hline      
+%\end{tabular}
+%\end{table}
 
 \begin{table*}[t]
 \caption{Disk parameters and values of their relevant physical magnitudes. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ and $l = l_{\mathrm{mb}}$}        
@@ -628,8 +719,11 @@ $0.9999$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.0$ 
 \end{tabular}
 \end{table*}
 
-%--------------------------------------------------------------------
+%%%%%%%%%%%%
 \section{Conclusions}
+\label{conclusions}
+%%%%%%%%%%%%
+
 Future work: Non-constant angular momentum case, Proca hair, shadows of the system HBH+disk.
 
 \begin{acknowledgements}
