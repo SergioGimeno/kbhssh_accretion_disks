@@ -282,7 +282,7 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \hspace{-0.2cm}
 \includegraphics[scale=0.14]{figures/fig3_IV__10.pdf}
 \hspace{-0.2cm}
-\caption{Rest-mass density distribution using perimeteral coordinates. From top to bottom the rows correspond to the different models for the KBHsSH (I, II, III and IV). From left to right the columns correspond to different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Same as Fig.~\ref{models_I} but using the perimetral radial coordinate $R$. \tf{Same comment as in the previous figure.}}
 \label{models_peri_I}
 \end{figure*}
 
@@ -306,9 +306,204 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \hspace{-0.2cm}
 \includegraphics[scale=0.14]{figures/fig4_VII__10.pdf}
 \hspace{-0.2cm}
-\caption{Rest-mass density distribution using perimeteral coordinates. From top to bottom the rows correspond to the different models for the KBHsSH (V, VI, VII). From left to right the columns correspond to different values of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$), mildly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 1$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Same as Fig.~\ref{models_II} but using the perimetral radial coordinate $R$. \tf{Same comment as in the previous figure.}}
 \label{models_peri_II}
 \end{figure*}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Distribution of angular momentum in the disk}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+Equilibrium models of thick disks around Kerr BHs are built assuming that the spacetime metric and the fluid fields are stationary and  axisymmetric (see, e.g.~\cite{Font:2002,Daigne:2004,Gimeno-Soler:2017} and references therein). For disks around KBHsSH we can follow the same approach as the metric ansatz given by Eq.~(\ref{metric}) is stationary and axisymmetric.
+
+We start by introducing the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
+\begin{equation}
+l = - \frac{u_{\phi}}{u_t}, \;\;\; \Omega = \frac{u^{\phi}}{u^t},
+\end{equation}
+where $u^{\mu}$ is the fluid four-velocity.
+The relationship between $l$ and $\Omega$ is given by the equations
+\begin{equation}
+l = - \frac{\Omega g_{\phi\phi} + g_{t\phi}}{\Omega g_{t\phi} + g_{tt}}, \;\;\; \Omega = - \frac{l g_{tt} + g_{t\phi}}{l g_{t\phi} + g_{\phi\phi}},
+\end{equation}
+where we are assuming circular motion, i.e.~the four-velocity can be written as
+\begin{equation}
+u^{\mu} = (u^t, 0, 0, u^{\phi})\,.
+\end{equation}
+
+The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum distribution of the disks was introduced by~\cite{Qian:2009}, and it is characterized by three free parameters, $\beta$, $\gamma$, and $\eta$ (see Eq.~(7) in~\cite{Gimeno-Soler:2017}). In this work, for simplicity and to reduce the ample space of parameters, we consider a constant angular momentum distribution, $l(r,\theta) = \mathrm{const}$, which corresponds to setting $\beta=\gamma=0$ in~\cite{Gimeno-Soler:2017}. This choice also allows for the presence of a cusp (and hence matter accretion onto the black hole) and a centre.  \tf{We should explain/motivate why we change our approach in this paper.} Following~\citep{Daigne:2004}, the specific value of the angular momentum corresponding to bound fluid elements ($-u_t<1$) is computed as the minimum of the following equation
+\begin{equation}\label{eq:mb_ang_mom}
+l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}
+\end{equation}
+where the plus sign corresponds to prograde orbits and the minus sign to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk.
+Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. We show the proof of this statement in Appendix~\ref{ang_mom_appendix}. \tf{Is there an Appendix A?}.
+
+%%%%%%%%%%%%%%%%
+\subsection{Magnetized disks}
+%%%%%%%%%%%%%%%%
+
+To account for the magnetic flied in the disks we use the procedure described by~\cite{Komissarov:2006,Montero:2007}. We write the equations of ideal general relativistic MHD as the following conservation laws, $\nabla_{\mu} T^{\mu\nu} = 0$, $\nabla_{\mu} \,^\ast F^{\mu\nu} = 0$, and 
+$\nabla_{\mu} (\rho u^{\mu}) = 0$, 
+where $\nabla_{\mu}$ is the covariant derivative and
+\begin{equation}\label{eq:e-m_tensor}
+T^{\mu\nu} = (\rho h + b^2)u^{\mu}u^{\nu} + (p + p_{\mathrm{m}})g^{\mu\nu} - b^{\mu}b^{\nu},
+\end{equation}
+is the energy-momentum tensor of a magnetized perfect fluid, $h$, $\rho$, $p$, and $p_{\mathrm{m}}$ being the fluid specific enthalpy, density, fluid pressure, and magnetic pressure, respectively, the latter defined as $p_{\mathrm{m}} = b^2/2$. The ratio of fluid pressure to magnetic pressure defines the magnetization parameter $\beta_{\mathrm{m}} = p/p_{\mathrm{m}}$.
+Moreover, $^\ast F^{\mu\nu} = b^{\mu}u^{\nu} - b^{\nu}u^{\mu}$ is the (dual of the) Faraday tensor relative to an observer with 
+four-velocity $u^{\mu}$, and $b^{\mu}$ is the magnetic field in that frame, with
+$b^2=b^{\mu}b_{\mu}$ (see~\cite{Anton:2006} for further details). Assuming the magnetic field is purely azimuthal, i.e.~$b^r = b^{\theta} = 0$,
+and taking into account that the flow is stationary and axisymmetric, the conservation of the current density and of the Faraday tensor follow. Contracting the divergence of Eq.~\eqref{eq:e-m_tensor} with the projection tensor $h^{\alpha}_{\,\,\beta} = \delta^{\alpha}_{\,\,\beta} + u^{\alpha}u_{\beta}$, we arrive at
+\begin{equation}
+(\rho h + b^2)u_{\nu}\partial_i u^{\nu} + \partial_i\left(p + \frac{b^2}{2}\right) - b_{\nu}\partial_i b^{\nu}=0\,,
+\end{equation}
+where $i = r, \theta$. This equation can be rewritten in terms of the specific angular momentum $l$ and of the angular velocity $\Omega$, 
+\begin{equation}\label{eq:diff_ver}
+\partial_i(\ln u_t|) - \frac{\Omega \partial_i l}{1-l\Omega} + \frac{\partial_i p}{\rho h} + \frac{\partial_i(\mathcal{L}b^2)}{2\mathcal{L}\rho h} = 0\,,
+\end{equation}
+where $\mathcal{L} = g_{t\phi}^2 - g_{tt}g_{\phi\phi}$.
+
+To integrate Eq.~\eqref{eq:diff_ver} we need to assume an equation of state (EOS). We assume a polytropic EOS of the form
+\begin{equation}\label{eq:eos_fluid}
+p = K \rho^{\Gamma},
+\end{equation}
+with $K$ and $\Gamma$ constants.
+ By introducing the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$ and $\widetilde{\rho h} = \mathcal{L} (\rho h)$, we can write equations equivalent to Eq.~\eqref{eq:eos_fluid} for both $\tilde{p}_{\mathrm{m}}$ and $p_{\mathrm{m}}$
+\begin{eqnarray}
+\label{eq:eos_mag_tilde}
+\tilde{p}_{\mathrm{m}} &=& M \widetilde{\rho h}^q,
+\\
+p_{\mathrm{m}} &=& M \mathcal{L}^{q-1} (\rho h)^q,
+\end{eqnarray}
+where $M$ and $q$ are constants. Then we can integrate Eq.~\eqref{eq:diff_ver} as
+\begin{equation}\label{eq:final}
+W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}\right) + \frac{q}{q-1}M(\mathcal{L}\rho h)^{q-1}=0,
+\end{equation}
+where $W \equiv \ln |u_t|$ stands for the (gravitational plus centrifugal) potential and  $W_{\mathrm{in}}$ is the potential at the inner edge of the disk.
+
+We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T^t_t + T^i_i$, and for the scalar field, $\rho_{\mathrm{SF}}=-(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i$. These are  given by
+\begin{eqnarray}\label{eq:torus_energy_density}
+\rho_{\mathrm{T}} &=&  \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
+\\
+\rho_{\mathrm{SF}} &=&  2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
+\end{eqnarray}
+
+%
+%\begin{equation}\label{eq:torus_energy_density}
+%\rho_{\mathrm{T}} = -T^t_t + T^i_i = \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
+%\end{equation}
+%and
+%\begin{equation}\label{eq:SF_energy_density}
+%\rho_{\mathrm{SF}} = -(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i = 2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
+%\end{equation}
+
+From the previous discussion it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field $\mu = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, and the density at the centre of the disk $\rho_{\mathrm{c}} = 1$. Thus, we leave the magnetization at the centre $\beta_{\mathrm{m_c}}$ as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
+
+\tf{We should discuss a bit more the reason for this choice. If $l_{\rm ms}<l<l_{\rm mb}$ and $r_{\rm mb}<r_{\rm cusp}<r_{\rm ms}$ the disk is closed and has a centre and a cusp. If $l=l_{\rm mb}$ and $r_{\rm cusp}=r_{\rm mb}$ the disk has a centre and a cusp, and it is closed at infinity. The models we have built are the latter, right? I wonder if we should have built models not completely filling their Roche lobe, so that they had a finite size. In any case, a comment must be provided here.}
+
+\tf{We also have to emphasize somewhere in the paper that we do not fix $h=1$. This is an important difference with respect to the work of~\cite{Vincent:2016}.}
+
+%%%%%%%%%%%%
+\section{Methodology}
+\label{procedure}
+%%%%%%%%%%%%
+
+\tf{Probably we do not need to have two subsections in this section, but just one. The description of the methodology is very
+poor now. It needs a lot of rewriting.}
+
+%%%%%%%%%%%%%%%%
+\subsection{Building the disks}
+%%%%%%%%%%%%%%%%
+
+To construct our models we first find the specific angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the minimum value of Eq.~\eqref{eq:mb_ang_mom} and the radial location of said minimum outside the event horizon, respectively. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$, and $W_{\mathrm{in}} = 0$. Next, we can compute the gravitational plus centrifugal potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the centre as
+\begin{equation}
+p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = \frac{K}{\beta_{\mathrm{m_c}}},
+\end{equation}
+where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. \tf{The previous sentence reads a bit strange.} Replacing this into Eq.~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
+\begin{equation}\label{eq:K_eq}
+W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
+\end{equation}
+Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
+
+%%%%%%%%%%%%%%%%%
+\subsection{Numerical method}
+%%%%%%%%%%%%%%%%%
+
+We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
+
+%%%%%%%%%%
+\section{Results}
+\label{results}
+%%%%%%%%%%
+
+%In table~\ref{models_list} we show the different KBHsSH models we will use. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
+
+\begin{table*}[t]
+\caption{Values of the relevant physical magnitudes of our models of magnetized, equilibrium tori around KBHsSH. For all cases,  $R_{\mathrm{in}} = R_{\mathrm{mb}}$ and $l = l_{\mathrm{mb}}$. \tf{Are we using the perimetral radial coordinate in this table?}}       
+\label{HBH_disk_parameters}      
+\centering          
+\begin{tabular}{c c c c c  c c c c c c c}
+\hline\hline       
+ Model & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
+\hline           
+I & $0.934$ & $-0.188$ & $0.81$ & $1.14$ & $10^{10}$ & $1.21$ & $1.0$ & $5.16 \times 10^{-2}$ & $5.50 \times 10^{-12}$ & $1.14$ & $1.26$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.10$ & $1.17$ & $3.11 \times 10^{-2}$ & $2.68 \times 10^{-2}$ & $1.01$ & $1.06$\\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $1.90$ & $1.10 \times 10^{-11}$ & $7.80 \times 10^{-2}$ & $0.93$ & $0.96$\\ 
+ \hline 
+II & $0.933$ & $-0.205$ & $0.75$ & $1.18$ & $10^{10}$ & $1.23$ & $1.0$ & $5.69 \times 10^{-2}$ & $6.14 \times 10^{-12}$ & $1.18$ & $1.36$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.12$ & $1.19$ & $3.50 \times 10^{-2}$ & $2.97 \times 10^{-2}$ & $1.00$ & $1.07$\\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $2.01$ & $1.30 \times 10^{-11}$ & $8.99 \times 10^{-2}$ & $0.91$ & $0.94$ \\ 
+ \hline 
+III & $1.060$ & $-0.362$ & $0.84$ & $1.07$ & $10^{10}$ & $1.44$ & $1.0$ & $0.109$ & $1.21 \times 10^{-11}$ & $1.07$ & $1.22$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.23$ & $1.28$ & $7.22 \times 10^{-2}$ & $5.76 \times 10^{-2}$ & $0.95$ & $0.99$ \\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $2.74$ & $3.48 \times 10^{-11}$ & $0.206$ & $0.89$ & $0.91$\\ 
+\hline  
+IV & $1.160$ & $-0.547$ & $0.67$ & $1.06$ & $10^{10}$ & $1.723$ & $1.0$ & $0.182$ & $2.09 \times 10^{-11}$ & $1.06$ & $1.34$ \\ 
+\hline 
+ &  &  &  &  & $1$ & $1.38$ & $1.37$ & $0.129$ & $9.76 \times 10^{-2}$ & $0.85$ & $0.91$\\ 
+\hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $3.70$ & $7.83 \times 10^{-11}$ & $0.408$ & $0.76$ & $0.78$ \\ 
+\hline   
+V & $1.200$ & $-0.685$ & $0.58$ & $1.07$ & $10^{10}$ & $1.98$ & $1.0$ & $0.246$ & $2.76 \times 10^{-11}$ & $1.07$ & $1.31$\\ 
+\hline 
+ &  &  &  &  & $1$ & $1.51$ & $1.40$ & $0.178$ & $0.132$ & $0.78$ & $0.87$ \\ 
+\hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $4.26$ & $1.18 \times 10{-10}$ & $0.579$ & $0.67$ & $0.69$ \\ 
+\hline   
+VI & $1.200$ & $-0.832$ & $0.43$ & $1.12$ & $10^{10}$ & $2.30$ & $1.0$ & $0.324$ & $3.52 \times 10^{-11}$ & $1.12$ & $1.32$ \\ 
+\hline 
+ &  &  &  &  & $1$ & $1.66$ & $1.39$ & $0.228$ & $0.169$ & $0.72$ & $0.86$ \\ 
+\hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $4.54$ & $1.57 \times 10^{-10}$ & $0.740$ & $0.55$ & $0.59$ \\ 
+\hline 
+VII & $0.920$ & $-1.236$ & $0.18$ & $1.10$ & $10^{-10}$ & $3.44$ & $1.0$ & $0.610$ & $6.459 \times 10^{-11}$ & $1.10$ & $1.25$ \\ 
+\hline 
+ &  &  &  &  & $1$ & $2.25$ & $1.64$ & $0.510$ & $0.322$ & $0.43$ & $0.62$\\ 
+\hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $10.42$ & $7.03 \times 10^{-10}$ & $2.44$ & $0.28$ & $0.30$\\ 
+\hline 
+\end{tabular}
+\end{table*}
+
+\subsection{2D Morphology}
+
+We start presenting the morphological distribution of the models in the ($r\sin\theta, r\cos\theta$) plane in figures~\ref{models_I} and~\ref{models_II}. The radial coordinate in these figures is the standard one of the spherical coordinate system.
+Figures~\ref{models_I} and~\ref{models_II} show the logarithm of the rest-mass density distribution for all our KBHsSH models for 3 different values of the magnetization parameter at the centre of the disks, $\beta_{\mathrm{m_c}}$, namely $10^{10}$ (unmagnetized, left column), $1$ (mildly magnetized, middle column) and $10^{-10}$ (strongly magnetized, right column). 
+
+The structure of the disks is similar for all values of $\beta_{\mathrm{m_c}}$ with the only quantitative differences being the location of the centre of the disk, which moves closer to the BH as the magnetization increases, and the range of variation of the isodensity contours, whose upper ends become larger with decreasing $\beta_{\mathrm{m_c}}$. This behaviour is in complete agreement with that found for KBHs in~\cite{Gimeno-Soler:2017} irrespective of the BH spin. For the particular case of Model VII, the maximum of the rest-mass density for the stronlgy magnetized case is significantly larger than for the other models and the spatial extent of the disk is significantly small. \tf{Can we use the last isodentity contour as a good measure of the size of the disk?}
+
+In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same models, but using a perimetral radial coordinate such as $R = e^{F_2} r$. \tf{We need to justify why we introduce this new radial coordinate. What is the benefit? Please include an explanation and also describe briefly the differences/similarities between these two figures and the first two.}
+
+%HERE
+
+Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for our disk models around KBHsSH. First of all, it is worth to mention that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks exhibit a maximum for $|\Delta W|$ when the spin parameter $a$ approaches 1. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. The models V, VI and VII violate that bound. This is related, as we will see, with the maximum value of the specific enthalpy, pressure and magnetic pressure.
+
 
 \begin{figure*}
 \centering
@@ -325,9 +520,13 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \hspace{-0.3cm}
 \includegraphics[scale=0.12]{figures/fig5_VII__10.pdf}
 \hspace{-0.2cm}
-\caption{Gravitational mass density distribution for the torus $\rho_{\mathrm{T}}$ (up) and the scalar field $\rho_{\mathrm{SF}}$ (down). From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Energy density distribution for the torus $\rho_{\mathrm{T}}$ (upper half of the images) and for the scalar field $\rho_{\mathrm{SF}}$ (lower half). From left to right the columns correspond to models I, IV, and VII. The top row corresponds to non-magnetized models ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and the bottom row to strongly magnetized models ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$).
+\tf{I think there is a lot of vertical space that we do not really need in these plots. To save some space, as we have many figures, I suggest to plot the vertical axis in shorter ranges, say $[-0.75,0.75]$ for model I, $[-0.5,0.5]$ for model IV, and $[-0.35,0.35]$ for model VII (and keeping the horizontal axis as it is now). I know the plot will not look squared, but that's fine.}
+}
 \label{comparison_mass_density}
 \end{figure*}
+
+
 
 \begin{figure*}
 \centering
@@ -344,7 +543,7 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \hspace{-0.4cm}
 \includegraphics[scale=0.12]{figures/fig6_VII__10.pdf}
 \hspace{-0.2cm}
-\caption{Gravitational mass density distribution for the torus $\rho_{\mathrm{T}}$ (up) and the scalar field $\rho_{\mathrm{SF}}$ (down) using perimeteral coordinates. From left to right the columns correspond to different models (I, IV and VII). From top to bottom, the rows correspond to different calues of the magnetization parameter, namely non-magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{10}$) and strongly magnetized ($\beta_{\mathrm{m}_{\mathrm{c}}} = 10^{-10}$)}
+\caption{Same as Fig.~\ref{comparison_mass_density} but using the perimetral radial coordinate. \tf{Same comment as in the previous figure regarding the vertical range, in this case $[-1.5,1.5]$ for all models.}}
 \label{comparison_mass_density_peri}
 \end{figure*}
 
@@ -434,148 +633,55 @@ field frequency diagram. \tf{The figure has to be redone to label the 7 models u
 \end{figure*}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Distribution of angular momentum in the disk}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{table*}[t]
+\caption{Disc parameters and values of their relevant physical magnitudes for the KBH case. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ , $l = l_{\mathrm{mb}}$ and $M_{\mathrm{BH}} = 1$.}        
+\label{KBH_disk_parameters}      
+\centering          
+\begin{tabular}{c c c c c  c c c c c c c}
+\hline\hline       
+ $a$ & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
+\hline           
+$0$ & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.0$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.02$ & $1.11$ & $6.29 \times 10^{-3}$ & $5.69 \times 10^{-3}$ & $8.81$ & $9.52$\\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $1.48$ & $1.83 \times 10^{-12}$ & $1.48 \times 10^{-2}$ & $7.70$ & $8.14$\\ 
+ \hline 
+ $0.5$ & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.0$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.03$ & $1.12$ & $9.43 \times 10^{-3}$ & $8.47 \times 10^{-3}$ & $6.05$ & $6.53$ \\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $1.53$ & $2.81 \times 10^{-12}$ & $2.23 \times 10^{-2}$ & $5.29$ & $5.59$\\ 
+\hline  
+$0.9$ & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.0$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
+ \hline 
+ &  &  &  &  & $1$ & $1.07$ & $1.14$ & $2.03 \times 10^{-2}$ & $1.78 \times 10^{-2}$ & $3.25$ & $3.47$\\ 
+ \hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $1.70$ & $6.54 \times 10^{-12}$ & $4.92 \times 10^{-2}$ & $2.92$ & $3.04$ \\ 
+ \hline 
+$0.9999$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.0$ & $0.134$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
+\hline 
+ &  &  &  &  & $1$ & $1.29$ & $1.51$ & $0.110$ & $7.52 \times 10^{-2}$ & $2.0075$ & $2.014$\\ 
+\hline 
+ &  &  &  &  & $10^{-10}$ & $1.0$ & $6.17$ & $1.22 \times 10^{-10}$ & $0.491$ & $2.0021$ & $2.0030$ \\ 
+\hline   
+\end{tabular}
+\end{table*}
 
-Equilibrium models of thick disks around Kerr BHs are built assuming that the spacetime metric and the fluid fields are stationary and  axisymmetric (see, e.g.~\cite{Font:2002,Daigne:2004,Gimeno-Soler:2017} and references therein). For disks around KBHsSH we can follow the same approach as the metric ansatz given by Eq.~(\ref{metric}) is stationary and axisymmetric.
 
-%HERE
+Table~\ref{KBH_disk_parameters} reports the relevant physical quantities for the disks built around KBH. \tf{Describe.}
 
-We start by introducing the specific angular momentum $l$ and the angular velocity $\Omega$ employing the standard definitions,
-\begin{equation}
-l = - \frac{u_{\phi}}{u_t}, \;\;\; \Omega = \frac{u^{\phi}}{u^t},
-\end{equation}
-where $u^{\mu}$ is the fluid four-velocity.
-The relationship between $l$ and $\Omega$ is given by the equations
-\begin{equation}
-l = - \frac{\Omega g_{\phi\phi} + g_{t\phi}}{\Omega g_{t\phi} + g_{tt}}, \;\;\; \Omega = - \frac{l g_{tt} + g_{t\phi}}{l g_{t\phi} + g_{\phi\phi}},
-\end{equation}
-where we are assuming circular motion, i.e.~the four-velocity can be written as
-\begin{equation}
-u^{\mu} = (u^t, 0, 0, u^{\phi})\,.
-\end{equation}
+In figure~\ref{comparison_mass_density} we show the total energy density of the torus $\rho_{\mathrm{T}}$ (upper half of each image) and the total energy density of the scalar field $\rho_{\mathrm{SF}}$ (lower half) for models I, IV and VII and 2 values of the magnetization parameter at the center ($10^{10}$, left panel, and $10^{-10}$, right panel). \tf{Describe this figure.} 
 
-The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum distribution of the disks was introduced by~\cite{Qian:2009}, and it is characterized by three free parameters, $\beta$, $\gamma$, and $\eta$ (see Eq.~(7) in~\cite{Gimeno-Soler:2017}). In this work, for simplicity and to reduce the ample space of parameters, we consider a constant angular momentum distribution, $l(r,\theta) = \mathrm{const}$, which corresponds to setting $\beta=\gamma=0$ in~\cite{Gimeno-Soler:2017}. This choice also allows for the presence of a cusp (and hence matter accretion onto the black hole) and a centre.  \tf{We should explain/motivate why we change our approach in this paper.} Following~\citep{Daigne:2004}, the specific value of the angular momentum corresponding to bound fluid elements ($-u_t<1$) is computed as the minimum of the following equation
-\begin{equation}\label{eq:mb_ang_mom}
-l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}
-\end{equation}
-where the plus sign corresponds to prograde orbits and the minus sign to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk.
-Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. We show the proof of this statement in Appendix~\ref{ang_mom_appendix}. \tf{Is there an Appendix A?}.
+In figure~\ref{comparison_mass_density_peri}, we show the same, but using the perimeteral coordinate we defined earlier. The plots show that the maximum of the total energy density of the disk $\rho_{\mathrm{t}}$ is closer to the maximum of the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for increasing hair. \tf{This trend is only satisfied for the unmagnetized models (top row) but not for the strongly magnetized models.}
 
-%%%%%%%%%%%%%%%%
-\subsection{Magnetized disks}
-%%%%%%%%%%%%%%%%
+\tf{One question: in our approach we are building the disks using the stress-energy tensor of the fluid only. Is this correct? Shouldn't we consider the entire stress-energy tensor from the fluid and the scalar field? Is this a valid approximation because we are in the test-fluid regime? What did~\cite{Vincent:2016} do?}
 
-To account for the magnetic flied in the disks we use the procedure described by~\cite{Komissarov:2006,Montero:2007}. We write the equations of ideal general relativistic MHD as the following conservation laws, $\nabla_{\mu} T^{\mu\nu} = 0$, $\nabla_{\mu} \,^\ast F^{\mu\nu} = 0$, and 
-$\nabla_{\mu} (\rho u^{\mu}) = 0$, 
-where $\nabla_{\mu}$ is the covariant derivative and
-\begin{equation}\label{eq:e-m_tensor}
-T^{\mu\nu} = (\rho h + b^2)u^{\mu}u^{\nu} + (p + p_{\mathrm{m}})g^{\mu\nu} - b^{\mu}b^{\nu},
-\end{equation}
-is the energy-momentum tensor of a magnetized perfect fluid, $h$, $\rho$, $p$, and $p_{\mathrm{m}}$ being the fluid specific enthalpy, density, fluid pressure, and magnetic pressure, respectively, the latter defined as $p_{\mathrm{m}} = b^2/2$. The ratio of fluid pressure to magnetic pressure defines the magnetization parameter $\beta_{\mathrm{m}} = p/p_{\mathrm{m}}$.
-Moreover, $^\ast F^{\mu\nu} = b^{\mu}u^{\nu} - b^{\nu}u^{\mu}$ is the (dual of the) Faraday tensor relative to an observer with 
-four-velocity $u^{\mu}$, and $b^{\mu}$ is the magnetic field in that frame, with
-$b^2=b^{\mu}b_{\mu}$ (see~\cite{Anton:2006} for further details). Assuming the magnetic field is purely azimuthal, i.e.~$b^r = b^{\theta} = 0$,
-and taking into account that the flow is stationary and axisymmetric, the conservation of the current density and of the Faraday tensor follow. Contracting the divergence of Eq.~\eqref{eq:e-m_tensor} with the projection tensor $h^{\alpha}_{\,\,\beta} = \delta^{\alpha}_{\,\,\beta} + u^{\alpha}u_{\beta}$, we arrive at
-\begin{equation}
-(\rho h + b^2)u_{\nu}\partial_i u^{\nu} + \partial_i\left(p + \frac{b^2}{2}\right) - b_{\nu}\partial_i b^{\nu}=0\,,
-\end{equation}
-where $i = r, \theta$. This equation can be rewritten in terms of the specific angular momentum $l$ and of the angular velocity $\Omega$, 
-\begin{equation}\label{eq:diff_ver}
-\partial_i(\ln u_t|) - \frac{\Omega \partial_i l}{1-l\Omega} + \frac{\partial_i p}{\rho h} + \frac{\partial_i(\mathcal{L}b^2)}{2\mathcal{L}\rho h} = 0\,,
-\end{equation}
-where $\mathcal{L} = g_{t\phi}^2 - g_{tt}g_{\phi\phi}$.
+\subsection{Comparison with KBHs}
 
-To integrate Eq.~\eqref{eq:diff_ver} we need to assume an equation of state (EOS). We assume a polytropic EOS of the form
-\begin{equation}\label{eq:eos_fluid}
-p = K \rho^{\Gamma},
-\end{equation}
-with $K$ and $\Gamma$ constants.
- By introducing the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$ and $\widetilde{\rho h} = \mathcal{L} (\rho h)$, we can write equations equivalent to Eq.~\eqref{eq:eos_fluid} for both $\tilde{p}_{\mathrm{m}}$ and $p_{\mathrm{m}}$
-\begin{eqnarray}
-\label{eq:eos_mag_tilde}
-\tilde{p}_{\mathrm{m}} &=& M \widetilde{\rho h}^q,
-\\
-p_{\mathrm{m}} &=& M \mathcal{L}^{q-1} (\rho h)^q,
-\end{eqnarray}
-where $M$ and $q$ are constants. Then we can integrate Eq.~\eqref{eq:diff_ver} as
-\begin{equation}\label{eq:final}
-W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}\right) + \frac{q}{q-1}M(\mathcal{L}\rho h)^{q-1}=0,
-\end{equation}
-where $W \equiv \ln |u_t|$ stands for the (gravitational plus centrifugal) potential and  $W_{\mathrm{in}}$ is the potential at the inner edge of the disk.
+Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). 
 
-We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T^t_t + T^i_i$, and for the scalar field, $\rho_{\mathrm{SF}}=-(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i$. These are  given by
-\begin{eqnarray}\label{eq:torus_energy_density}
-\rho_{\mathrm{T}} &=&  \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
-\\
-\rho_{\mathrm{SF}} &=&  2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
-\end{eqnarray}
-
-%
-%\begin{equation}\label{eq:torus_energy_density}
-%\rho_{\mathrm{T}} = -T^t_t + T^i_i = \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
-%\end{equation}
-%and
-%\begin{equation}\label{eq:SF_energy_density}
-%\rho_{\mathrm{SF}} = -(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i = 2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
-%\end{equation}
-
-From the previous discussion it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field $\mu = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, and the density at the centre of the disk $\rho_{\mathrm{c}} = 1$. Thus, we leave the magnetization at the centre $\beta_{\mathrm{m_c}}$ as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
-
-\tf{We should discuss a bit more the reason for this choice. If $l_{\rm ms}<l<l_{\rm mb}$ and $r_{\rm mb}<r_{\rm cusp}<r_{\rm ms}$ the disk is closed and has a centre and a cusp. If $l=l_{\rm mb}$ and $r_{\rm cusp}=r_{\rm mb}$ the disk has a centre and a cusp, and it is closed at infinity. The models we have built are the latter, right? I wonder if we should have built models not completely filling their Roche lobe, so that they had a finite size. In any case, a comment must be provided here.}
-
-\tf{We also have to emphasize that we do not fix $h=1$.}
-
-%%%%%%%%%%%%
-\section{Methodology}
-\label{procedure}
-%%%%%%%%%%%%
-
-\tf{Probably we do not need to have two subsections in this section, but just one. The description of the methodology is very
-poor now. It needs a lot of rewriting.}
-
-%%%%%%%%%%%%%%%%
-\subsection{Building the disks}
-%%%%%%%%%%%%%%%%
-
-To construct our models we first find the specific angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the minimum value of Eq.~\eqref{eq:mb_ang_mom} and the radial location of said minimum outside the event horizon, respectively. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$, and $W_{\mathrm{in}} = 0$. Next, we can compute the gravitational plus centrifugal potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the centre as
-\begin{equation}
-p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = \frac{K}{\beta_{\mathrm{m_c}}},
-\end{equation}
-where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. \tf{The previous sentence reads a bit strange.} Replacing this into Eq.~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
-\begin{equation}\label{eq:K_eq}
-W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
-\end{equation}
-Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
-
-%%%%%%%%%%%%%%%%%
-\subsection{Numerical method}
-%%%%%%%%%%%%%%%%%
-
-We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
-
-%%%%%%%%%%
-\section{Results}
-\label{results}
-%%%%%%%%%%
-
-%In table~\ref{models_list} we show the different KBHsSH models we will use. As it can be seen, the models go from a Kerr-like model (almost all the mass and angular momentum are stored in BH) to a KBHSH with almost all the mass and angular momentum stored in the scalar field. It is also worth mentioning that, as shown in table~\ref{models_spin_vel} some of the models violate the Kerr bound (in terms of ADM or horizon quantities). This is not worrying because, as shown in~\cite{Herdeiro:2015c} the horizon linear velocity $v_{\mathrm{H}}$ never exceed $1$. For comparison, we also show the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with horizon linear velocity $v_{\mathrm{H}}$.
-
-\subsection{2D Morphology}
-
-We start presenting the morphological distribution of the models in the ($r\sin\theta, r\cos\theta$) plane in figures~\ref{models_I} and~\ref{models_II}. The radial coordinate in these figures is the standard one of the spherical coordinate system.
-Figures~\ref{models_I} and~\ref{models_II} show the logarithm of the rest-mass density distribution for all our KBHsSH models for 3 different values of the magnetization parameter at the centre of the disks, $\beta_{\mathrm{m_c}}$, namely $10^{10}$ (unmagnetized, left column), $1$ (mildly magnetized, middle column) and $10^{-10}$ (strongly magnetized, right column). 
-
-The structure of the disks is similar for all values of $\beta_{\mathrm{m_c}}$ with the only quantitative differences being the location of the centre of the disk, which moves closer to the BH as the magnetization increases, and the range of variation of the isodensity contours, whose upper ends become larger with decreasing $\beta_{\mathrm{m_c}}$. This behaviour is in complete agreement with that found for KBHs in~\cite{Gimeno-Soler:2017} irrespective of the BH spin. For the particular case of Model VII, the maximum of the rest-mass density for the stronlgy magnetized case is significantly larger than for the other models and the spatial extent of the disk is significantly small. \tf{Can we use the last isodentity contour as a good measure of the size of the disk?}
-
-In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same models, but using a perimetral radial coordinate such as $R = e^{F_2} r$. \tf{We need to justify why we introduce this new radial coordinate. What is the benefit?}
-
-%HERE
-
-Tables~\ref{HBH_disk_parameters} and~\ref{KBH_disk_parameters} show the relevant physical quantities for both KBHSH and the same KBH cases we presented in the figures. First of all, it is worth to mention that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks exhibit a maximum for $|\Delta W|$ when the spin parameter $a$ approaches 1. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. The models V, VI and VII violate that bound. This is related, as we will see, with the maximum value of the specific enthalpy, pressure and magnetic pressure.
-
-In figure~\ref{comparison_mass_density} we show the total energy density of the torus $\rho_{\mathrm{T}}$ (superior half) and the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for 3 of the models (I, IV and VII) and 2 values of the magnetization parameter at the center ($10^{10}$ and $10^{-10}$). In figure~\ref{comparison_mass_density_peri}, we show the same, but using the perimeteral coordinate we defined earlier. The plots show that the maximum of the total energy density of the disk $\rho_{\mathrm{t}}$ is closer to the maximum of the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for increasing hair.
+As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extracting information about the morphology of the disks from 2-dimensional plots. This idea is discussed in appendix~\ref{torus_embedding}.
 
 \subsection{Radial profiles}
 
@@ -584,13 +690,13 @@ The behaviour of the maximum specific enthalpy $h_{\mathrm{max}}$ and the maximu
 
 Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the variation of the quotient of the perimeteral radius of the magnetic pressure maximum by the perimeteral radius of the disk center $R_{\mathrm{m, max}}/R_{\mathrm{c}}$ with the decimal logarithm of the magnetization parameter at the disk center $\log_{10} \beta_{\mathrm{m_c}}$ for the same KBHsSH and KBH cases as in figure~\ref{comparison_HBH_Kerr_dens_enth}. The inset shows a region around $\beta_{\mathrm{m_c}} = 3$ and $R_{\mathrm{m, max}}/R_{\mathrm{c}} = 1$, this is because for disks with $h = 1$, $R_{\mathrm{m, max}} = R_{\mathrm{c}}$ if $\beta_{\mathrm{m_c}} = 1 / \Gamma - 1$. As we can easily see, this condition is also fulfilled for the Kerr case, even $h \neq 1$ (with a slight deviation for very high spin parameter cases), but not quite for the KBHsSH cases.
 
+
+
 \sg{Include discussion about radial profiles.}
 
-As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extracting information about the morphology of the disks from 2-dimensional plots. This idea is discussed in appendix~\ref{torus_embedding}.
 
-\subsection{Comparison with KBHs}
 
-Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). 
+
 
 %\begin{table}
 %\caption{List of models of KBHsSH.}        
@@ -642,93 +748,6 @@ Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different 
 %\end{tabular}
 %\end{table}
 
-\begin{table*}[t]
-\caption{Disk parameters and values of their relevant physical magnitudes. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ and $l = l_{\mathrm{mb}}$}        
-\label{HBH_disk_parameters}      
-\centering          
-\begin{tabular}{c c c c c  c c c c c c c}
-\hline\hline       
- Model & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
-\hline           
-I & $0.934$ & $-0.188$ & $0.81$ & $1.14$ & $10^{10}$ & $1.21$ & $1.0$ & $5.16 \times 10^{-2}$ & $5.50 \times 10^{-12}$ & $1.14$ & $1.26$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.10$ & $1.17$ & $3.11 \times 10^{-2}$ & $2.68 \times 10^{-2}$ & $1.01$ & $1.06$\\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $1.90$ & $1.10 \times 10^{-11}$ & $7.80 \times 10^{-2}$ & $0.93$ & $0.96$\\ 
- \hline 
-II & $0.933$ & $-0.205$ & $0.75$ & $1.18$ & $10^{10}$ & $1.23$ & $1.0$ & $5.69 \times 10^{-2}$ & $6.14 \times 10^{-12}$ & $1.18$ & $1.36$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.12$ & $1.19$ & $3.50 \times 10^{-2}$ & $2.97 \times 10^{-2}$ & $1.00$ & $1.07$\\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $2.01$ & $1.30 \times 10^{-11}$ & $8.99 \times 10^{-2}$ & $0.91$ & $0.94$ \\ 
- \hline 
-III & $1.06$ & $-0.362$ & $0.84$ & $1.07$ & $10^{10}$ & $1.44$ & $1.0$ & $0.109$ & $1.21 \times 10^{-11}$ & $1.07$ & $1.22$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.23$ & $1.28$ & $7.22 \times 10^{-2}$ & $5.76 \times 10^{-2}$ & $0.95$ & $0.99$ \\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $2.74$ & $3.48 \times 10^{-11}$ & $0.206$ & $0.89$ & $0.91$\\ 
-\hline  
-IV & $1.16$ & $-0.547$ & $0.67$ & $1.06$ & $10^{10}$ & $1.723$ & $1.0$ & $0.182$ & $2.09 \times 10^{-11}$ & $1.06$ & $1.34$ \\ 
-\hline 
- &  &  &  &  & $1$ & $1.38$ & $1.37$ & $0.129$ & $9.76 \times 10^{-2}$ & $0.85$ & $0.91$\\ 
-\hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $3.70$ & $7.83 \times 10^{-11}$ & $0.408$ & $0.76$ & $0.78$ \\ 
-\hline   
-V & $1.20$ & $-0.685$ & $0.58$ & $1.07$ & $10^{10}$ & $1.98$ & $1.0$ & $0.246$ & $2.76 \times 10^{-11}$ & $1.07$ & $1.31$\\ 
-\hline 
- &  &  &  &  & $1$ & $1.51$ & $1.40$ & $0.178$ & $0.132$ & $0.78$ & $0.87$ \\ 
-\hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $4.26$ & $1.18 \times 10{-10}$ & $0.579$ & $0.67$ & $0.69$ \\ 
-\hline   
-VI & $1.20$ & $-0.832$ & $0.43$ & $1.12$ & $10^{10}$ & $2.30$ & $1.0$ & $0.324$ & $3.52 \times 10^{-11}$ & $1.12$ & $1.32$ \\ 
-\hline 
- &  &  &  &  & $1$ & $1.66$ & $1.39$ & $0.228$ & $0.169$ & $0.72$ & $0.86$ \\ 
-\hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $4.54$ & $1.57 \times 10^{-10}$ & $0.740$ & $0.55$ & $0.59$ \\ 
-\hline 
-VII & $0.920$ & $-1.236$ & $0.18$ & $1.10$ & $10^{-10}$ & $3.44$ & $1.0$ & $0.610$ & $6.459 \times 10^{-11}$ & $1.10$ & $1.25$ \\ 
-\hline 
- &  &  &  &  & $1$ & $2.25$ & $1.64$ & $0.510$ & $0.322$ & $0.43$ & $0.62$\\ 
-\hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $10.42$ & $7.03 \times 10^{-10}$ & $2.44$ & $0.28$ & $0.30$\\ 
-\hline 
-\end{tabular}
-\end{table*}
-
-\begin{table*}[t]
-\caption{Disc parameters and values of their relevant physical magnitudes for the KBH case. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ , $l = l_{\mathrm{mb}}$ and $M_{\mathrm{BH}} = 1$.}        
-\label{KBH_disk_parameters}      
-\centering          
-\begin{tabular}{c c c c c  c c c c c c c}
-\hline\hline       
- $a$ & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
-\hline           
-$0$ & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.0$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.02$ & $1.11$ & $6.29 \times 10^{-3}$ & $5.69 \times 10^{-3}$ & $8.81$ & $9.52$\\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $1.48$ & $1.83 \times 10^{-12}$ & $1.48 \times 10^{-2}$ & $7.70$ & $8.14$\\ 
- \hline 
- $0.5$ & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.0$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.03$ & $1.12$ & $9.43 \times 10^{-3}$ & $8.47 \times 10^{-3}$ & $6.05$ & $6.53$ \\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $1.53$ & $2.81 \times 10^{-12}$ & $2.23 \times 10^{-2}$ & $5.29$ & $5.59$\\ 
-\hline  
-$0.9$ & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.0$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
- \hline 
- &  &  &  &  & $1$ & $1.07$ & $1.14$ & $2.03 \times 10^{-2}$ & $1.78 \times 10^{-2}$ & $3.25$ & $3.47$\\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $1.70$ & $6.54 \times 10^{-12}$ & $4.92 \times 10^{-2}$ & $2.92$ & $3.04$ \\ 
- \hline 
-$0.9999$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.0$ & $0.134$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
-\hline 
- &  &  &  &  & $1$ & $1.29$ & $1.51$ & $0.110$ & $7.52 \times 10^{-2}$ & $2.0075$ & $2.014$\\ 
-\hline 
- &  &  &  &  & $10^{-10}$ & $1.0$ & $6.17$ & $1.22 \times 10^{-10}$ & $0.491$ & $2.0021$ & $2.0030$ \\ 
-\hline   
-\end{tabular}
-\end{table*}
 
 %%%%%%%%%%%%
 \section{Conclusions}
