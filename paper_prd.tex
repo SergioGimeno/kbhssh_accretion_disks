@@ -456,7 +456,7 @@ where we are assuming circular motion, i.e.~the four-velocity can be written as
 u^{\mu} = (u^t, 0, 0, u^{\phi})\,.
 \end{equation}
 
-The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum distribution of the disks was introduced by~\cite{Qian:2009}, and it is characterized by three free parameters, $\beta$, $\gamma$, and $\eta$ (see Eq.~(7) in~\cite{Gimeno-Soler:2017}). In this work, for simplicity and to reduce the ample space of parameters, we consider a constant angular momentum distribution, $l(r,\theta) = \mathrm{const}$, which corresponds to setting $\beta=\gamma=0$ in~\cite{Gimeno-Soler:2017}. This choice also allows for the presence of a cusp (and hence matter accretion onto the black hole) and a centre.  \tf{We should explain/motivate why we change our approach in this paper.} Following~\citep{Daigne:2004}, the specific value of the angular momentum corresponding to bound fluid elements ($-u_t<1$) is computed as the minimum of the following equation
+The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum distribution of the disks was introduced by~\cite{Qian:2009}, and it is characterized by three free parameters, $\beta$, $\gamma$, and $\eta$ (see Eq.~(7) in~\cite{Gimeno-Soler:2017}). In this work, for simplicity and to reduce the ample space of parameters, we consider a constant angular momentum distribution, $l(r,\theta) = \mathrm{const}$, which corresponds to setting $\beta=\gamma=0$ in~\cite{Gimeno-Soler:2017}. This choice also allows for the presence of a cusp (and hence matter accretion onto the black hole) and a centre.  \tf{We should explain/motivate why we change our approach in this paper.}\sg{We limit this study to the constant angular momentum case to limit the parameter space, as the main aim of this paper is to study the dependence of the characteristics of magnetised discs with respect to the KBHSH spacetime.} Following~\citep{Daigne:2004}, the specific value of the angular momentum corresponding to bound fluid elements ($-u_t<1$) is computed as the minimum of the following equation
 \begin{equation}\label{eq:mb_ang_mom}
 l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}
 \end{equation}
@@ -467,7 +467,7 @@ Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but
 \subsection{Magnetized disks}
 %%%%%%%%%%%%%%%%
 
-To account for the magnetic flied in the disks we use the procedure described by~\cite{Komissarov:2006,Montero:2007}. We write the equations of ideal general relativistic MHD as the following conservation laws, $\nabla_{\mu} T^{\mu\nu} = 0$, $\nabla_{\mu} \,^\ast F^{\mu\nu} = 0$, and 
+To account for the magnetic field in the disks we use the procedure described by~\cite{Komissarov:2006,Montero:2007}. We write the equations of ideal general relativistic MHD as the following conservation laws, $\nabla_{\mu} T^{\mu\nu} = 0$, $\nabla_{\mu} \,^\ast F^{\mu\nu} = 0$, and 
 $\nabla_{\mu} (\rho u^{\mu}) = 0$, 
 where $\nabla_{\mu}$ is the covariant derivative and
 \begin{equation}\label{eq:e-m_tensor}
@@ -492,10 +492,10 @@ To integrate Eq.~\eqref{eq:diff_ver} we need to assume an equation of state (EOS
 p = K \rho^{\Gamma},
 \end{equation}
 with $K$ and $\Gamma$ constants.
- By introducing the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$ and $\widetilde{\rho h} = \mathcal{L} (\rho h)$, we can write equations equivalent to Eq.~\eqref{eq:eos_fluid} for both $\tilde{p}_{\mathrm{m}}$ and $p_{\mathrm{m}}$
+ By introducing the definitions $\tilde{p}_{\mathrm{m}} = \mathcal{L} p_{\mathrm{m}}$, $w = \rho h$ and $\tilde{w} = \mathcal{L} (w)$, we can write equations equivalent to Eq.~\eqref{eq:eos_fluid} for both $\tilde{p}_{\mathrm{m}}$ and $p_{\mathrm{m}}$
 \begin{eqnarray}
 \label{eq:eos_mag_tilde}
-\tilde{p}_{\mathrm{m}} &=& M \widetilde{\rho h}^q,
+\tilde{p}_{\mathrm{m}} &=& M \tilde{w}^q,
 \\
 p_{\mathrm{m}} &=& M \mathcal{L}^{q-1} (\rho h)^q,
 \end{eqnarray}
@@ -505,7 +505,7 @@ W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}\r
 \end{equation}
 where $W \equiv \ln |u_t|$ stands for the (gravitational plus centrifugal) potential and  $W_{\mathrm{in}}$ is the potential at the inner edge of the disk.
 
-We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T^t_t + T^i_i$, and for the scalar field, $\rho_{\mathrm{SF}}=-(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i$. These are  given by
+We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T^t_t + T^i_i$, and for the scalar field, $\rho_{\mathrm{SF}}=-(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i$. These are given by
 \begin{eqnarray}\label{eq:torus_energy_density}
 \rho_{\mathrm{T}} &=&  \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
 \\
@@ -521,9 +521,10 @@ We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T
 %\rho_{\mathrm{SF}} = -(T_{\mathrm{SF}})^t_t + (T_{\mathrm{SF}})^i_i = 2 \left(\frac{2 e^{2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
 %\end{equation}
 
-From the previous discussion it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field $\mu = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, and the density at the centre of the disk $\rho_{\mathrm{c}} = 1$. Thus, we leave the magnetization at the centre $\beta_{\mathrm{m_c}}$ as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
+From the previous discussion it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field $\mu = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$, the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, and the density at the centre of the disk $\rho_{\mathrm{c}} = 1$.Thus, we leave the magnetization at the centre $\beta_{\mathrm{m_c}}$ as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
 
 \tf{We should discuss a bit more the reason for this choice. If $l_{\rm ms}<l<l_{\rm mb}$ and $r_{\rm mb}<r_{\rm cusp}<r_{\rm ms}$ the disk is closed and has a centre and a cusp. If $l=l_{\rm mb}$ and $r_{\rm cusp}=r_{\rm mb}$ the disk has a centre and a cusp, and it is closed at infinity. The models we have built are the latter, right? I wonder if we should have built models not completely filling their Roche lobe, so that they had a finite size. In any case, a comment must be provided here.}
+\sg{We choose this value for the angular momentum and the inner radius of the disc to allow discs with a cusp and a centre that also are marginally stable (a small perturbation can trigger accretion into the black hole). Also, the thermodynamical quantities reach its maximum for this particular choice of angular momentum and inner radius of the disc (as they are related to the total potential well $|\Delta W|$). This also means that the resulting discs will be semi-infinite (they are closed at infinity), this is not a source of concern, as the external layers of the disc have extremely low density. (not sure about the relevance of the last part...)}
 
 \tf{We also have to emphasize that we do not fix $h=1$.}
 
@@ -534,26 +535,27 @@ From the previous discussion it becomes apparent that the number of parameters d
 
 \tf{Probably we do not need to have two subsections in this section, but just one. The description of the methodology is very
 poor now. It needs a lot of rewriting.}
+\sg{I have serious doubts about this section, as I am not really certain that we need to provide an explanation for some specific parts (that are pretty obvious anyway) Perhaps I should go into detail for the numerical part? (e.g. that Eq.~\eqref{eq:final} is a trascendental equation and we are bound to solve it numerically with the bisection method for each cell of our numerical grid)}
 
-%%%%%%%%%%%%%%%%
-\subsection{Building the disks}
-%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%
+% \subsection{Building the disks}
+% %%%%%%%%%%%%%%%%
 
-To construct our models we first find the specific angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the minimum value of Eq.~\eqref{eq:mb_ang_mom} and the radial location of said minimum outside the event horizon, respectively. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$, and $W_{\mathrm{in}} = 0$. Next, we can compute the gravitational plus centrifugal potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the centre as
-\begin{equation}
-p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = \frac{K}{\beta_{\mathrm{m_c}}},
-\end{equation}
-where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. \tf{The previous sentence reads a bit strange.} Replacing this into Eq.~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
-\begin{equation}\label{eq:K_eq}
-W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
-\end{equation}
-Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
+% To construct our models we first find the specific angular momentum $l$ and the radius of the cusp $r_{\mathrm{cusp}}$ as the minimum value of Eq.~\eqref{eq:mb_ang_mom} and the radial location of said minimum outside the event horizon, respectively. This choice of angular momentum implies $r_{\mathrm{cusp}} = r_{\mathrm{mb}}$, $l = l_{\mathrm{K}}(r_{\mathrm{mb}})$, and $W_{\mathrm{in}} = 0$. Next, we can compute the gravitational plus centrifugal potential distribution as $W(r, \theta) \equiv \ln |u_t|$. Considering this, and that we can write the magnetic pressure at the centre as
+% \begin{equation}
+% p_{\mathrm{m_c}} = M \mathcal{L}^{q-1} \left(1 + \frac{\Gamma K}{\Gamma +1}\right)^q = \frac{K}{\beta_{\mathrm{m_c}}},
+% \end{equation}
+% where we have taken into account that $\rho_{\mathrm{c}} = 1$, that the pressure at the center is $p_{\mathrm{c}} = K$ and the specific enthalpy can be written as $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. \tf{The previous sentence reads a bit strange.} Replacing this into Eq.~\eqref{eq:final} we arrive at an equation for the polytropic constant $K$
+% \begin{equation}\label{eq:K_eq}
+% W_{\mathrm{c}} + \ln \left(1 + \frac{\Gamma K}{\Gamma +1}\right) + \frac{q}{q-1}\frac{K/\beta_{\mathrm{m_c}}}{1 + \frac{\Gamma K}{\Gamma +1}} = 0.
+% \end{equation}
+% Once we have $K$, it is easy to find $p_{\mathrm{m}}$, $M$ and $h_{\mathrm{c}}$ with the definition of the magnetization parameter at the center $\beta_{\mathrm{m_c}}$, the equation~\eqref{eq:eos_mag} and $h = 1 + \frac{\Gamma K}{\Gamma +1}\rho^{\Gamma -1}$. With this, we already have all we need in order to compute all the relevant physical quantities inside the disk.
 
-%%%%%%%%%%%%%%%%%
-\subsection{Numerical method}
-%%%%%%%%%%%%%%%%%
+% %%%%%%%%%%%%%%%%%
+% \subsection{Numerical method}
+% %%%%%%%%%%%%%%%%%
 
-We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
+% We start from a uniform numerical grid $(X, \theta)$ (with $x$ being a compactified radial coordinate such as $X = x/(1+x)$ and $x = \sqrt{r^2 - r_{\mathrm{H}}^2}$) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_X \times N_\theta = 251 \times 30$. Then, we transform and interpolate the grid to end with a non-uniform grid $(r, \theta)$ with a domain $[r_{\mathrm{H}}, 199.2] \times [0, \pi/2]$ and a number of points $N_r \times N_\theta = 2500 \times 300$, this is the grid we use for our computations.
 
 %%%%%%%%%%
 \section{Results}
@@ -745,39 +747,39 @@ Future work: Non-constant angular momentum case, Proca hair, shadows of the syst
 \bibliography{references.bib}
 
 \begin{appendix}
-\section{Embedding of the accretion torus in $\mathbb{E}^3$}\label{torus_embedding}
-Following the same reasoning as in~\cite{Delgado:2018}, we write the 2-metric for the surface of a torus as 
-\begin{equation}\label{eq:torus_prev_metric}
-\mathrm{d}\sigma^2 = \frac{e^{2 F_1}}{N}\mathrm{d}r^2+ e^{2 F_1}r^2\mathrm{d}\theta^2+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
-\end{equation}
-and the condition $r = r(\theta)$ for the surface of the torus. The location of the surface of the torus $r(\theta)$ can be obtained integrating $r' = \frac{\mathrm{d}r}{\mathrm{d}\theta} = -\frac{\partial_{\theta}W}{\partial_{r}W}$ (equation (24) of~\citep{Gimeno-Soler:2017}). Using this, we can write equation~\eqref{eq:torus_prev_metric} as
-\begin{equation}\label{eq:torus_metric}
-\mathrm{d}\sigma^2 = e^{2 F_1} \mathrm{d}\theta^2\left(\frac{r'^2}{N} +r^2\right)+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
-\end{equation}
-with the prime $'$ denoting partial differentiation with respect to $\theta$. Then, we try the embedding in $\mathbb{E}^3$ with the Cartesian metric $\mathrm{d}\sigma^2 = \mathrm{d}X^2 + \mathrm{d}Y^2 + \mathrm{d}Z^2$ and the embedding functions:
-\begin{equation}
-X + \mathrm{i}Y = f(\theta)e^{\mathrm{i}\phi},  \;\;\; Z = g(\theta),
-\end{equation}
-then
-\begin{equation}
-f = e^{2 F_2} r^2 \sin^2\theta, \;\;\; f'^2 + g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right),
-\end{equation}
-so we can write $g'^2$ as
-\begin{equation}\label{eq:embedding_existance}
-g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right) - e^{2 F_2} (F_2'r \sin \theta + r' \sin \theta + r \cos \theta)^2.
-\end{equation}
-This result tells us that the r.h.s. of~\eqref{eq:embedding_existance} must be $\geq 0$ in order to the embedding function to exist.
+% \section{Embedding of the accretion torus in $\mathbb{E}^3$}\label{torus_embedding}
+% Following the same reasoning as in~\cite{Delgado:2018}, we write the 2-metric for the surface of a torus as 
+% \begin{equation}\label{eq:torus_prev_metric}
+% \mathrm{d}\sigma^2 = \frac{e^{2 F_1}}{N}\mathrm{d}r^2+ e^{2 F_1}r^2\mathrm{d}\theta^2+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
+% \end{equation}
+% and the condition $r = r(\theta)$ for the surface of the torus. The location of the surface of the torus $r(\theta)$ can be obtained integrating $r' = \frac{\mathrm{d}r}{\mathrm{d}\theta} = -\frac{\partial_{\theta}W}{\partial_{r}W}$ (equation (24) of~\citep{Gimeno-Soler:2017}). Using this, we can write equation~\eqref{eq:torus_prev_metric} as
+% \begin{equation}\label{eq:torus_metric}
+% \mathrm{d}\sigma^2 = e^{2 F_1} \mathrm{d}\theta^2\left(\frac{r'^2}{N} +r^2\right)+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
+% \end{equation}
+% with the prime $'$ denoting partial differentiation with respect to $\theta$. Then, we try the embedding in $\mathbb{E}^3$ with the Cartesian metric $\mathrm{d}\sigma^2 = \mathrm{d}X^2 + \mathrm{d}Y^2 + \mathrm{d}Z^2$ and the embedding functions:
+% \begin{equation}
+% X + \mathrm{i}Y = f(\theta)e^{\mathrm{i}\phi},  \;\;\; Z = g(\theta),
+% \end{equation}
+% then
+% \begin{equation}
+% f = e^{2 F_2} r^2 \sin^2\theta, \;\;\; f'^2 + g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right),
+% \end{equation}
+% so we can write $g'^2$ as
+% \begin{equation}\label{eq:embedding_existance}
+% g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right) - e^{2 F_2} (F_2'r \sin \theta + r' \sin \theta + r \cos \theta)^2.
+% \end{equation}
+% This result tells us that the r.h.s. of~\eqref{eq:embedding_existance} must be $\geq 0$ in order to the embedding function to exist.
 
-\begin{figure*}
-\centering
-\includegraphics[scale=0.2]{figures/embedding.pdf}
-\hspace{0.5cm}
-\caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $> 0$ and red when is $\leq 0$.}
-\label{embedding_VII}
-\end{figure*}
+% \begin{figure*}
+% \centering
+% \includegraphics[scale=0.2]{figures/embedding.pdf}
+% \hspace{0.5cm}
+% \caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $> 0$ and red when is $\leq 0$.}
+% \label{embedding_VII}
+% \end{figure*}
 
 \section{Finding $l_{\mathrm{mb}}$ and $r_{\mathrm{mb}}$}\label{ang_mom_appendix}
-\sg{To do.}
+\sg{I figured this out, but now I am not really sure if this is interesting enough to be an appendix by itself. Maybe more like a comment in the main text.}
 \end{appendix}     
 
 \end{document}
