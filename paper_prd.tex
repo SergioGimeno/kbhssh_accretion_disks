@@ -361,7 +361,20 @@ If we compare both results, we can see that Eq.~\eqref{eq:non_rel_non_mag_enth} 
 \label{radial_profiles_HBH}
 \end{figure*}
 
-For the extremely magnetized case, we consider again Eq.~\eqref{eq:final} and Eq.~(20) of~\cite{Gimeno-Soler:2017}, but this time around we take $\beta_{\mathrm{m_c}} \rightarrow 0$ ($K \rightarrow 0$). This yields the same result for both equations
+\begin{figure*}
+\centering
+\includegraphics[scale=0.37]{figures/log_radial_log_rho_I_ADM.pdf}
+\hspace{-0.6cm}
+\includegraphics[scale=0.37]{figures/log_radial_log_rho_IV_ADM.pdf}
+\hspace{-0.6cm}
+\includegraphics[scale=0.37]{figures/log_radial_log_rho_VII_ADM.pdf}
+\hspace{-0.6cm}
+\caption{Size of the disks. Effects of the magnetisation on the radial profiles of the logarithm of the density at the equatorial plane for different KBH models. From left to right we show three different cases with the same ADM quantities as the KBHsSH model I, IV, and VII, respectively.}
+\label{radial_profiles_KBH}
+\end{figure*}
+
+For the extremely magnetised case, we consider again Eq.~\eqref{eq:final} and Eq.~(20) of~\cite{Gimeno-Soler:2017}, but this time around we take $\beta_{\mathrm{m_c}} \rightarrow 0$ ($K \rightarrow 0$). This yields the same result for both equations
+
 \begin{equation}
 W - W_{\mathrm{in}} + \frac{q}{q-1}K_{\rm m}(\mathcal{L}\rho h)^{q-1}=0.
 \end{equation}
@@ -648,7 +661,7 @@ Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all
 \hspace{-0.cm}
 \includegraphics[scale=0.2]{figures/fig7_Kerr_enth.eps}
 \hspace{-0.cm}
-\caption{Effects of the magnetization on the values for the maximum density (left) and enthalpy (right) of the disks. In the first row, we show this for all of our KBHsSH models. In the second row, we show this for a sequence of Kerr BHs with increasing spin parameter. \tf{Using yellow is a bad choice as it cannot be seen, especially on print. Please change the colour of the yellow dots to some other colour or symbol.}}
+\caption{Effects of the magnetization on the values for the maximum density (left) and enthalpy (right) of the disks. In the first row, we show this for all of our KBHsSH models. In the second row, we show this for a sequence of Kerr BHs with increasing spin parameter. \tf{Using yellow is a bad choice as it cannot be seen, especially on print. Please change the colour of the yellow dots to some other colour or symbol.}\sg{I increased the size of the dots a and added a black edge.}}
 \label{comparison_HBH_Kerr_dens_enth}
 \end{figure*}
 
@@ -658,7 +671,7 @@ Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all
 \hspace{0.5cm}
 \includegraphics[width=0.4\textwidth]{figures/fig8_Kerr.eps}
 \hspace{0.5cm}
-\caption{Effects of the magnetization on the perimeteral location of the magnetic pressure maximum (divided by the the perimeteral radius of the centre), $R_{\mathrm{mag}, \mathrm{max}} - R_{\mathrm{c}})/ R_{\mathrm{c}}$). Left panel: KBHsSH models. Right panel: A sequence of KBHs with increasing spin parameter. \tf{Change the $r$ to $R$ in the vertical labels.}}
+\caption{Effects of the magnetization on the perimeteral location of the magnetic pressure maximum (divided by the the perimeteral radius of the centre), $R_{\mathrm{mag}, \mathrm{max}} - R_{\mathrm{c}})/ R_{\mathrm{c}}$). Left panel: KBHsSH models. Right panel: A sequence of KBHs with increasing spin parameter. \tf{Change the $r$ to $R$ in the vertical labels.} \sg{Done}}
 \label{comparison_HBH_Kerr_r_m_max}
 \end{figure*}
 
@@ -667,115 +680,91 @@ Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all
 \caption{Disk parameters and values of their relevant physical magnitudes for the KBH case. For all the cases, we have $R_{\mathrm{in}} = R_{\mathrm{mb}}$ , $l = l_{\mathrm{mb}}$ and $M_{\mathrm{BH}} = 1$.}        
 \label{KBH_disk_parameters}      
 \centering          
-\begin{tabular}{c c c c c  c c c c c c c}
+\begin{tabular}{c c c c c c  c c c c c c c}
 \hline\hline       
- $a$ & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
+ $a$ & $\mathfrak{s}$ &  $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
 \hline           
-$0$ & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.00$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
+$0$ & & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.00$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
  \hline 
- &  &  &  &  & $1$ & $1.02$ & $1.11$ & $6.29 \times 10^{-3}$ & $5.69 \times 10^{-3}$ & $8.81$ & $9.52$\\ 
+ &  &  &  &  &  & $1$ & $1.02$ & $1.11$ & $6.29 \times 10^{-3}$ & $5.69 \times 10^{-3}$ & $8.81$ & $9.52$\\ 
  \hline 
- &  &  &  &  & $10^{-10}$ & $1.00$ & $1.48$ & $1.83 \times 10^{-12}$ & $1.48 \times 10^{-2}$ & $7.70$ & $8.14$\\ 
+ &  &  & &  &  & $10^{-10}$ & $1.00$ & $1.48$ & $1.83 \times 10^{-12}$ & $1.48 \times 10^{-2}$ & $7.70$ & $8.14$\\ 
  \hline 
- $0.5$ & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.00$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
+ $0.5$ & & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.00$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
  \hline 
- &  &  &  &  & $1$ & $1.03$ & $1.12$ & $9.43 \times 10^{-3}$ & $8.47 \times 10^{-3}$ & $6.05$ & $6.53$ \\ 
- \hline 
- &  &  &  &  & $10^{-10}$ & $1.00$ & $1.53$ & $2.81 \times 10^{-12}$ & $2.23 \times 10^{-2}$ & $5.29$ & $5.59$\\ 
+ &  &  & &  &  & $1$ & $1.03$ & $1.12$ & $9.43 \times 10^{-3}$ & $8.47 \times 10^{-3}$ & $6.05$ & $6.53$ \\ 
+ \hline  
+ &  &  & &  &  & $10^{-10}$ & $1.00$ & $1.53$ & $2.81 \times 10^{-12}$ & $2.23 \times 10^{-2}$ & $5.29$ & $5.59$\\ 
 \hline  
-$0.9$ & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.00$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
+$0.9$ &  & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.00$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
  \hline 
- &  &  &  &  & $1$ & $1.07$ & $1.14$ & $2.03 \times 10^{-2}$ & $1.78 \times 10^{-2}$ & $3.25$ & $3.47$\\ 
+ &  &  &  &  &  & $1$ & $1.07$ & $1.14$ & $2.03 \times 10^{-2}$ & $1.78 \times 10^{-2}$ & $3.25$ & $3.47$\\ 
  \hline 
- &  &  &  &  & $10^{-10}$ & $1.00$ & $1.70$ & $6.54 \times 10^{-12}$ & $4.92 \times 10^{-2}$ & $2.92$ & $3.04$ \\ 
+ &  &  &  &  &  & $10^{-10}$ & $1.00$ & $1.70$ & $6.54 \times 10^{-12}$ & $4.92 \times 10^{-2}$ & $2.92$ & $3.04$ \\ 
  \hline 
-$0.9999$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.00$ & $1.34 \times 10^{-1}$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
+$0.9999$ &  & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.00$ & $1.34 \times 10^{-1}$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
 \hline 
- &  &  &  &  & $1$ & $1.29$ & $1.51$ & $1.10 \times 10^{-1}$ & $7.52 \times 10^{-2}$ & $2.0075$ & $2.014$\\ 
+ &  &  &  &  &  & $1$ & $1.29$ & $1.51$ & $1.10 \times 10^{-1}$ & $7.52 \times 10^{-2}$ & $2.0075$ & $2.014$\\ 
 \hline 
- &  &  &  &  & $10^{-10}$ & $1.00$ & $6.17$ & $1.22 \times 10^{-10}$ & $4.91 \times 10^{-1}$ & $2.0021$ & $2.0030$ \\ 
+ &  &  &  &  &  & $10^{-10}$ & $1.00$ & $6.17$ & $1.22 \times 10^{-10}$ & $4.91 \times 10^{-1}$ & $2.0021$ & $2.0030$ \\ 
 \hline   
 \end{tabular}
 \end{table*}
 
 
-\begin{table}
-\caption{Angular velocity at the centre for the different models computed. In the first column, we present the angular velocity at the disk centre for the different KBHsSH models. In the second column, we present the angular velocity at the disk centre for a KBH with the same ADM quantities.\sg{to fill with the Kerr case values.}}
-\label{angular_velocity_table}      
-\centering          
-\begin{tabular}{c c c }
-\hline\hline       
- Model & $\Omega_{\mathrm{c}}$ & $\Omega_{\mathrm{ADM_c}}$ \\ 
-\hline           
-I & $0.493$ & $-$ \\ 
- \hline 
-II & $0.424$ & $--$ \\
- \hline 
-III & $0.521$ & $-$ \\ 
- \hline 
-IV & $0.427$ & $-$ \\ 
- \hline 
-V & $0.394$ & $-$ \\ 
- \hline 
-VI & $0.350$ & $-$ \\ 
- \hline 
-VII & $0.330$ & $-$ \\ 
-\hline      
-\end{tabular}
-\end{table}
+\begin{table*}[t]
+\caption{Central density of the disc for the different models, considering a disc with a value of $r_{\mathrm{in}}$ such as $\Delta W = 0.9 \Delta W_{\mathrm{Total} \equiv W_{\mathrm{cusp}} - W_{\mathrm{c}}}$ and a torus gravitational mass of $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. In the first column, we present the value of the central density for the different KBHsSH models. In the second column, we present the central density for a KBH with the same ADM quantities.\sg{To fill with the Kerr case values.}}
 
-\begin{table}
-\caption{Central density of the disk for the different models, considering a disk with a value of $r_{\mathrm{in}}$ such as $\Delta W = 0.9 \Delta W_{\mathrm{Total} \equiv W_{\mathrm{cusp}} - W_{\mathrm{c}}}$ and a torus gravitational mass of $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. In the first column, we present the value of the central density for the different KBHsSH models. In the second column, we present the central density for a KBH with the same ADM quantities.\sg{To fill with the Kerr case values.}}
 \label{central_density_table}      
 \centering          
-\begin{tabular}{c c c c }
+\begin{tabular}{c c c c c c c c c}
 \hline\hline       
- Model & $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $\rho_{\mathrm{c}}$ & $\rho_{\mathrm{ADM_c}}$ \\ 
+ Model & $\Omega_{\mathrm{c}}$ & $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $\rho_{\mathrm{c}}$ & $\rho_{\mathrm{c}} (\mathrm{g} \dot cm^{-3})$ & $\Omega_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}(\mathrm{g} \dot cm^{-3})$ & $\mathfrak{s}_{\mathrm{ADM}}$ \\ 
 \hline           
-I & $10^{10}$ & $0.002051$ & $-$ \\ 
+I & $0.493$ & $10^{10}$ & $6.818 \times 10^{-4}$ & & $0.854$ & $3.752 \times 10^{-3}$ &   & $1.589$ \\ 
  \hline 
- & $1$ & $0.00434$ & $-$ \\ 
+ & & $1$ & $2.185 \times 10^{-3}$ & & & $7.942 \times 10^{-3}$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.00531$ & $-$ \\ 
+ & & $10^{-10}$ & $3.227 \times 10^{-3}$ & & & $7.641 \times 10^{-3}$ & & \\ 
  \hline 
-II & $10^{10}$ & $0.00150$ & $-$ \\ 
+II & $0.424$ & $10^{10}$ & $3.216 \times 10^{-4}$ & & $-$ & $-$ & & $-$ \\ 
  \hline 
- & $1$ & $0.00427$ & $-$ \\ 
+ & & $1$ & $1.651 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.00582$ & $-$ \\ 
+ & & $10^{-10}$ & $3.026 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
-III & $10^{10}$ & $0.00304$ & $-$ \\ 
+III & $0.521$ & $10^{10}$ & $8.120 \times 10^{-4}$ & & $0.163$ & $-$ & & $1.278$ \\ 
  \hline 
- & $1$ & $0.00840$ & $-$ \\ 
+ & & $1$ & $3.497 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.0108$ & $-$ \\ 
+ & & $10^{-10}$ & $5.452 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
-IV & $10^{10}$ & $0.00407$ & $-$ \\ 
+IV & $0.427$ & $10^{10}$ & $1.197 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
  \hline 
- & $1$ & $0.00897$ & $-$ \\ 
+ & & $1$ & $3.421 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.0110$ & $-$ \\ 
+ & & $10^{-10}$ & $5.135 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
-V & $10^{10}$ & $0.00577$ & $-$ \\ 
+V & $0.394$ & $10^{10}$ & $1.792 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
  \hline 
- & $1$ & $0.0104$ & $-$ \\ 
+ & & $1$ & $3.883 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.0121$ & $-$ \\ 
+ & & $10^{-10}$ & $5.435 \times 10^{-3} $ & & & $-$ & & \\ 
  \hline 
-VI & $10^{10}$ & $0.00762$ & $-$ \\ 
+VI & $0.350$ & $10^{10}$ & $2.348 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
  \hline 
- & $1$ & $0.0116$ & $-$ \\ 
+ & & $1$ & $4.106 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.0131$ & $-$ \\ 
+ & & $10^{-10}$ & $5.685 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
-VII & $10^{10}$ & $0.0129$ & $-$ \\ 
+VII & $0.330$ & $10^{10}$ & $3.737 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
  \hline 
- & $1$ & $0.0162$ & $-$ \\ 
+ & & $1$ & $5.356 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline 
- & $10^{-10}$ & $0.01701$ & $-$ \\ 
+ & & $10^{-10}$ & $7.598 \times 10^{-3}$ & & & $-$ & & \\ 
  \hline     
 \end{tabular}
-\end{table}
+\end{table*}
 
 In figure~\ref{comparison_mass_density} we show the total energy density of the torus $\rho_{\mathrm{T}}$ (upper half of each image) and the total energy density of the scalar field $\rho_{\mathrm{SF}}$ (lower half) for models I, IV and VII and two  values of the magnetization parameter at the center ($10^{10}$, top row, and $10^{-10}$, bottom row). This figure shows that, for non-magnetized disks, the maximum of the total energy density of the disk $\rho_{\mathrm{T}}$ is closer to the maximum of the total energy density of the scalar field $\rho_{\mathrm{SF}}$ for increasing hair. This trend disappears with increasing magnetization, as the disk moves closer to the horizon in such case.
 
@@ -783,11 +772,13 @@ In figure~\ref{comparison_mass_density} we show the total energy density of the 
 \subsection{Comparison with Kerr BHs}
 %%%%%%%%%%%%%%%%%%%%%
 
-For the sake of comparison we build equilibrium sequences of magnetized disks around four Kerr BHs of varying spins, from $a=0$ to $a=0.9999$. Our numerical approach can handle BH spins as large as $|a-1|=10^{-10}$ \tf{Check} but such extreme cases do not add further relevant information to our discussion. Table~\ref{KBH_disk_parameters} reports a summary of the main physical quantities of these disks, whose morphology is displayed in Figs.~\ref{models_Kerr} and~\ref{models_Kerr_peri}. As for the disks built around KBHsSH, the maximum values of the enthalpy, density, pressure and magnetic pressure increase with increasing $|\Delta W|$, which, in the Kerr BH case, also means with increasing values of $a$. It can be seen that both the cusp and the centre move closer to the horizon with increasing $a$. \tf{Describe further the table and the figures}. \tf{Mention that the horizon location is constant in perimetral coordinates irrespective of $a$.} 
+For the sake of comparison we build equilibrium sequences of magnetised disks around four Kerr BHs of varying spins, from $a=0$ to $a=0.9999$. Our numerical approach can handle BH spins as large as $|a-1|=10^{-7}$ \sg{Done}\tf{Check} but such extreme cases do not add further relevant information to our discussion. Table~\ref{KBH_disk_parameters} reports a summary of the main physical quantities of these disks, whose morphology is displayed in Figs.~\ref{models_Kerr} and~\ref{models_Kerr_peri}. As for the disks built around KBHsSH, the maximum values of the enthalpy, density, pressure and magnetic pressure increase with increasing $|\Delta W|$, which, in the Kerr BH case, also means with increasing values of $a$. It can be seen that both the cusp and the centre move closer to the horizon with increasing $a$. \tf{Describe further the table and the figures}. \tf{Mention that the horizon location is constant in perimetral coordinates irrespective of $a$.} 
 
 Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). 
 
-\sg{Compare the radial profiles.}
+
+In Fig~\ref{radial_profiles_KBH}, we show three KBH models with the same ADM mass and angular momentum as the cases shown in Fig.~\ref{radial_profiles_HBH}. The first case corresponds to a near-extremal KBH ($a = 0.9987$) and the other two have a similar value for spin parameter ($0.8489$ and $0.8941$ respectively). Direct comparison between this models and the KBHsSH ones, draws out very interesting features of these models. It can be seen that, for model I, the disc in the Kerr case is considerably smaller than its hairy counterpart...
+
 \sg{Describe and compare the angular velocity at the centre.}
 
 
@@ -797,7 +788,9 @@ Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different 
 \subsection{Magnetization profiles}
 %%%%%%%%%%%%%%%%%%
 
-The dependence of the maximum specific enthalpy $h_{\mathrm{max}}$ and the maximum rest-mass density $\rho_{\mathrm{max}}$ with the magnetization parameter is shown in figures~\ref{comparison_HBH_Kerr_dens_enth}. The upper panels correspond to the KBHsSH models (I-VII) and the lower ones to our sequence of Kerr BHs with increasing spin parameter. For both cases, an increase in $|\Delta W|$ implies monotonically  higher values for $h_{\mathrm{max}}$ (low magnetization) and also higher values for $\rho_{\mathrm{max}}$ (high magnetization). However, there are quantitative differences between the two cases. For the enthalpy, the values of $h_{\mathrm{max}}$ reached for disks around KBHsSH are much higher than those of the Kerr BH case. This implies that, while the $w = \rho h \simeq \rho$ approximation (employed in~\cite{Komissarov:2006,Gimeno-Soler:2017}) is valid for magnetized disks ($\beta_{\mathrm{m_c}} \sim 1$) around Kerr BHs for values of the spin parameter as high as $a \sim 0.99$, that is not the case for disks around KBHsSH. We note that for the most extreme spin value we can build, $a=XXX$, the maximum enthalpy is $h_{\rm max}=XXX$. \tf{Complete.}
+
+The dependence of the maximum specific enthalpy $h_{\mathrm{max}}$ and the maximum rest-mass density $\rho_{\mathrm{max}}$ with the magnetization parameter is shown in figures~\ref{comparison_HBH_Kerr_dens_enth}. The upper panels correspond to the KBHsSH models (I-VII) and the lower ones to our sequence of Kerr BHs with increasing spin parameter. For both cases, an increase in $|\Delta W|$ implies monotonically  higher values for $h_{\mathrm{max}}$ (low magnetisation) and also higher values for $\rho_{\mathrm{max}}$ (high magnetisation). However, there are quantitative differences between the two cases. For the enthalpy, the values of $h_{\mathrm{max}}$ reached for disks around KBHsSH are much higher than those of the Kerr BH case. This implies that, while the $w = \rho h \simeq \rho$ approximation (employed in~\cite{Komissarov:2006,Gimeno-Soler:2017}) is valid for magnetized disks ($\beta_{\mathrm{m_c}} \sim 1$) around Kerr BHs for values of the spin parameter as high as $a \sim 0.99$, that is not the case for disks around KBHsSH. We note that for the most extreme spin value we can build, $a=0.9999999$, the maximum enthalpy for the purely hydrodynamical case is $h_{\rm max}=1.692$. \tf{Complete.} \sg{Done}
+
 %Also, for the rest-mass density we have a different behaviour: $\rho_{\mathrm{max}}$ for KBHsSH reach values only attainable by high spin parameter KBHs (between $a = 0.9$ and $a = 0.99999$ for the seven models we present here).
 
 Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the relative variation of the quotient of the perimetral radius of the magnetic pressure maximum and the perimetral radius of the disk center, $(R_{\mathrm{m, max}}-R_{\mathrm{c}})/R_{\mathrm{c}}$, with the decimal logarithm of the magnetization parameter at the center of the disk, $\log_{10} \beta_{\mathrm{m_c}}$. The curves plotted correspond to the same KBHsSH and Kerr BH cases as those in figure~\ref{comparison_HBH_Kerr_dens_enth}. For all cases, the radial location of the magnetic pressure maximum decreases with decreasing $\beta_{\mathrm{m_c}}$. In~\cite{Gimeno-Soler:2017} we proved that for $h=1$ disk models in stationary and axisymmetric BH spacetimes, the location of the maximum of the magnetic pressure is identical for all models when $\beta_{\mathrm{m_c}}\equiv 1 / \Gamma - 1=3$. This condition is also fulfilled for the Kerr BH case  even when $h \neq 1$, with a slight deviation for cases with very high spin parameter, as can be seen in the inset of the right panel of Fig.~\ref{comparison_HBH_Kerr_r_m_max}. However, this condition is not fulfilled for disks built around KBHsSH (see inset in the left panel). At this point, it is relevant to remember that some of the KBHsSH models violate the Kerr bound in terms of the potential. As we mentioned previously, we need a small value of $\Delta W$ for the $h \simeq 1$ approximation to be valid in the non-magnetized regime. Now we can see that, in the KBHsSH case, this approximation is not valid even for mildly-magnetized disks.
