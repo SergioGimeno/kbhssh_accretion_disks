@@ -153,7 +153,7 @@ IV & $0.933$ & $0.739$ & $0.234$ &  $0.114$  & $0.699$ & $0.625$ & $0.100$ & $0.
  \hline 
 V & $0.940$ & $0.757$ & $0.159$ &  $0.076$  & $0.781$ & $0.680$ & $0.091$ & $0.8560$ & $3.017$ & $0.4438$ & $0.7415$ & $1.357$ \\ 
  \hline 
-VI & $0.959$ & $0.795$ & $0.087$ &  $0.034$  & $0.872$ & $0.747$ & $0.088$ & $0.9477$ & $3.947$ & $0.2988$ & $0.5487$ & $1.222$ \\ 
+VI & $0.959$ & $0.795$ & $0.087$ &  $0.034$  & $0.872$ & $0.747$ & $0.088$ & $0.8644$ & $3.947$ & $0.2988$ & $0.5487$ & $1.222$ \\ 
  \hline 
 VII & $0.975$ & $0.850$ & $0.018$ &  $0.002$  & $0.957$ & $0.848$ & $0.040$ & $0.8941$ & $6.173$ & $0.0973$ & $0.1928$ & $1.039$ \\ 
 \hline      
@@ -174,7 +174,7 @@ The models of KBHsSH we use in this study are built following the procedure desc
 %\end{split}
 \end{eqnarray}
 with $N = 1 - r_{\rm H}/r$, where $r_{\rm H}$ is the radius of the event horizon of the BH, and $W$, $F_1$, $F_2$, $F_0$ are functions of $r$ and $\theta$. Moreover, $\omega$ is the scalar field frequency and $m$ is the azimuthal harmonic index.
-We note that the radial coordinate $r$ is related to the Boyer-Lindquist radial coordinate $r_{\rm BL}$ by $r=r_{\rm BL}-a^2/r_{\rm H,BL}$, where $a$ stands for the spin of the BH and $r_{\rm H,BL}$ is the location of the horizon in Boyer-Lindquist coordinates.
+We note that the radial coordinate $r$ is related to the Boyer-Lindquist radial coordinate $r_{\rm BL}$ by $r=r_{\rm BL}-a^2/r_{\rm H,BL}$, where $a = J/M$ stands for the spin of the BH and $r_{\rm H,BL}$ is the location of the horizon in Boyer-Lindquist coordinates.
 
 The stationary and axisymmetric metric ansatz is a solution to the EKG field equations $R_{ab} - \frac{1}{2}R g _{ab} = 8 \pi (T_{\mathrm{SF}})_{ab}$ with 
 \begin{eqnarray}\label{eq:e-m_scalaf_field}
@@ -184,7 +184,11 @@ The stationary and axisymmetric metric ansatz is a solution to the EKG field equ
 \end{eqnarray}
 where $\mu$ is the mass of the scalar field and superscript $(^*)$ denotes complex conjugation. The interested reader is addressed to~\cite{Herdeiro:2015b} for details on the equations of motion for the scalar field $\Psi$ and the four metric functions ${W, F_0,F_1,F_2}$, along with their solution.
 
-Table~\ref{models_list} lists the seven KBHsSH models we use in this work. The models have been selected to span all regions of interest in the parameter space. Model I corresponds to a Kerr-like model, with almost all the mass and angular momentum stored in the BH (namely, $94.7\%$ of the total mass and $87.2\%$ of the total angular momentum of the spacetime are stored in the BH), while model VII corresponds to a hairy Kerr BH with almost all the mass (98.15\%) and angular momentum (99.76\%) stored in the scalar field. It is worth mentioning that some of the models violate the Kerr bound (i.e.~the normalized spin parameter is larger than unity) in terms of both ADM or horizon quantities. This is not a source of concern because, as shown in~\cite{Herdeiro:2015c}, the linear velocity of the horizon, $v_{\mathrm{H}}$, never exceeds the speed of light. For comparison, we also show in the second-to-last column of Table~\ref{models_list} the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with a horizon linear velocity $v_{\mathrm{H}}$. \tf{Description of the sphericity.} In addition to the information provided in Table~\ref{models_list}, Figure~\ref{existence} plots the location of our models in  the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram.  \tf{This figure has to be redone.}
+Table~\ref{models_list} lists the seven KBHsSH models we use in this work. The models have been selected to span all regions of interest in the parameter space. Model I corresponds to a Kerr-like model, with almost all the mass and angular momentum stored in the BH (namely, $94.7\%$ of the total mass and $87.2\%$ of the total angular momentum of the spacetime are stored in the BH), while model VII corresponds to a hairy Kerr BH with almost all the mass (98.15\%) and angular momentum (99.76\%) stored in the scalar field. It is worth mentioning that some of the models violate the Kerr bound (i.e.~the normalized spin parameter is larger than unity) in terms of both ADM or horizon quantities. This is not a source of concern because, as shown in~\cite{Herdeiro:2015c}, the linear velocity of the horizon, $v_{\mathrm{H}}$, never exceeds the speed of light. For comparison, we also show in the second-to-last column of Table~\ref{models_list} the spin parameter $a_{\mathrm{H_{eq}}}$ corresponding to a Kerr BH with a horizon linear velocity $v_{\mathrm{H}}$. In the last column, we also include the horizon sphericity of the KBHsSH, defined in~\cite{Delgado:2018} as the quotient of the equatorial and polar proper lengths of the event horizon
+\begin{equation}
+\mathfrak{s} = \frac{L_{\mathrm{e}}}{L_{\mathrm{p}}} = \frac{\int^{2\pi}_{0} \mathrm{d}\phi e^{F_2(r_{\mathrm{H}}, \pi/2)} r_{\mathrm{H}}}{2\int^{\pi}_{0} \mathrm{d} \theta e^{F_1(r_{\mathrm{H}}, \theta)} r_{\mathrm{H}}}.
+\end{equation}
+ \tf{Description of the sphericity.} \sg{Done} In addition to the information provided in Table~\ref{models_list}, Figure~\ref{existence} plots the location of our models in the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram.  \tf{This figure has to be redone.}
 
 \begin{figure}
 \centering
@@ -295,7 +299,7 @@ and taking into account that the flow is stationary and axisymmetric, the conser
 \end{equation}
 where $i = r, \theta$. This equation can be rewritten in terms of the specific angular momentum $l$ and of the angular velocity $\Omega$, 
 \begin{equation}\label{eq:diff_ver}
-\partial_i(|\ln u_t|) - \frac{\Omega \partial_i l}{1-l\Omega} + \frac{\partial_i p}{\rho h} + \frac{\partial_i(\mathcal{L}b^2)}{2\mathcal{L}\rho h} = 0\,,
+\partial_i(\ln |u_t|) - \frac{\Omega \partial_i l}{1-l\Omega} + \frac{\partial_i p}{\rho h} + \frac{\partial_i(\mathcal{L}b^2)}{2\mathcal{L}\rho h} = 0\,,
 \end{equation}
 where $\mathcal{L} = g_{t\phi}^2 - g_{tt}g_{\phi\phi}$.
 
@@ -448,7 +452,7 @@ In particular, our choice of specific angular momentum and inner radius is made 
 
 Before building the models, it is important to note that we need a sufficiently fine numerical grid to fully capture the behaviour of the physical magnitudes at the innermost regions of the disk. For this reason, we use a non-uniform $(r, \theta)$ grid with a typical domain given by $[r_{\mathrm{H}}, 199.2] \times [0, \pi/2]$ and a typical number of points $N_r \times N_{\theta} = 2500 \times 300$. Those numbers are only representative as the actual numbers depend on the horizon radius $r_{\mathrm{H}}$ and on the specific model. The spacetime metric data on this grid is interpolated from the original data obtained by~\cite{Herdeiro:2015b}. The original grid in~\cite{Herdeiro:2015b} is a uniform ($x$, $\theta$) grid (where $x$ is a compactified radial coordinate) with a domain $[0, 1] \times [0, \pi/2]$ and a number of points of $N_x \times N_{\theta} = 251 \times 30$~\footnote{Some samples are presented in~\cite{grav_web}}. To obtain our grid, we use the coordinate transformation provided in~\cite{grav_web} and interpolate the initial grid using cubic splines interpolation. An example of our grid is shown in Fig.~XXX. \tf{We will include this figure if it could be done and were meaningful.} \tf{Maybe we could also provide the number of the domain and number of points we need for our most extreme case with $a = 0.9999$.}
 
-\sg{It may be important to note that it seems that we have not angular resolution enough to resolve the morphology of the disk in these extreme cases (see the 2D perimeteral plots). But I think this should go in the results section.} \tf{I agree with mentioning this in the results section.}
+\sg{It may be important to note that it seems that we have not angular resolution enough to resolve the morphology of the disk in these extreme cases (see the 2D perimeteral plots). But I think this should go in the results section.} \tf{I agree with mentioning this in the results section.} \sg{Added.}
 
 To build the disks we first need to find $l_{\mathrm{mb}}$ and $r_{\mathrm{mb}}$ as the minimum of Eq.~\eqref{eq:mb_ang_mom} and the location of said minimum in terms of the radial coordinate respectively. Once this is done, we can compute the total potential distribution as
 \begin{equation}
@@ -490,47 +494,47 @@ It is relevant to note that Eqs.~\eqref{eq:to_solve_K} and~\eqref{eq:to_solve_rh
  Model & $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
 \hline           
 I & $0.934$ & $-0.188$ & $0.81$ & $1.14$ & $10^{10}$ & $1.21$ & $1.00$ & $5.16 \times 10^{-2}$ & $5.50 \times 10^{-12}$ & $1.14$ & $1.26$\\ 
- \hline 
+
  &  &  &  &  & $1$ & $1.10$ & $1.17$ & $3.11 \times 10^{-2}$ & $2.68 \times 10^{-2}$ & $1.01$ & $1.06$\\ 
- \hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $1.90$ & $1.10 \times 10^{-11}$ & $7.80 \times 10^{-2}$ & $0.93$ & $0.96$\\ 
- \hline 
+
 II & $0.933$ & $-0.205$ & $0.75$ & $1.18$ & $10^{10}$ & $1.23$ & $1.00$ & $5.69 \times 10^{-2}$ & $6.14 \times 10^{-12}$ & $1.18$ & $1.36$\\ 
- \hline 
+
  &  &  &  &  & $1$ & $1.12$ & $1.19$ & $3.50 \times 10^{-2}$ & $2.97 \times 10^{-2}$ & $1.00$ & $1.07$\\ 
- \hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $2.01$ & $1.30 \times 10^{-11}$ & $8.99 \times 10^{-2}$ & $0.91$ & $0.94$ \\ 
- \hline 
+
 III & $1.060$ & $-0.362$ & $0.84$ & $1.07$ & $10^{10}$ & $1.44$ & $1.00$ & $1.09 \times 10^{-1}$ & $1.21 \times 10^{-11}$ & $1.07$ & $1.22$\\ 
- \hline 
+
  &  &  &  &  & $1$ & $1.23$ & $1.28$ & $7.22 \times 10^{-2}$ & $5.76 \times 10^{-2}$ & $0.95$ & $0.99$ \\ 
- \hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $2.74$ & $3.48 \times 10^{-11}$ & $2.06 \times 10^{-1}$ & $0.89$ & $0.91$\\ 
-\hline  
+ 
 IV & $1.160$ & $-0.547$ & $0.67$ & $1.06$ & $10^{10}$ & $1.72$ & $1.00$ & $1.82\times 10^{-1}$ & $2.09 \times 10^{-11}$ & $1.06$ & $1.34$ \\ 
-\hline 
+
  &  &  &  &  & $1$ & $1.38$ & $1.37$ & $1.29 \times 10^{-1}$ & $9.76 \times 10^{-2}$ & $0.85$ & $0.91$\\ 
-\hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $3.70$ & $7.83 \times 10^{-11}$ & $4.08\times 10^{-1}$ & $0.76$ & $0.78$ \\ 
-\hline   
+
 V & $1.200$ & $-0.685$ & $0.58$ & $1.07$ & $10^{10}$ & $1.98$ & $1.00$ & $2.46 \times 10^{-1}$ & $2.76 \times 10^{-11}$ & $1.07$ & $1.31$\\ 
-\hline 
+
  &  &  &  &  & $1$ & $1.51$ & $1.40$ & $1.78 \times 10^{-1}$ & $1.32\times 10^{-1}$ & $0.78$ & $0.87$ \\ 
-\hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $4.26$ & $1.18 \times 10^{-10}$ & $5.79\times 10^{-1}$ & $0.67$ & $0.69$ \\ 
-\hline   
+  
 VI & $1.200$ & $-0.832$ & $0.43$ & $1.12$ & $10^{10}$ & $2.30$ & $1.00$ & $3.24 \times 10^{-1}$ & $3.52 \times 10^{-11}$ & $1.12$ & $1.32$ \\ 
-\hline 
+
  &  &  &  &  & $1$ & $1.66$ & $1.39$ & $2.28 \times 10^{-1}$ & $1.69\times 10^{-1}$ & $0.72$ & $0.86$ \\ 
-\hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $4.54$ & $1.57 \times 10^{-10}$ & $7.40\times 10^{-1}$ & $0.55$ & $0.59$ \\ 
-\hline 
+ 
 VII & $0.920$ & $-1.236$ & $0.18$ & $1.10$ & $10^{-10}$ & $3.44$ & $1.00$ & $6.10 \times 10^{-1}$ & $6.46 \times 10^{-11}$ & $1.10$ & $1.25$ \\ 
-\hline 
+
  &  &  &  &  & $1$ & $2.25$ & $1.64$ & $5.10 \times 10^{-1}$ & $3.22\times 10^{-1}$ & $0.43$ & $0.62$\\ 
-\hline 
+
  &  &  &  &  & $10^{-10}$ & $1.00$ & $10.42$ & $7.03 \times 10^{-10}$ & $2.44$ & $0.28$ & $0.30$\\ 
-\hline 
+\hline\hline
 \end{tabular}
 \end{table*}
 
@@ -563,9 +567,9 @@ The structure of the disks is similar for all values of $\beta_{\mathrm{m_c}}$ w
 
 The size of the disks can be best quantified by plotting the radial profiles of the rest-mass density on the equatorial plane. This is shown in Fig.~\ref{radial_profiles_HBH} for models I, IV and VII and for the same three values of the magnetization parameter shown in Figs.~\ref{models_I} and~\ref{models_II}. From this figure we see that model I disks are significantly larger than models IV and VII, i.e.~the hairier the models the more compact and smaller they become. We also note the presence of an extended region of high density in the unmagnetized model VII  (the mildly-magnetized case also shows this feature but to a lesser extent). This could be related to the existence of an extra gravitational well due to the scalar field distribution that overlaps with the matter distribution of the disk (as can be seen in the right panel of Fig.~\ref{comparison_mass_density} below).
 
-In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same morphological distribution of Figs.~\ref{models_I} and~\ref{models_II} but using, instead, a perimetral radial coordinate $R$, related to the radial coordinate $r$ according to $R = e^{F_2} r$. This perimetral coordinate represents the proper length along the azimuthal direction, which constitutes a geometrically meaningful direction since it runs along the orbits of the azimuthal Killing vector field. Therefore, the proper size of a full $\phi$ orbit is given by $2\pi R$, i.e.~$R$ is the perimetral radius. The most salient feature of the morphologies shown in Figs.~\ref{models_peri_I} and~\ref{models_peri_II}, when comparing to those displayed in Figs.~\ref{models_I} and~\ref{models_II}, is the deformation of the disks in their innermost regions. In general, the deformations become larger the higher the BH spin and the closer the disk is to the horizon. Model III is the one showing the largest deformation, as $R_{\rm in}-R_{\rm H}$ attains the smallest value for this model. \tf{Check.} It is also worth noticing that the shape of the BH also changes when using the perimetral coordinate. While in the $r$ coordinate the horizon is spherical (cf.~Figs.~\ref{models_I} and~\ref{models_II}) in the perimetral coordinate $R$ is not always so. Moreover, the larger the value of $v_{\rm H}$, the more elliptic the horizon becomes, which in our sample corresponds to model III (cf.~Table~\ref{models_list}, $\mathfrak{s}=1.489$). 
+In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same morphological distribution of Figs.~\ref{models_I} and~\ref{models_II} but using, instead, a perimetral radial coordinate $R$, related to the radial coordinate $r$ according to $R = e^{F_2} r$. This perimetral coordinate represents the proper length along the azimuthal direction, which constitutes a geometrically meaningful direction since it runs along the orbits of the azimuthal Killing vector field. Therefore, the proper size of a full $\phi$ orbit is given by $2\pi R$, i.e.~$R$ is the perimetral radius. The most salient feature of the morphologies shown in Figs.~\ref{models_peri_I} and~\ref{models_peri_II}, when comparing to those displayed in Figs.~\ref{models_I} and~\ref{models_II}, is the deformation of the disks in their innermost regions. In general, the deformations become larger the higher the horizon sphericity $\mathfrak{s}$ and the closer the disk is to the horizon. Model III is the one showing the largest deformation, as $R_{\rm in}-R_{\rm H}/R_{\rm H}$ attains the smallest value for this model. \tf{Check.} \sg{Done} It is also worth noticing that the shape of the BH also changes when using the perimetral coordinate. While in the $r$ coordinate the horizon is spherical (cf.~Figs.~\ref{models_I} and~\ref{models_II}) in the perimetral coordinate $R$ is not always so. Moreover, the larger the value of $v_{\rm H}$, the more elliptic the horizon becomes, which in our sample corresponds to model III (cf.~Table~\ref{models_list}, $\mathfrak{s}=1.489$). Also, an interesting property of the perimeteral coordinates is that, for the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum. But for the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$, and the quotient $R_{\mathrm{H}}/ 2M_{\mathrm{H}}$ increases as more mass and angular momentum is stored in the scalar field. \sg{It is possible that the angular momentum does not change anything, but we cannot know, as we do not have two different models with the same value of the BH mass.}
 
-\sg{Discuss. I find that the 2D morphology in perimeteral coordinates might not be very useful, but I found an interesting property of these coordinates: For the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum (For the KBHsSH cases, $2M_{\mathrm{H}} \neq R_{\mathrm{H}} \neq 2M_{\mathrm{ADM}}$. I don't know if there are any kind of dependence on the angular momentum, as we don't two cases with the same value of the mass). I suppose this could help us to compare different models. In fact, the differences in the morphology close to the equatorial plane in the near horizon region are actually related to the value of the angular momentum (we can see a relationship between the morphological differences and the equivalent spin parameter $a_{\mathrm{eq}}$).} \tf{Could you please include some of this information in here?}
+\sg{Discuss. I find that the 2D morphology in perimeteral coordinates might not be very useful, but I found an interesting property of these coordinates: For the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum (For the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$. I don't know if there are any kind of dependence on the angular momentum, as we don't two cases with the same value of the mass). I suppose this could help us to compare different models. In fact, the differences in the morphology close to the equatorial plane in the near horizon region are actually related to the value of the angular momentum (we can see a relationship between the morphological differences and the equivalent spin parameter $a_{\mathrm{eq}}$).} \tf{Could you please include some of this information in here?} \sg{Done}
 
 Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all of our disk models around KBHsSH. It is worth mentioning that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks arround Kerr BHs exhibit a maximum for $|\Delta W|$ when the spin parameter $a\rightarrow 1$. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. Models V, VI, and VII of our sample violate that bound. As a result, the maximum values of the fluid quantities for disks around KBHsSH are significantly larger than in the Kerr BH case. In both cases, these values increase as $|\Delta W|$ increases, irrespective of the magnetization, as shown in Table~\ref{HBH_disk_parameters}.
 
@@ -684,85 +688,85 @@ Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all
 \hline\hline       
  $a$ & $\mathfrak{s}$ &  $l$ & $W_{\mathrm{c}}$ & $R_{\mathrm{in}}$ & $R_{\mathrm{c}}$ &  $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $h_{\mathrm{max}}$ & $\rho_{\mathrm{max}}$ & $p_{\mathrm{max}}$ & $p_{\mathrm{m, max}}$ & $R_{\mathrm{max}}$ & $R_{\mathrm{m, max}}$\\ 
 \hline           
-$0$ & & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.00$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
- \hline 
+$0$ & $1$ & $4.00$ & $-4.32 \times 10^{-2}$ & $4.00$ & $10.47$ & $10^{10}$ & $1.04$ & $1.00$ & $1.10 \times 10^{-2}$ & $1.15 \times 10^{-12}$ & $10.47$ & $11.86$\\ 
+
  &  &  &  &  &  & $1$ & $1.02$ & $1.11$ & $6.29 \times 10^{-3}$ & $5.69 \times 10^{-3}$ & $8.81$ & $9.52$\\ 
- \hline 
+
  &  &  & &  &  & $10^{-10}$ & $1.00$ & $1.48$ & $1.83 \times 10^{-12}$ & $1.48 \times 10^{-2}$ & $7.70$ & $8.14$\\ 
- \hline 
- $0.5$ & & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.00$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
- \hline 
+
+ $0.5$ & $1.053$ & $3.41$ & $-6.35 \times 10^{-2}$ & $2.99$ & $7.12$ & $10^{10}$ & $1.07$ & $1.00$ & $1.64 \times 10^{-2}$ & $1.72 \times 10^{-12}$ & $7.19$ & $8.14$\\ 
+
  &  &  & &  &  & $1$ & $1.03$ & $1.12$ & $9.43 \times 10^{-3}$ & $8.47 \times 10^{-3}$ & $6.05$ & $6.53$ \\ 
- \hline  
+ 
  &  &  & &  &  & $10^{-10}$ & $1.00$ & $1.53$ & $2.81 \times 10^{-12}$ & $2.23 \times 10^{-2}$ & $5.29$ & $5.59$\\ 
-\hline  
-$0.9$ &  & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.00$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
- \hline 
+ 
+$0.9$ & $1.276$ & $2.63$ & $-0.129$ & $2.18$ & $3.78$ & $10^{10}$ & $1.14$ & $1.00$ & $1.64 \times 10^{-2}$ & $3.65 \times 10^{-12}$ & $3.78$ & $4.23$\\ 
+
  &  &  &  &  &  & $1$ & $1.07$ & $1.14$ & $2.03 \times 10^{-2}$ & $1.78 \times 10^{-2}$ & $3.25$ & $3.47$\\ 
- \hline 
+
  &  &  &  &  &  & $10^{-10}$ & $1.00$ & $1.70$ & $6.54 \times 10^{-12}$ & $4.92 \times 10^{-2}$ & $2.92$ & $3.04$ \\ 
- \hline 
-$0.9999$ &  & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.00$ & $1.34 \times 10^{-1}$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
-\hline 
+
+$0.9999$ & $1.629$ & $2.02$ & $-0.429$ & $2.00015$ & $2.034$ & $10^{10}$ & $1.54$ & $1.00$ & $1.34 \times 10^{-1}$ & $1.61 \times 10^{-11}$ & $2.034$ & $2.094$ \\ 
+
  &  &  &  &  &  & $1$ & $1.29$ & $1.51$ & $1.10 \times 10^{-1}$ & $7.52 \times 10^{-2}$ & $2.0075$ & $2.014$\\ 
-\hline 
+
  &  &  &  &  &  & $10^{-10}$ & $1.00$ & $6.17$ & $1.22 \times 10^{-10}$ & $4.91 \times 10^{-1}$ & $2.0021$ & $2.0030$ \\ 
-\hline   
+\hline\hline
 \end{tabular}
 \end{table*}
 
 
 \begin{table*}[t]
-\caption{Central density of the disc for the different models, considering a disc with a value of $r_{\mathrm{in}}$ such as $\Delta W = 0.9 \Delta W_{\mathrm{Total} \equiv W_{\mathrm{cusp}} - W_{\mathrm{c}}}$ and a torus gravitational mass of $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. In the first column, we present the value of the central density for the different KBHsSH models. In the second column, we present the central density for a KBH with the same ADM quantities.\sg{To fill with the Kerr case values.}}
+\caption{Central density of the disc for the different models, considering a disc with a value of $r_{\mathrm{in}}$ such as $\Delta W = 0.9 \Delta W_{\mathrm{Total}} \equiv W_{\mathrm{cusp}} - W_{\mathrm{c}}$ and a torus gravitational mass of $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. In the first column, we present the value of the central density for the different KBHsSH models. In the second column, we present the central density for a KBH with the same ADM quantities.\sg{complete caption}}
 
-\label{central_density_table}      
+\label{density_table}      
 \centering          
 \begin{tabular}{c c c c c c c c c}
 \hline\hline       
- Model & $\Omega_{\mathrm{c}}$ & $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $\rho_{\mathrm{c}}$ & $\rho_{\mathrm{c}} (\mathrm{g} \dot cm^{-3})$ & $\Omega_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}(\mathrm{g} \dot cm^{-3})$ & $\mathfrak{s}_{\mathrm{ADM}}$ \\ 
+ Model & $\Omega_{\mathrm{c}}$ & $\beta_{\mathrm{m_{\mathrm{c}}}}$ & $\rho_{\mathrm{c}}$ & $\rho_{\mathrm{c}} (\mathrm{g} \cdot \rm{cm}^{-3})$ & $\Omega_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}$ & $\rho_{\mathrm{ADM_c}}(\mathrm{g} \cdot \rm{cm}^{-3})$ & $\mathfrak{s}_{\mathrm{ADM}}$ \\ 
 \hline           
-I & $0.493$ & $10^{10}$ & $6.818 \times 10^{-4}$ & & $0.854$ & $3.752 \times 10^{-3}$ &   & $1.589$ \\ 
- \hline 
- & & $1$ & $2.185 \times 10^{-3}$ & & & $7.942 \times 10^{-3}$ & & \\ 
- \hline 
- & & $10^{-10}$ & $3.227 \times 10^{-3}$ & & & $7.641 \times 10^{-3}$ & & \\ 
- \hline 
-II & $0.424$ & $10^{10}$ & $3.216 \times 10^{-4}$ & & $-$ & $-$ & & $-$ \\ 
- \hline 
- & & $1$ & $1.651 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $3.026 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
-III & $0.521$ & $10^{10}$ & $8.120 \times 10^{-4}$ & & $0.163$ & $-$ & & $1.278$ \\ 
- \hline 
- & & $1$ & $3.497 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $5.452 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
-IV & $0.427$ & $10^{10}$ & $1.197 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
- \hline 
- & & $1$ & $3.421 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $5.135 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
-V & $0.394$ & $10^{10}$ & $1.792 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
- \hline 
- & & $1$ & $3.883 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $5.435 \times 10^{-3} $ & & & $-$ & & \\ 
- \hline 
-VI & $0.350$ & $10^{10}$ & $2.348 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
- \hline 
- & & $1$ & $4.106 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $5.685 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
-VII & $0.330$ & $10^{10}$ & $3.737 \times 10^{-3}$ & & $-$ & $-$ & & \\ 
- \hline 
- & & $1$ & $5.356 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline 
- & & $10^{-10}$ & $7.598 \times 10^{-3}$ & & & $-$ & & \\ 
- \hline     
+I & $0.493$ & $10^{10}$ & $6.818 \times 10^{-4}$ & $1.739 \times 10^{13}$ & $0.854$ & $3.752 \times 10^{-3}$ &  $9.567 \times 10^{13}$ & $1.589$ \\ 
+
+ & & $1$ & $2.185 \times 10^{-3}$ & $5.503 \times 10^{13}$ & & $7.942 \times 10^{-3}$ & $2.025 \times 10^{14}$ & \\ 
+
+ & & $10^{-10}$ & $3.227 \times 10^{-3}$ & $8.229 \times 10^{13}$ & & $7.641 \times 10^{-3}$ & $1.948 \times 10^{14}$ & \\ 
+
+II & $0.424$ & $10^{10}$ & $3.216 \times 10^{-4}$ & $8.201 \times 10^{12}$ & $-$ & $-$ & $-$ & $-$ \\ 
+ 
+ & & $1$ & $1.651 \times 10^{-3}$ & $4.210 \times 10^{13}$ & $-$ & $-$ & $-$ & $-$ \\ 
+
+ & & $10^{-10}$ & $3.026 \times 10^{-3}$ & $7.716 \times 10^{13}$ & $-$ & $-$ & $-$ & $-$ \\ 
+
+III & $0.521$ & $10^{10}$ & $8.120 \times 10^{-4}$ & $2.071 \times 10^{13}$ & $0.163$ & $6.683 \times 10^{-5}$ & $1.704 \times 10^{12}$ & $1.278$ \\ 
+
+ & & $1$ & $3.497 \times 10^{-3}$ & $8.917 \times 10^{13}$ & & $2.075 \times 10^{-4}$ & $5.291 \times 10^{12}$ & \\ 
+
+ & & $10^{-10}$ & $5.452 \times 10^{-3}$ & $1.390 \times 10^{14}$ & & $3.265 \times 10^{-4}$ & $8.325 \times 10^{12}$ & \\ 
+
+IV & $0.427$ & $10^{10}$ & $1.197 \times 10^{-3}$ & $3.052 \times 10^{13}$ & $0.113$ & $3.001 \times 10^{-5}$ & $7.652 \times 10^{11}$ & $1.219$ \\ 
+
+ & & $1$ & $3.421 \times 10^{-3}$ & $8.723 \times 10^{13}$ & & $9.512 \times 10^{-5}$ & $2.425 \times 10^{12}$ & \\ 
+
+ & & $10^{-10}$ & $5.135 \times 10^{-3}$ & $1.309 \times 10^{14}$ & & $1.533 \times 10^{-4}$ & $3.909 \times 10^{12}$ & \\ 
+ 
+V & $0.394$ & $10^{10}$ & $1.792 \times 10^{-3}$ & $4.569 \times 10^{13}$ & $0.115$ & $3.152 \times 10^{-5}$ & $8.037 \times 10^{11}$ & $1.227$\\ 
+
+ & & $1$ & $3.883 \times 10^{-3}$ & $9.901 \times 10^{13}$ & & $9.942 \times 10^{-5}$ & $2.535 \times 10^{12}$ & \\ 
+
+ & & $10^{-10}$ & $5.435 \times 10^{-3} $ & $1.386 \times 10^{14}$ & & $1.596 \times 10^{-4}$ & $4.070 \times 10^{12}$ & \\ 
+
+VI & $0.350$ & $10^{10}$ & $2.348 \times 10^{-3}$ & $5.987 \times 10^{13}$ & $0.117$ & $3.232 \times 10^{-5}$ & $8.241 \times 10^{11}$ & $1.234$\\ 
+
+ & & $1$ & $4.106 \times 10^{-3}$ & $1.047 \times 10^{14}$ & & $1.019 \times 10^{-4}$ & $2.598 \times 10^{12}$ & \\ 
+
+ & & $10^{-10}$ & $5.685 \times 10^{-3}$ & $1.450 \times 10^{14}$ & & $1.632 \times 10^{-4}$ & $4.161 \times 10^{12}$ & \\ 
+
+VII & $0.330$ & $10^{10}$ & $3.737 \times 10^{-3}$ & $9.529 \times 10^{13}$ & $0.129$ & $4.114 \times 10^{-5}$ & $1.049 \times 10^{12}$ & $1.268$\\ 
+
+ & & $1$ & $5.356 \times 10^{-3}$ & $1.366 \times 10^{14}$ & & $1.280 \times 10^{-4}$ & $3.264 \times 10^{12}$ & \\ 
+
+ & & $10^{-10}$ & $7.598 \times 10^{-3}$ & $1.937 \times 10^{14}$ & & $2.021 \times 10^{-4}$ & $5.153 \times 10^{12}$ & \\ 
+ \hline\hline   
 \end{tabular}
 \end{table*}
 
@@ -772,15 +776,14 @@ In figure~\ref{comparison_mass_density} we show the total energy density of the 
 \subsection{Comparison with Kerr BHs}
 %%%%%%%%%%%%%%%%%%%%%
 
-For the sake of comparison we build equilibrium sequences of magnetised disks around four Kerr BHs of varying spins, from $a=0$ to $a=0.9999$. Our numerical approach can handle BH spins as large as $|a-1|=10^{-7}$ \sg{Done}\tf{Check} but such extreme cases do not add further relevant information to our discussion. Table~\ref{KBH_disk_parameters} reports a summary of the main physical quantities of these disks, whose morphology is displayed in Figs.~\ref{models_Kerr} and~\ref{models_Kerr_peri}. As for the disks built around KBHsSH, the maximum values of the enthalpy, density, pressure and magnetic pressure increase with increasing $|\Delta W|$, which, in the Kerr BH case, also means with increasing values of $a$. It can be seen that both the cusp and the centre move closer to the horizon with increasing $a$. \tf{Describe further the table and the figures}. \tf{Mention that the horizon location is constant in perimetral coordinates irrespective of $a$.} 
+For the sake of comparison we build equilibrium sequences of magnetised disks around four Kerr BHs of varying spins, from $a=0$ to $a=0.9999$. Our numerical approach can handle BH spins as large as $|a-1|=10^{-7}$ without modifying the resolution of our numerical grid. For higher values of the spin parameter, we would need to increase our resolution (specially the $\theta$ resolution for the highly magnetised case)\sg{Done}\tf{Check} but such extreme cases do not add further relevant information to our discussion. Table~\ref{KBH_disk_parameters} reports a summary of the main physical quantities of these disks, whose morphology is displayed in Figs.~\ref{models_Kerr} and~\ref{models_Kerr_peri}. As for the disks built around KBHsSH, the maximum values of the enthalpy, density, pressure and magnetic pressure increase with increasing $|\Delta W|$, which, in the Kerr BH case, also means with increasing values of $a$. It can be seen that both the cusp and the centre move closer to the horizon with increasing $a$ (note that, as we mentioned before in the Kerr case, the radial location of the horizon at the equatorial plane in perimeteral coordinates is $R_{\mathrm{H}} = 2M$ irrespective of the value of the spin $a$). Regarding the physical quantities, we can see that, even for highly rotating KBHs, the maximum values for the $h$, $p$ and $p_{\mathrm{m}}$ are lower than in the KBHsSH case. This is not a surprise, as these quantities are related to the value of $|\Delta W|$. Also, as in the case of KBHsSH, we observe a higher distorsion of the shape of the disc in the near-horizon region with increasing sphericity $\mathfrak{s}$ (and spin, in this particular case). \tf{Describe further the table and the figures}. \tf{Mention that the horizon location is constant in perimetral coordinates irrespective of $a$.} \sg{Done}
 
-Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). 
+Also, in figures~\ref{models_Kerr} and~\ref{models_Kerr_peri} we show different KBH models with the same mass $M_{\mathrm{BH}} = 1$ and different values for the spin parameter($0$, $0.5$, $0.9$, $0.9999$). In particular, we can see the well-known behaviour of these models, as the disc reduces its size and tends to attach to the horizon as the spin parameter increases. This cannot be particularly be seen in figure~\ref{models_Kerr}, as the radial coordinate expands the near-horizon region and, while it is well suited to do the computations, this is not the case for visualization. However, using perimeteral coordinates (figure~\ref{models_Kerr_peri}), we can see the disc attaching to the horizon and the subsequent deformation clearly. \sg{complete}
 
 
-In Fig~\ref{radial_profiles_KBH}, we show three KBH models with the same ADM mass and angular momentum as the cases shown in Fig.~\ref{radial_profiles_HBH}. The first case corresponds to a near-extremal KBH ($a = 0.9987$) and the other two have a similar value for spin parameter ($0.8489$ and $0.8941$ respectively). Direct comparison between this models and the KBHsSH ones, draws out very interesting features of these models. It can be seen that, for model I, the disc in the Kerr case is considerably smaller than its hairy counterpart...
+In Fig~\ref{radial_profiles_KBH}, we show three KBH models with the same ADM mass and angular momentum as the cases shown in Fig.~\ref{radial_profiles_HBH}. The first case corresponds to a near-extremal KBH ($a = 0.9987$) and the other two have a similar value for spin parameter ($0.8489$ and $0.8941$ respectively). Direct comparison between these models and the KBHsSH ones, draws out very interesting features of these models. It can be seen that, for model I, the disc in the Kerr case is considerably smaller than its hairy counterpart. In this case, the scalar field has little effect on the morphology of the disc (as its gravitational field is small), but its effect is noted in a reduction of the value of the sphericity (see Table~\ref{density_table}), effectively reducing the effects of the black hole spin in the disc (i.e.~increasing its shape). As the mass and angular momentum stored in the scalar field increase, the gravitational field of the scalar field affects the radial morphology of the disc, altering its shape and reducing its extent. Note that both model IV and model VII have lesser radial extent than its KBH counterparts, even though model VII has a lower value of the sphericity.
 
-\sg{Describe and compare the angular velocity at the centre.}
-
+In Table~\ref{density_table}, we also present the value of the angular velocity at the disc centre (both for the KBHsSH case and for their KBH counterparts). It can be seen that, with the exception of the first case, the values of the angular velocity of the Kerr cases are lower than \sg{I need to think a bit about this.}
 
 % As shown in~\cite{Delgado:2018} some \sg{(compute which ones are embeddable and which are not)} of our models are in the region of the domain of existence where the event horizon is not embeddable in $\mathbb{E}^3$ then, the shaded regions depicting the horizon that we show at several of the figures are not faithful representations of the horizon geometry. Nevertheless, we show them for the sake of clarity. Also, this led us to asking ourselves if this could also happen for the shape of the accretion tori and therefore, we should be conservative when extracting information about the morphology of the disks from 2-dimensional plots. This idea is discussed in appendix~\ref{torus_embedding}.
 
@@ -799,6 +802,14 @@ Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the relative variation of the quo
 \subsection{Torus mass}
 %%%%%%%%%%%%%%%%%%
 
+Even though the models we have computed are non self-gravitating, for the sake of astrophysical relevance, we computed the accretion torus mass for the different KBHsSH models and also, for comparison, the torus mass for seven models of Kerr BHs, each one with the same ADM quantities as their KBHsSH counterparts. For this particular section, we have dropped the $\rho_{\mathrm{c}} = 1$ choice and instead, we have chosen that the mass of the torus must be $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. Also, to avoid complications due to the infinite size of our models, we have chosen the total potential well as the $90\%$ of its maximum possible value. This is in agreement with the torus masses found as the final state of binary neutron stars mergers (see, for instance~\cite{Rezzolla:2010}). \sg{I think we should check and include more references.} As we have fixed the value of the mass of the torus, now we have to compute the new value of the central density for each model. In the fourth (KBHSH) and seventh (Kerr) columns of table~\ref{density_table} we report the resulting central densities we found. Now, in order to compare our results with the end-product of a binary neutron star merger, we need to convert our result to cgs units. To this end, we first need to choose a mass for the scalar field $\mu$ (as the maximum ADM mass of KBHsSH are related to $\mu$). To compute the maximum ADM mass with the followimg equation (see~\cite{Delgado:2018} and references therein)
+\begin{equation}
+M^{max}_{ADM} \simeq \alpha_{\mathrm{BS}} 10^{-19} M_{\odot} \left(\frac{GeV}{\mu}\right) \mathrm{GeV}\,
+\end{equation}
+for a value of $\alpha_{\mathrm{BS}} = 1.315$. Using a value of the mass of $\mu = 2.087 \times 10^{-11} \mathrm{eV}$ gives us the following values for the ADM mass of our models, from model I to VII ($2.043$, $3.100$, $3.923$, $4.592$, $4.627$, $4.720$, $4.799$) in units of the mass of the sun $M_{\odot}$. Note that (as is mentioned in~\cite{Ramazanoglu:2016}) the value of $\mu$ we have chose is compatible with the scalar field mass range allowed by the observational tests in Scalar-Tensor theories. \sg{not sure about this last comment, but I think something should be told about $\mu$.}
+
+In columns five (KBHSH) to eight (Kerr) of table~\ref{density_table}, we report the values of the central density in cgs units we have found for each model. The found values are between  $\sim 10^{11}$ and $\sim 10^{14} \mathrm{g} \cdot \mathrm{cm}^{-3}$. This great range is due to the great difference in the disc size for the different models, specially between the Kerr and KBHsSH cases). Comparing these values to the ones in the avalaible literature (see~\cite{Rezzolla:2010} \sg{we need more references.}) we can see that, considering that our assumptions are quite unrealistic, they are within a reasonable margin of the central densities found in discs as the end-product of numerical simulations of a binary neutron star merger. Changing the rotation law and the EOS to a more realistic one is expected to improve the accuracy of our results.
+
 \tf{Sergio please finish this section.}
 
 \sg{Even the models we have computed are non-self gravitating, for the sake of astrophysical relevance, we computed the mass of some of the disks. For this case only, we have dropped the $\rho_{\mathrm{c}} = 1$ choice and instead, we have chosen that the mass of the torus must be $M_{\mathrm{T}} = 0.1 M_{\mathrm{ADM}}$. This is in agreement with the torus masses found as the final state of binary neutron stars mergers}
@@ -814,7 +825,7 @@ Figure~\ref{comparison_HBH_Kerr_r_m_max} shows the relative variation of the quo
 \label{conclusions}
 %%%%%%%%%%%%
 
-Astrophysical BHs are commonly surrounded by accretion disks, either at stellar-mass scales or at supermassive scales. In the former case,  stellar-mass BHs surrounded by thick disks (or tori) are broadly accepted as natural end results of catastrophic events involving the coalescence and merger of compact objects, namely binary neutron stars and BH-neutron star systems (see e.g.~\cite{FaberRasio2012,Paschalidis:2016agf,Rezzolla:2017} and references therein). These systems are traditionally described using the paradigmatic BHs of general relativity, where the spacetime metric is given by the Kerr metric, solely characterized by the BH mass and spin. Upcoming observational campaigns may, however, provide data to discriminate those canonical BH solutions from exotic alternatives as, e.g.~those in which the BHs are endowed with scalar or vector (Proca) hair, recently obtained by~\cite{Herdeiro:2014a,Herdeiro:2016}. It is conceivable that testing the no-hair hypothesis of BHs will become increasingly more precise in the next few years as new observational data is collected in both the gravitational-wave channel and in the electromagnetic channel.
+Astrophysical BHs are commonly surrounded by accretion disks, either at stellar-mass scales or at supermassive scales. In the former case, stellar-mass BHs surrounded by thick disks (or tori) are broadly accepted as natural end results of catastrophic events involving the coalescence and merger of compact objects, namely binary neutron stars and BH-neutron star systems (see e.g.~\cite{FaberRasio2012,Paschalidis:2016agf,Rezzolla:2017} and references therein). These systems are traditionally described using the paradigmatic BHs of general relativity, where the spacetime metric is given by the Kerr metric, solely characterized by the BH mass and spin. Upcoming observational campaigns may, however, provide data to discriminate those canonical BH solutions from exotic alternatives as, e.g.~those in which the BHs are endowed with scalar or vector (Proca) hair, recently obtained by~\cite{Herdeiro:2014a,Herdeiro:2016}. It is conceivable that testing the no-hair hypothesis of BHs will become increasingly more precise in the next few years as new observational data is collected in both the gravitational-wave channel and in the electromagnetic channel.
 
 In this paper we have considered numerically generated spacetimes of Kerr BHs with synchronised scalar hair and have built stationary models of magnetized tori around them. Those disks are assumed to be not self-gravitating, to obey a polytropic equation of state, and to be marginally stable, i.e.~the disks completely fill their Roche lobe. In addition, and for simplicity purpose, the distribution of the specific angular momentum in the disks has been assumed to be constant. The models have been constructed building on existing approaches presented in~\cite{Komissarov:2006} and~\cite{Gimeno-Soler:2017}. An important generalization of the present work compared to the methodology presented in previous works has had to do with the fluid model: while the mater EOS is still rather simplistic (a polytropic EOS) the models are allowed to be thermodinamically relativist, as the specific enthalpy of the fluid can adopt values significantly larger than unity. That has led to interesting differences with respect to the findings reported in~\cite{Gimeno-Soler:2017} for the purely Kerr BH case.
 
