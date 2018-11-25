@@ -35,6 +35,7 @@
 \renewcommand{\t}{\times}
 \newcommand{\sg}[1]{\textcolor{blue}{SG: #1}}
 \newcommand{\tf}[1]{\textcolor{red}{TF: #1}}
+\newcommand{\ch}[1]{\textcolor{cyan}{CH: #1}}
 
 \long\def\symbolfootnote[#1]#2{\begingroup%
 \def\thefootnote{\fnsymbol{footnote}}\footnote[#1]{#2}\endgroup}
@@ -59,12 +60,15 @@
   Jos\'e Beltr\'an 2, 46980, Paterna (Val\`encia), Spain}
 
 \author{Carlos Herdeiro}
-\affiliation{Departamento de F\'{\i}sica da Universidade de Aveiro and CIDMA, Campus de Santiago, 
-3810-183 Aveiro, Portugal}
+\affiliation{Centro de Astrof\'\i sica e Gravita\c c\~ao - CENTRA, Departamento de F\'\i sica,
+Instituto Superior T\'ecnico - IST, Universidade de Lisboa - UL, Avenida
+Rovisco Pais 1, 1049-001, Portugal}
 
 \author{Eugen Radu}
-\affiliation{Departamento de F\'{\i}sica da Universidade de Aveiro and CIDMA, Campus de Santiago, 
-3810-183 Aveiro, Portugal}
+\affiliation{School of Theoretical Physics, Dublin Institute for Advanced Studies, 
+ 10 Burlington Road, Dublin 4, Ireland and 
+CIDMA, Universidade de Aveiro,
+Campus de Santiago, 3810-183 Aveiro, Portugal}
 
 
 %%%%%%%%%%%%%%%%
@@ -109,7 +113,7 @@ Testing the true nature of black holes -- the no-hair hypothesis -- will become 
 \section{Introduction}
 %%%%%%%%%%%
 
-In recent years, new families of stationary, asymptotically flat black holes (BHs) avoiding the so-called ``no hair" theorems, have been obtained both in general relativity and in modified gravity (see e.g.~\cite{Herdeiro:2015_review} and references therein). Among those, Kerr BHs with synchronised hair~\cite{Herdeiro:2014a,Herdeiro:2016} are a counterexample to the no hair conjecture resulting from minimally coupling Einstein's gravity to simple (bosonic) matter fields obeying all energy conditions. The physical conditions and stability properties of these classes of {\it hairy} BHs  (HBHs) have been recently investigated to assess their potential viability as  alternatives to astrophysical Kerr BHs.  On the one hand, Kerr BHs with Proca hair have been shown to form dynamically as the end-product of the superradiant instability~\cite{East:2017,Herdeiro:2017} (see also~\cite{Sanchis-Gual:2016,Bosch:2016} for the case of a charged scalar field around a charged BH in spherical  symmetry). On the other hand, the stability of these solutions, questioned by~\cite{Ganchev:2018} in the scalar case, has been recently revisited by~\cite{Degollado:2018} who have shown that the domain of HBH solutions for which the superradiant instability might affect their actual existence has no significance for astrophysical BHs, rendering HBHs as {\it effectively} stable.
+In recent years, new families of stationary, asymptotically flat black holes (BHs) avoiding the so-called ``no hair" theorems, have been obtained both in general relativity and in modified gravity (see e.g.~\cite{Herdeiro:2015_review} and references therein). Among those, Kerr BHs with synchronised hair~\cite{Herdeiro:2014a,Herdeiro:2016} are a counterexample to the no hair conjecture resulting from minimally coupling Einstein's gravity to simple (bosonic) matter fields obeying all energy conditions. The physical conditions and stability properties of these classes of {\it hairy} BHs  (HBHs) have been recently investigated to assess their potential viability as  alternatives to astrophysical Kerr BHs.  On the one hand, Kerr BHs with Proca hair have been shown to form dynamically as the end-product of the superradiant instability~\cite{East:2017,Herdeiro:2017} (see also~\cite{Sanchis-Gual:2016,Bosch:2016} for the case of a charged scalar field around a charged BH in spherical  symmetry). On the other hand, even though the hairy BHs themselves are (like Kerr BHs) afflicted by superradiant instabilities~\cite{Herdeiro:2014b,Ganchev:2018}, these instabilities are weaker than for Kerr and, at least in some regions of parameter space, are inefficient for astrophysical time scales, making the hairy BHs {\it effectively} stable against superradiance~\cite{Degollado:2018}. 
 
 In the observational arena, the LIGO/Virgo detection of gravitational waves from binary BHs~\cite{Abbott2016, Abbott:2016nmj, Abbott:2017vtc, Abbott:2017oio, Abbott:2017gyy} and the exciting prospects of observing the first image -- the black hole {\it shadow} -- of a BH by the Event Horizon Telescope (EHT)~\cite{Fish:2016} opens the opportunity to test the true nature of BHs -- the no-hair hypothesis -- and, in particular, the astrophysical relevance of HBHs. It is not yet known whether the LIGO/Virgo binary BH signals are consistent with alternative scenarios, such as the merger of ultracompact boson stars or non-Kerr BHs, because the latter possibilities remain thus far insufficiently modelled. Likewise, Kerr BHs with scalar hair (KBHsSH) can exhibit very distinct shadows from those of (bald) Kerr BHs, as shown by~\cite{Cunha:2015} and~\cite{Vincent:2016} for two different setups for the light source, either a celestial sphere far from the compact object or an emitting torus of matter surrounding the BH, respectively. It is therefore an intriguing open possibility if the very long baseline interferometric observations of BH candidates in Sgr A* and M87 envisaged by the EHT may constrain the astrophysical significance of HBHs.
 
@@ -139,13 +143,13 @@ The models of KBHsSH we use in this study are built following the procedure desc
 %\end{split}
 \end{eqnarray}
 with $N = 1 - r_{\rm H}/r$, where $r_{\rm H}$ is the radius of the event horizon of the BH, and $W$, $F_1$, $F_2$, $F_0$ are functions of $r$ and $\theta$. Moreover, $\omega$ is the scalar field frequency and $m$ is the azimuthal harmonic index.
-We note that the radial coordinate $r$ is related to the Boyer-Lindquist radial coordinate $r_{\rm BL}$ by $r=r_{\rm BL}-a^2/r_{\rm H,BL}$, where $a = J/M$ stands for the spin of the BH and $r_{\rm H,BL}$ is the location of the horizon in Boyer-Lindquist coordinates.
+We note that the radial coordinate $r$ is related to the Boyer-Lindquist radial coordinate $r_{\rm BL}$ by $r=r_{\rm BL}-a^2/r_{\rm H,BL}$, in the Kerr limit, where $a = J/M$ stands for the spin of the BH and $r_{\rm H,BL}$ is the location of the horizon in Boyer-Lindquist coordinates.
 
 The stationary and axisymmetric metric ansatz is a solution to the EKG field equations $R_{ab} - \frac{1}{2}R g _{ab} = 8 \pi (T_{\mathrm{SF}})_{ab}$ with 
 \begin{eqnarray}\label{eq:e-m_scalaf_field}
 (T_{\mathrm{SF}})_{ab} &=& \partial_a \Psi^* \partial_b \Psi + \partial_b \Psi^* \partial_a \Psi 
-\nonumber \\ 
-&-& g_{ab} \left(\frac{1}{2} g^{cd}(\partial_c \Psi^* \partial_d \Psi + \partial_d \Psi^* \partial_c \Psi) + \mu^2 \Psi^* \Psi \right),
+ \\ 
+&-& g_{ab} \left(\frac{1}{2} g^{cd}(\partial_c \Psi^* \partial_d \Psi + \partial_d \Psi^* \partial_c \Psi) + \mu^2 \Psi^* \Psi \right), \nonumber
 \end{eqnarray}
 where $\mu$ is the mass of the scalar field and superscript $(^*)$ denotes complex conjugation. The interested reader is addressed to~\cite{Herdeiro:2015b} for details on the equations of motion for the scalar field $\Psi$ and the four metric functions ${W, F_0,F_1,F_2}$, along with their solution.
 
@@ -153,19 +157,19 @@ Table~\ref{models_list} lists the seven KBHsSH models we use in this work. The m
 \begin{equation}
 \mathfrak{s} = \frac{L_{\mathrm{e}}}{L_{\mathrm{p}}} = \frac{\int^{2\pi}_{0} \mathrm{d}\phi \, e^{F_2(r_{\mathrm{H}}, \pi/2)} r_{\mathrm{H}}}{2\int^{\pi}_{0} \mathrm{d} \theta \, e^{F_1(r_{\mathrm{H}}, \theta)} r_{\mathrm{H}}}\,.
 \end{equation}
-In addition to the information provided in Table~\ref{models_list}, Figure~\ref{existence} plots the location of our models in the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram.  \tf{This figure has to be redone by Carlos.}
+In addition to the information provided in Table~\ref{models_list}, Figure~\ref{existence} plots the location of our models in the domain of existence of KBHsSH in an ADM mass versus scalar field frequency diagram. 
 
 \begin{figure}
 \centering
-\includegraphics[scale=0.7]{figures/existence-eps-converted-to.pdf}
-\caption{Domain of existence for KBHsSH in an ADM mass versus scalar
-field frequency diagram. \tf{The figure has to be redone to label the 7 models used in this work.}}
+\includegraphics[scale=0.43]{figures/existence-new.pdf}
+\caption{Domain of existence for KBHsSH (shaded blue area) in an ADM mass versus scalar
+field frequency diagram. The seven solutions to be studied herein are highlighted in this diagram.}
 \label{existence}
 \end{figure}
 
 %%%%%%%%%%%%%%%%%%%
 \begin{table*}[t]
-\caption{List of models of KBHsSH used in this work. From left to right the columns report the name of the model, the ADM mass, $M_{\mathrm{ADM}}$, the ADM angular momentum, $J_{\mathrm{ADM}}$, the horizon mass, $M_{\mathrm{H}}$, the horizon angular momentum, $J_{\mathrm{H}}$, the mass of the scalar field, $M_{\mathrm{SF}}$, the angular momentum of the scalar field, $J_{\mathrm{SF}}$, the radius of the event horizon, $r_{\mathrm{H}}$, the values of the normalized spin parameter for the ADM quantities, $a_{\mathrm{ADM}}$, and for the BH horizon quantities, $a_{\mathrm{H}}$, the horizon linear velocity, $v_{\mathrm{H}}$, the spin parameter corresponding to a Kerr BH with a linear velocity equal to $v_{\mathrm{H}}$, $a_{\mathrm{H_{eq}}}$, and the sphericity of the horizon, $\mathfrak{s}$.}        
+\caption{List of models of KBHsSH used in this work. From left to right the columns report the name of the model, the ADM mass, $M_{\mathrm{ADM}}$, the ADM angular momentum, $J_{\mathrm{ADM}}$, the horizon mass, $M_{\mathrm{H}}$, the horizon angular momentum, $J_{\mathrm{H}}$, the mass of the scalar field, $M_{\mathrm{SF}}$, the angular momentum of the scalar field, $J_{\mathrm{SF}}$, the radius of the event horizon, $r_{\mathrm{H}}$, the values of the normalized spin parameter for the ADM quantities, $a_{\mathrm{ADM}}$, and for the BH horizon quantities, $a_{\mathrm{H}}$, the horizon linear velocity, $v_{\mathrm{H}}$, the spin parameter corresponding to a Kerr BH with a linear velocity equal to $v_{\mathrm{H}}$, $a_{\mathrm{H_{eq}}}$, and the sphericity of the horizon, $\mathfrak{s}$. Here $\mu=1$.}        
 \label{models_list}      
 \centering          
 \begin{tabular}{c c c c  c c c c   c c c c c}
@@ -208,7 +212,7 @@ The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum di
 \begin{equation}\label{eq:mb_ang_mom}
 l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}\,,
 \end{equation}
-where the plus sign solution corresponds to prograde orbits and the minus sign solution to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk. Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. We show the proof of this statement in Appendix~\ref{ang_mom_appendix}.
+where the plus sign solution corresponds to prograde orbits and the minus sign solution to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk. Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. \ch{The marginally bound orbit is not stable, right? So this is what is called the ICO, not ISCO, in the literature?} We show the proof of this statement in Appendix~\ref{ang_mom_appendix}.
 
 %%%%%%%%%%%%%%%%
 \subsection{Magnetized disks}
@@ -312,6 +316,7 @@ We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T
 \\
 \rho_{\mathrm{SF}} &=&  2 \left(\frac{2 e^{-2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
 \end{eqnarray}
+\ch{Careful with $\omega$ vs. $w$. I think in these expressions should be $\omega$. Please check.}
 Using these expressions, we can compute the total gravitational mass of the torus and the scalar field as the following expression
 \begin{equation}\label{eq:mass_integral}
 \mathcal{M} = \int  \rho \sqrt{-g}\,\mathrm{d}^3x\,,
@@ -354,7 +359,7 @@ If we compare both results, we can see that Eq.~\eqref{eq:non_rel_non_mag_enth} 
 \hspace{-0.6cm}
 \includegraphics[scale=0.37]{figures/log_radial_log_rho_VII_ADM.pdf}
 \hspace{-0.6cm}
-\caption{Size of the disks. Top panel: Effects of the magnetization on the radial profiles of the logarithm of the density at the equatorial plane for different KBHsSH models. From left to right we show model I, IV, and VII, respectively. Bottom panel: same as the top panel but for Kerr BHs. From left to right the cases shown have the same ADM quantities as the KBHsSH model I, IV, and VII, respectively, shown in the top panel. Note that the scale shown in the horizontal axes is different in all plots.}
+\caption{Size of the disks. Top panel: Effects of the magnetization on the radial profiles of the logarithm of the density at the equatorial plane for different KBHsSH models. From left to right we show model I, IV, and VII, respectively. Bottom panel: same as the top panel but for Kerr BHs. From left to right the cases shown have the same ADM quantities as the KBHsSH model I, IV, and VII, respectively, shown in the top panel. Note that the scale shown in the horizontal axes is different in all plots. \ch{Please change the line style (one dotted, one dashed and one solid, in each plot, for clarity in black and white. The structure near the origin would be clearer if the r coordinate would be in a log plot.}}
 \label{radial_profiles}
 \end{figure*}
 
@@ -560,7 +565,8 @@ The size of the disks can be best quantified by plotting the radial profiles of 
 
 In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same morphological distribution of Figs.~\ref{models_I} and~\ref{models_II} but using, instead, a perimeteral radial coordinate $R$, related to the radial coordinate $r$ according to $R = e^{F_2} r$. This perimeteral coordinate represents the proper length along the azimuthal direction, which constitutes a geometrically meaningful direction since it runs along the orbits of the azimuthal Killing vector field. Therefore, the proper size of a full $\phi$ orbit is given by $2\pi R$, i.e.~$R$ is the perimeteral radius. The most salient feature of the morphologies shown in Figs.~\ref{models_peri_I} and~\ref{models_peri_II}, when comparing to those displayed in Figs.~\ref{models_I} and~\ref{models_II}, is the deformation of the disks in their innermost regions. In general, the deformations become larger the higher the horizon sphericity $\mathfrak{s}$ and the closer the disk is to the horizon. Model III is the one showing the largest deformation, as $(R_{\rm in}-R_{\rm H})/R_{\rm H}$ attains the smallest value for this model. It is also worth noticing that the shape of the BH also changes when using the perimeteral coordinate. While in the $r$ coordinate the horizon is spherical (cf.~Figs.~\ref{models_I} and~\ref{models_II}) in the perimeteral coordinate $R$ is not always so. Moreover, the larger the value of $v_{\rm H}$, the more elliptic the horizon becomes, which in our sample corresponds to model III (cf.~Table~\ref{models_list}, $\mathfrak{s}=1.489$). 
 
-In addition, an interesting geometrical property of the perimeteral coordinates is that, for the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum. However, for the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$, and the quotient $R_{\mathrm{H}}/ 2M_{\mathrm{H}}$ increases as more mass and angular momentum is stored in the scalar field. \sg{It is possible that the angular momentum does not change anything, but we cannot know, as we do not have two different models with the same value of the BH mass.} \tf{Any comment, Carlos?}
+In addition, an interesting geometrical property of the perimeteral coordinates is that, for the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum. However, for the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$, and the quotient $R_{\mathrm{H}}/ 2M_{\mathrm{H}}$ increases as more mass and angular momentum is stored in the scalar field. 
+%\sg{It is possible that the angular momentum does not change anything, but we cannot know, as we do not have two different models with the same value of the BH mass.} \tf{Any comment, Carlos?}
 
 %\sg{Discuss. I find that the 2D morphology in perimeteral coordinates might not be very useful, but I found an interesting property of these coordinates: For the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum (For the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$. I don't know if there are any kind of dependence on the angular momentum, as we don't two cases with the same value of the mass). I suppose this could help us to compare different models. In fact, the differences in the morphology close to the equatorial plane in the near horizon region are actually related to the value of the angular momentum (we can see a relationship between the morphological differences and the equivalent spin parameter $a_{\mathrm{eq}}$).} \tf{Could you please include some of this information in here?} \sg{Done}
 
@@ -820,7 +826,7 @@ We have studied the dependence of the morphology and properties of the accretion
 \section*{Acknowledgements}
 %%%%%%%%%%%%%%%%
 
-This work has been supported by the Spanish MINECO (grant AYA2015-66899-C2-1-P), by the FCT (Portugal) IF programme, by the CIDMA (FCT) strategic project UID/MAT/04106/2013 and by  the  European  Union's  Horizon  2020  research  and  innovation  (RISE) programmes H2020-MSCA-RISE-2015 Grant No.~StronGrHEP-690904 and H2020-MSCA-RISE-2017 Grant No.~FunFiCO-777740. The authors would like to acknowledge networking support by the COST Action CA16104.  
+This work has been supported by the Spanish MINECO (grant AYA2015-66899-C2-1-P), by the FCT (Portugal) IF programme, by the FCT grant PTDC/FIS-OUT/28407/2017, by  CIDMA (FCT) strategic project UID/MAT/04106/2013, by CENTRA (FCT) strategic project UID/FIS/00099/2013 and by  the  European  Union's  Horizon  2020  research  and  innovation  (RISE) programmes H2020-MSCA-RISE-2015 Grant No.~StronGrHEP-690904 and H2020-MSCA-RISE-2017 Grant No.~FunFiCO-777740. E.R. gratefully acknowledges the support of DIAS. The authors would like to acknowledge networking support by the COST Action CA16104.  
 
 \begin{appendix}
 % \section{Embedding of the accretion torus in $\mathbb{E}^3$}\label{torus_embedding}
@@ -859,19 +865,19 @@ This work has been supported by the Spanish MINECO (grant AYA2015-66899-C2-1-P),
 
 We start by considering the Lagrangian of a stationary and axisymmetric spacetime
 \begin{equation}
-L = \frac{1}{2}\left(g_{tt} (\dot{t})^2 + 2 g_{t\phi} \dot{t}\dot{\phi} + g_{rr} (\dot{r})^2 + g_{\theta\theta} (\dot{\theta})^2 + g_{\phi\phi} (\dot{\phi})^2\right)\,
+\mathcal{L} = \frac{1}{2}\left[g_{tt} (\dot{t})^2 + 2 g_{t\phi} \dot{t}\dot{\phi} + g_{rr} (\dot{r})^2 + g_{\theta\theta} (\dot{\theta})^2 + g_{\phi\phi} (\dot{\phi})^2\right]\ ,
 \end{equation}
 where $\dot{x^{\alpha}} = \mathrm{d}x^{\alpha}/\mathrm{d}\lambda$ denotes the partial derivative of the coordinates with respect to an affine parameter $\lambda$. We can note that we have two cyclic coordinates ($t$ and $\phi$). Then, the canonically conjugate momentum of each coordinate is conserved, namely
 \begin{eqnarray}\label{eq:momenta}
-p_t = \frac{\partial L}{\partial \dot{t}} = -E
+p_t = \frac{\partial L}{\partial \dot{t}} = -E \ ,
 \\
-p_{\phi} = \frac{\partial L}{\partial \dot{\phi}} = L\,
+p_{\phi} = \frac{\partial L}{\partial \dot{\phi}} = L\ ,
 \end{eqnarray}
 where we identify the constants of motion as the energy and angular momentum of a test particle.
 
-If we assume motion in the equatiorial plane (i.e.~$\theta = \pi/2$, $\dot{\theta} = 0$) we can write the relativistic four-momentum (of a massive particle) normalisation as
+If we assume motion in the equatorial plane (i.e.~$\theta = \pi/2$, $\dot{\theta} = 0$) we can write the relativistic four-momentum (of a massive particle) normalisation as
 \begin{equation}\label{eq:momenta_normalisation}
-p_{t}p^t + p_{r}p^r + p_{\phi}p^{\phi} = -m^2\,
+p_{t}p^t + p_{r}p^r + p_{\phi}p^{\phi} = -m^2\ ,
 \end{equation}
 where $m$ is the mass of a test particle. Using the defintions of the energy and angular momentum of the particle and taking into account that $p^{\alpha} = \dot{x^{\alpha}}$, we can rewrite the above equation as
 \begin{equation}
@@ -879,23 +885,23 @@ where $m$ is the mass of a test particle. Using the defintions of the energy and
 \end{equation}
 Now, we can find the expressions for the contravariant momenta $p^{t}$ and $p^{\phi}$ from $p_{\alpha} = g_{\alpha \beta}p^{\beta}$
 \begin{eqnarray}
-p^{t} = \frac{g_{\phi\phi}E + g_{t\phi}}{g_{t\phi}^2-g_{tt}g_{\phi\phi}}
+p^{t} = \frac{g_{\phi\phi}E + g_{t\phi}}{g_{t\phi}^2-g_{tt}g_{\phi\phi}} \ ,
 \\
-p^{\phi} = -\frac{g_{tt}L+g_{t\phi}}{g_{t\phi}^2-g_{tt}g_{\phi\phi}}\,
+p^{\phi} = -\frac{g_{tt}L+g_{t\phi}}{g_{t\phi}^2-g_{tt}g_{\phi\phi}}\ ,
 \end{eqnarray}
-now, we can replace these expressions into Eq.~\eqref{eq:momenta_normalisation} and write the expressión for the radial velocity $\dot{r}$
+replace these expressions into Eq.~\eqref{eq:momenta_normalisation} and write the expression for the radial velocity $\dot{r}$
 \begin{equation}\label{eq:radial_velocity}
 \dot{r} = \left(-m^2+\frac{g_{\phi\phi}E^2+2 g_{t\phi}LE+g_{tt}L^2}{g_{t\phi}^2-g_{tt}g_{\phi\phi}}\right)^{\frac{1}{2}}.
 \end{equation}
 We want to consider circular orbits, so the radial velocity must be $\dot{r} = 0$. Then, we arrive at
 \begin{equation}
-g_{t\phi}^2-g_{tt}g_{\phi\phi} = g_{\phi\phi}e^2+2 g_{t\phi}le+g_{tt}l^2\,
+g_{t\phi}^2-g_{tt}g_{\phi\phi} = g_{\phi\phi}e^2+2 g_{t\phi}le+g_{tt}l^2\ ,
 \end{equation}
 where we have introduced the specific energy per unit mass ($e = E/m$) and the specific angular momentum per unit mass ($l = L/m$). Additionally, we are interested in bound orbits. Specifically, we want marginally bound orbits ($e=1$). Taking this into account, we get the following expression for the specific angular momentum
 \begin{equation}\label{eq:bound_ang_mom}
 l^{\pm}_{\mathrm{b}} = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}\,
 \end{equation}
-which corresponds to Eq.~\eqref{eq:mb_ang_mom}. It is well-known that in black hole spacetimes there is an innermost circular marginally bound orbit for test particles. Naturally, a marginally bound particle at the innermost circular orbit has to have the smallest possible value of the specific angular momentum (i.e.~a minimum of Eq.~\eqref{eq:bound_ang_mom}). The radial location of said minimum is, obviously, the innermost circular marginally bound radius $r_{\mathrm{mb}}$.
+which corresponds to Eq.~\eqref{eq:mb_ang_mom}. It is well-known that in BH spacetimes there is an innermost circular marginally bound orbit for test particles. Naturally, a marginally bound particle at the innermost circular orbit has to have the smallest possible value of the specific angular momentum (i.e.~a minimum of Eq.~\eqref{eq:bound_ang_mom}). The radial location of said minimum is, obviously, the innermost circular marginally bound radius $r_{\mathrm{mb}}$.
 \end{appendix}
 
 \bibliographystyle{apsrev4-1}
