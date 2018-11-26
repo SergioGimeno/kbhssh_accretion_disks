@@ -93,8 +93,9 @@ Testing the true nature of black holes -- the no-hair hypothesis -- will become 
 \pacs{
 95.30.Sf, % relativity and gravitation
 04.70.Bw, 
-04.40.Nr, 
+04.40.-b, 
 04.25.dg
+95.30.Qd
 }
 
 
@@ -119,7 +120,7 @@ In the observational arena, the LIGO/Virgo detection of gravitational waves from
 
 The setup considered by~\cite{Vincent:2016} in which the light source producing the BH shadow is an accretion disk, is arguably more realistic than the distant celestial sphere of~\cite{Cunha:2015}. Thick accretion disks (or tori) are common systems in astrophysics, either surrounding the supermassive central BHs of quasars and active galactic nuclei or, at  stellar scale, surrounding the compact objects in X-ray binaries, microquasars, and gamma-ray bursts (see~\cite{Abramowicz:2013} and references therein). In this paper we present new families of stationary solutions of magnetized thick accretion disks around KBHsSH that differ from those considered by~\cite{Vincent:2016}. Our procedure, which combines earlier approaches put forward by~\cite{Komissarov:2006,Qian:2009} was presented in~\cite{Gimeno-Soler:2017} for the Kerr BH case. In Ref.~\cite{Gimeno-Soler:2017} we built equilibrium sequences of accretion disks  in the test-fluid approximation endowed with a purely toroidal magnetic field, assuming a form of the angular momentum distribution that departs from the constant case considered by~\cite{Komissarov:2006} and from which the location and morphology of the equipotential surfaces can be numerically computed. Our goal in the present work is to extend this approach to KBHsSH and to assess the dependence of the morphology and properties of accretion disks on the type of BH considered, either Kerr BHs of varying spins or KBHsSH. In this first investigation we focus on disks with a constant distribution of specific angular momentum. In the  purely hydrodynamical case, such a model is commonly refereed to as a `Polish doughnut', after the seminal work by~\cite{Abramowicz:1978} (but see also~\cite{Fishbone:1976}). In a companion paper we will present the non-constant (power-law) case, whose sequences have already been computed. The dynamical (non-linear) stability of these solutions as well as the analysis of the corresponding shadows will be discussed elsewhere.
 
-The organization of this paper is as follows: Section~\ref{framework} presents  the mathematical framework we employ to build magnetized disks in the numerically generated spacetimes of KBHsSH. Section~\ref{procedure} discusses the corresponding numerical methodology to build the disks. Sequences of equilibrium models are presented in Section~\ref{results} along with the discussion of their morphological features and properties and the comparison with models around Kerr BHs. Finally, our conclusions  are  summarized  in  Section~\ref{conclusions}. Geometrized units ($G=c=1$) are used throughout. 
+The organization of this paper is as follows: Section~\ref{framework} presents  the mathematical framework we employ to build magnetized disks in the numerically generated spacetimes of KBHsSH. Section~\ref{procedure} discusses the corresponding numerical methodology to build the disks. Sequences of equilibrium models are presented in Section~\ref{results} along with the discussion of their morphological features and properties and the comparison with models around Kerr BHs. Finally, our conclusions are summarized in Section~\ref{conclusions}. Geometrized units ($G=c=1$) are used throughout. 
  
 %%%%%%%%%%%
 \section{Framework}
@@ -212,7 +213,7 @@ The approach we followed in~\cite{Gimeno-Soler:2017} for the angular momentum di
 \begin{equation}\label{eq:mb_ang_mom}
 l^{\pm}_{\mathrm{b}}(r, \theta) = \frac{g_{t\phi} \pm \sqrt{ (g_{t\phi}^2-g_{tt}g_{\phi\phi})  (1+g_{tt}) } }{-g_{tt}}\,,
 \end{equation}
-where the plus sign solution corresponds to prograde orbits and the minus sign solution to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk. Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. \ch{The marginally bound orbit is not stable, right? So this is what is called the ICO, not ISCO, in the literature?} We show the proof of this statement in Appendix~\ref{ang_mom_appendix}.
+where the plus sign solution corresponds to prograde orbits and the minus sign solution to retrograde orbits. Our convention is that the angular momentum of the BH is positive and the matter of the disk rotates in the positive (negative) direction of $\phi$ for a prograde (retrograde) disk. Equation~(\ref{eq:mb_ang_mom}) is given by~\citep{Daigne:2004} for Kerr BHs, but it is valid for any stationary and axisymmetric spacetime. For prograde motion, the function has a minimum outside the event horizon. The location of this minimum corresponds with the marginally bound orbit $r_{\mathrm{mb}}$ \sg{(also known as ICO (innermost circular orbit) in the literature)}, and the angular momentum corresponds to the Keplerian angular momentum $l_{\mathrm{mb}}$ at that point. We show the proof of this statement in Appendix~\ref{ang_mom_appendix}.
 
 %%%%%%%%%%%%%%%%
 \subsection{Magnetized disks}
@@ -314,9 +315,9 @@ We can also define the total energy density for the torus, $\rho_{\mathrm{T}}=-T
 \begin{eqnarray}\label{eq:torus_energy_density}
 \rho_{\mathrm{T}} &=&  \frac{\rho h (g_{\phi\phi} - g_{tt} l^2)}{g_{\phi\phi} + 2 g_{t\phi} l + g_{tt} l^2} + 2 (p + p_{\mathrm{m}}),
 \\
-\rho_{\mathrm{SF}} &=&  2 \left(\frac{2 e^{-2 F_0} w (w-m W)}{N} - \mu^2\right) \phi^2.
+\rho_{\mathrm{SF}} &=&  2 \left(\frac{2 e^{-2 F_0} \omega (\omega-m W)}{N} - \mu^2\right) \phi^2.
 \end{eqnarray}
-\ch{Careful with $\omega$ vs. $w$. I think in these expressions should be $\omega$. Please check.}
+
 Using these expressions, we can compute the total gravitational mass of the torus and the scalar field as the following expression
 \begin{equation}\label{eq:mass_integral}
 \mathcal{M} = \int  \rho \sqrt{-g}\,\mathrm{d}^3x\,,
@@ -345,21 +346,21 @@ If we compare both results, we can see that Eq.~\eqref{eq:non_rel_non_mag_enth} 
 
 \begin{figure*}
 \centering
-\includegraphics[scale=0.37]{figures/radial_log_rho_model_I.pdf}
+\includegraphics[scale=0.22]{figures/radial_log_rho_model_I.pdf}
 \hspace{-0.6cm}
-\includegraphics[scale=0.37]{figures/radial_log_rho_model_IV.pdf}
+\includegraphics[scale=0.22]{figures/radial_log_rho_model_IV.pdf}
 \hspace{-0.6cm}
-\includegraphics[scale=0.37]{figures/radial_log_rho_model_VII.pdf}
+\includegraphics[scale=0.22]{figures/radial_log_rho_model_VII.pdf}
 \hspace{-0.6cm}
 \\
 \hspace{-0.6cm}
-\includegraphics[scale=0.37]{figures/log_radial_log_rho_I_ADM.pdf}
+\includegraphics[scale=0.22]{figures/log_radial_log_rho_I_ADM.pdf}
 \hspace{-0.6cm}
-\includegraphics[scale=0.37]{figures/log_radial_log_rho_IV_ADM.pdf}
+\includegraphics[scale=0.22]{figures/log_radial_log_rho_IV_ADM.pdf}
 \hspace{-0.6cm}
-\includegraphics[scale=0.37]{figures/log_radial_log_rho_VII_ADM.pdf}
+\includegraphics[scale=0.22]{figures/log_radial_log_rho_VII_ADM.pdf}
 \hspace{-0.6cm}
-\caption{Size of the disks. Top panel: Effects of the magnetization on the radial profiles of the logarithm of the density at the equatorial plane for different KBHsSH models. From left to right we show model I, IV, and VII, respectively. Bottom panel: same as the top panel but for Kerr BHs. From left to right the cases shown have the same ADM quantities as the KBHsSH model I, IV, and VII, respectively, shown in the top panel. Note that the scale shown in the horizontal axes is different in all plots. \ch{Please change the line style (one dotted, one dashed and one solid, in each plot, for clarity in black and white. The structure near the origin would be clearer if the r coordinate would be in a log plot.}}
+\caption{Size of the disks. Top panel: Effects of the magnetization on the radial profiles of the logarithm of the density at the equatorial plane for different KBHsSH models. From left to right we show model I, IV, and VII, respectively. Bottom panel: same as the top panel but for Kerr BHs. From left to right the cases shown have the same ADM quantities as the KBHsSH model I, IV, and VII, respectively, shown in the top panel. Note that the scale shown in the horizontal axes is different in all plots.}
 \label{radial_profiles}
 \end{figure*}
 
@@ -444,7 +445,7 @@ Taking into account these two limits we can obtain the range of validity of the 
 \label{procedure}
 %%%%%%%%%%%%
 
-We now turn to describe the numerical methodology to build the disks. From the discussion in the preceding section it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field to $\mu = 1$, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, the density at the centre of the disk to $\rho_{\mathrm{c}} = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$ and the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$. Thus, we leave the magnetization at the centre, $\beta_{\mathrm{m_c}}$, as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
+We now turn to describe the numerical methodology to build the disks. From the discussion in the preceding section it becomes apparent that the number of parameters defining the disk models is fairly large. In order to reduce the sample, in this work we set the mass of the scalar field to $\mu = 1$, \sg{the harmonic azimuthal index to $m = 1$}, the exponents of the polytropic EOS to $q = \Gamma = 4/3$, the density at the centre of the disk to $\rho_{\mathrm{c}} = 1$, the specific angular momentum to $l = l_{\mathrm{mb}}$ and the inner radius of the disk to $r_{\mathrm{in}} = r_{\mathrm{mb}}$. Thus, we leave the magnetization at the centre, $\beta_{\mathrm{m_c}}$, as the only free parameter for each model of KBHsSH. With this information we can compute all relevant physical quantities.
 
 In particular, our choice of specific angular momentum and inner radius is made to allow disks to have a cusp and a centre. These disks are marginally stable, as they completely fill their Roche lobe, and a small perturbation can trigger accretion onto the BH. In addition, the thermodynamical quantities of the disks reach their maxima for this particular choice of parameters, as they are related to the total potential well $|\Delta W|$. Our choice also implies that the resulting disks will be semi-infinite (they are closed at infinity) but this is not a source of concern, as the external layers of the disk have extremely low density.
 
