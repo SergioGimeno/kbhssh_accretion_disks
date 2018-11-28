@@ -364,18 +364,6 @@ If we compare both results, we can see that Eq.~\eqref{eq:non_rel_non_mag_enth} 
 \label{radial_profiles}
 \end{figure*}
 
-%\begin{figure*}
-%\centering
-%\includegraphics[scale=0.37]{figures/log_radial_log_rho_I_ADM.pdf}
-%\hspace{-0.6cm}
-%\includegraphics[scale=0.37]{figures/log_radial_log_rho_IV_ADM.pdf}
-%\hspace{-0.6cm}
-%\includegraphics[scale=0.37]{figures/log_radial_log_rho_VII_ADM.pdf}
-%\hspace{-0.6cm}
-%\caption{Size of the disks. Effects of the magnetisation on the radial profiles of the logarithm of the density at the equatorial plane for different KBH models. From left to right we show three different cases with the same ADM quantities as the KBHsSH model I, IV, and VII, respectively.}
-%\label{radial_profiles_KBH}
-%\end{figure*}
-
 For the extremely magnetised case, we consider again Eq.~\eqref{eq:final} and Eq.~(20) of~\cite{Gimeno-Soler:2017}, but this time around we take $\beta_{\mathrm{m_c}} \rightarrow 0$ ($K \rightarrow 0$). This yields the same result for both equations
 
 \begin{equation}
@@ -456,23 +444,19 @@ To build the disks we first need to find $l_{\mathrm{mb}}$ and $r_{\mathrm{mb}}$
 W(r,\theta) \equiv \ln |u_t| = \frac{1}{2} \ln \left| \frac{g_{t\phi}^2-g_{tt}g_{\phi\phi}}{g_{\phi\phi}+2g_{t\phi}l+g_{tt}l^2} \right|.
 \end{equation}
 With the total potential distribution, we can compute the location of the cusp $r_{\mathrm{cusp}}$ and the centre $r_{\mathrm{c}}$ as the extrema (maximum and minimum respectively) of the total potential in the equatorial plane. Also, we set $r_{\mathrm{in}} = r_{\mathrm{cusp}}$. For our choice of angular momentum distribution, this also means $W_{\mathrm{in}} = 0$. Having the total potential distribution and the characteristic radii of the disk, we can start to compute the thermodynamical quantities in the disk. First of all, we compute the polytropic constant $K$ by evaluating Eq.~\eqref{eq:final} at the centre
-%\begin{equation}
 \begin{multline}
 \label{eq:to_solve_K}
 W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma -1}\rho_{\mathrm{c}}^{\Gamma -1}\right) 
 \\
 + \frac{q}{q-1} \frac{K\rho_{\mathrm{c}}^{\Gamma}}{\beta_{\mathrm{m_c}} \left(\rho_{\mathrm{c}} + \frac{K\Gamma\rho_{\mathrm{c}}^{\Gamma}}{\Gamma-1}\right)} =0\,,
 \end{multline}
-%\end{equation}
 where we have used the definition of magnetic pressure and the definition of the magnetization parameter $\beta$. Using their corresponding definitions, we can also compute $h_{\mathrm{c}}$, $p_{\mathrm{c}}$, $p_{\mathrm{m_c}}$ and the constant of the magnetic EOS $K_{\rm m}$. With both $K$ and $K_{\rm m}$ obtained, we can now compute the thermodynamical quantities in all our numerical domain. For points with $W(r, \theta) > 0$ we set $\rho = p = p_{\mathrm{m}} = 0$ and for points with $W_{\mathrm{c}} < W(r, \theta) < 0$, we write Eq.~\eqref{eq:final} as
-%\begin{equation}
 \begin{multline}
 \label{eq:to_solve_rho}
 W - W_{\mathrm{in}} + \ln \left(1 + \frac{\Gamma K}{\Gamma -1}\rho^{\Gamma -1}\right) 
 \\
 + \frac{q}{q-1}K_{\rm m}\left(\mathcal{L}\left(\rho + \frac{K\Gamma \rho^{\Gamma}}{\Gamma - 1}\right)\right)^{q-1}=0\,,
 \end{multline}
-%\end{equation}
 to compute the rest-mass density $\rho$ of said point. Then, we can use again Eqs.~\eqref{eq:eos_fluid} and~\eqref{eq:eos_mag_tilde} and the definition of the specific enthalpy to compute the distribution of $p$, $p_{\mathrm{m}}$ and $h$.
 
 It is relevant to note that Eqs.~\eqref{eq:to_solve_K} and~\eqref{eq:to_solve_rho} are trascendental equations and that Eq.~\eqref{eq:to_solve_rho} in particular must be solved at each point of our numerical grid. To solve these equations we use the bisection method. To ensure the accuracy of our computations (particularly the accuracy of the maximum and central quantities we report) we choose our grid to have a difference between two adjacent points of $\Delta r (r \simeq r_{\mathrm{c}}) \simeq 0.001$ in the equatorial plane.
@@ -567,32 +551,8 @@ The size of the disks can be best quantified by plotting the radial profiles of 
 In figures~\ref{models_peri_I} and~\ref{models_peri_II} we show the same morphological distribution of Figs.~\ref{models_I} and~\ref{models_II} but using, instead, a perimeteral radial coordinate $R$, related to the radial coordinate $r$ according to $R = e^{F_2} r$. This perimeteral coordinate represents the proper length along the azimuthal direction, which constitutes a geometrically meaningful direction since it runs along the orbits of the azimuthal Killing vector field. Therefore, the proper size of a full $\phi$ orbit is given by $2\pi R$, i.e.~$R$ is the perimeteral radius. The most salient feature of the morphologies shown in Figs.~\ref{models_peri_I} and~\ref{models_peri_II}, when comparing to those displayed in Figs.~\ref{models_I} and~\ref{models_II}, is the deformation of the disks in their innermost regions. In general, the deformations become larger the higher the horizon sphericity $\mathfrak{s}$ and the closer the disk is to the horizon. Model III is the one showing the largest deformation, as $(R_{\rm in}-R_{\rm H})/R_{\rm H}$ attains the smallest value for this model. It is also worth noticing that the shape of the BH also changes when using the perimeteral coordinate. While in the $r$ coordinate the horizon is spherical (cf.~Figs.~\ref{models_I} and~\ref{models_II}) in the perimeteral coordinate $R$ is not always so. Moreover, the larger the value of $v_{\rm H}$, the more elliptic the horizon becomes, which in our sample corresponds to model III (cf.~Table~\ref{models_list}, $\mathfrak{s}=1.489$). 
 
 In addition, an interesting geometrical property of the perimeteral coordinates is that, for the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum. However, for the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$, and the quotient $R_{\mathrm{H}}/ 2M_{\mathrm{H}}$ increases as more mass and angular momentum is stored in the scalar field. 
-%\sg{It is possible that the angular momentum does not change anything, but we cannot know, as we do not have two different models with the same value of the BH mass.} \tf{Any comment, Carlos?}
-
-%\sg{Discuss. I find that the 2D morphology in perimeteral coordinates might not be very useful, but I found an interesting property of these coordinates: For the Kerr metric, $R_{\mathrm{H}} = 2M$ irrespective of the value of the angular momentum (For the KBHsSH cases, $2M_{\mathrm{H}} < R_{\mathrm{H}} < 2M_{\mathrm{ADM}}$. I don't know if there are any kind of dependence on the angular momentum, as we don't two cases with the same value of the mass). I suppose this could help us to compare different models. In fact, the differences in the morphology close to the equatorial plane in the near horizon region are actually related to the value of the angular momentum (we can see a relationship between the morphological differences and the equivalent spin parameter $a_{\mathrm{eq}}$).} \tf{Could you please include some of this information in here?} \sg{Done}
 
 Table~\ref{HBH_disk_parameters} reports the relevant physical quantities for all of our disk models around KBHsSH. It is worth mentioning that KBHsSH can violate the Kerr bound for the potential $\Delta W \equiv W_{\mathrm{in}} - W_{\mathrm{c}}$. As shown in~\cite{Abramowicz:1978}, constant angular momentum disks arround Kerr BHs exhibit a maximum for $|\Delta W|$ when the spin parameter $a\rightarrow 1$. This value is $\Delta W_{\mathrm{max}} = -\frac{1}{2} \ln 3 \simeq -0.549$. Models V, VI, and VII of our sample violate that bound. As a result, the maximum values of the fluid quantities for disks around KBHsSH are significantly larger than in the Kerr BH case. In both cases, these values increase as $|\Delta W|$ increases, irrespective of the magnetization, as shown in Table~\ref{HBH_disk_parameters}.
-
-
-%\begin{figure*}
-%\centering
-%\includegraphics[scale=0.12]{figures/fig6_I_10.pdf}
-%\hspace{-0.4cm}
-%\includegraphics[scale=0.12]{figures/fig6_IV_10.pdf}
-%\hspace{-0.4cm}
-%\includegraphics[scale=0.12]{figures/fig6_VII_10.pdf}
-%\hspace{-0.2cm}
-%\\
-%\includegraphics[scale=0.12]{figures/fig6_I__10.pdf}
-%\hspace{-0.4cm}
-%\includegraphics[scale=0.12]{figures/fig6_IV__10.pdf}
-%\hspace{-0.4cm}
-%\includegraphics[scale=0.12]{figures/fig6_VII__10.pdf}
-%\hspace{-0.2cm}
-%\caption{Same as Fig.~\ref{comparison_mass_density} but using the perimeteral radial coordinate. \tf{Same comment as in the previous figure regarding the vertical range, in this case $[-1.5,1.5]$ for all models.} \sg{Done}}
-%\label{comparison_mass_density_peri}
-%\end{figure*}
-
 
 \begin{figure*}
 \centering
@@ -830,36 +790,6 @@ We have studied the dependence of the morphology and properties of the accretion
 This work has been supported by the Spanish MINECO (grant AYA2015-66899-C2-1-P), by the FCT (Portugal) IF programme, by the FCT grant PTDC/FIS-OUT/28407/2017, by  CIDMA (FCT) strategic project UID/MAT/04106/2013, by CENTRA (FCT) strategic project UID/FIS/00099/2013 and by  the  European  Union's  Horizon  2020  research  and  innovation  (RISE) programmes H2020-MSCA-RISE-2015 Grant No.~StronGrHEP-690904 and H2020-MSCA-RISE-2017 Grant No.~FunFiCO-777740. E.R. gratefully acknowledges the support of DIAS. The authors would like to acknowledge networking support by the COST Action CA16104.  
 
 \begin{appendix}
-% \section{Embedding of the accretion torus in $\mathbb{E}^3$}\label{torus_embedding}
-% Following the same reasoning as in~\cite{Delgado:2018}, we write the 2-metric for the surface of a torus as 
-% \begin{equation}\label{eq:torus_prev_metric}
-% \mathrm{d}\sigma^2 = \frac{e^{2 F_1}}{N}\mathrm{d}r^2+ e^{2 F_1}r^2\mathrm{d}\theta^2+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
-% \end{equation}
-% and the condition $r = r(\theta)$ for the surface of the torus. The location of the surface of the torus $r(\theta)$ can be obtained integrating $r' = \frac{\mathrm{d}r}{\mathrm{d}\theta} = -\frac{\partial_{\theta}W}{\partial_{r}W}$ (equation (24) of~\citep{Gimeno-Soler:2017}). Using this, we can write equation~\eqref{eq:torus_prev_metric} as
-% \begin{equation}\label{eq:torus_metric}
-% \mathrm{d}\sigma^2 = e^{2 F_1} \mathrm{d}\theta^2\left(\frac{r'^2}{N} +r^2\right)+e^{2 F_2} r^2 \sin^2\theta \mathrm{d}\phi^2,
-% \end{equation}
-% with the prime $'$ denoting partial differentiation with respect to $\theta$. Then, we try the embedding in $\mathbb{E}^3$ with the Cartesian metric $\mathrm{d}\sigma^2 = \mathrm{d}X^2 + \mathrm{d}Y^2 + \mathrm{d}Z^2$ and the embedding functions:
-% \begin{equation}
-% X + \mathrm{i}Y = f(\theta)e^{\mathrm{i}\phi},  \;\;\; Z = g(\theta),
-% \end{equation}
-% then
-% \begin{equation}
-% f = e^{2 F_2} r^2 \sin^2\theta, \;\;\; f'^2 + g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right),
-% \end{equation}
-% so we can write $g'^2$ as
-% \begin{equation}\label{eq:embedding_existance}
-% g'^2 = e^{2 F_1}\left(\frac{r'^2}{N} +r^2\right) - e^{2 F_2} (F_2'r \sin \theta + r' \sin \theta + r \cos \theta)^2.
-% \end{equation}
-% This result tells us that the r.h.s. of~\eqref{eq:embedding_existance} must be $\geq 0$ in order to the embedding function to exist.
-
-% \begin{figure*}
-% \centering
-% \includegraphics[scale=0.2]{figures/embedding.pdf}
-% \hspace{0.5cm}
-% \caption{Rest-mass density distribution for model VII with $r_{\mathrm{in}} = 0.08$ and $\beta_{\mathrm{m_c}} = 10^{10}$ (up) and the scalar field amplitude distribution $\phi$ (down). The isocontours are blue when the r.h.s. of equation~\eqref{eq:embedding_existance} is $> 0$ and red when is $\leq 0$.}
-% \label{embedding_VII}
-% \end{figure*}
 
 \section{Finding $l_{\mathrm{mb}}$ and $r_{\mathrm{mb}}$}
 \label{ang_mom_appendix}
