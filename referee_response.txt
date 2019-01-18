@@ -1,0 +1,43 @@
+Dear PRD Editor,
+
+Thank you for sending us the report of the referee, whom we thank for
+carefully reading our manuscript and providing very useful feedback. We 
+have made changes addressing the issues raised in the report, 
+which are listed below together with our response. The changes made in 
+the manuscript are highlighted in boldface, to facilitate identification. 
+We hope that with these amendments the paper will be considered 
+acceptable for publication on Physical Review D.
+
+       Best wishes,
+
+       The authors
+
+
+> ----------------------------------------------------------------------
+> Report of the Referee -- DY12222/Gimeno-Soler
+> ----------------------------------------------------------------------
+
+> The paper describes an interesting and potentially important problem
+> concerning the structure of accretion disks around exotic black holes
+> modified by the presence of a gravitationally strong scalar field. The
+> authors focus on the semi-analytic models of magneto-static tori,
+> which under some conditions may capture properties of such disks, and
+> build a grid of models exploring the parameter space. This is a
+> meticulous work of good quality, which I am happy to recommend for
+> publication in Physics.Rev.D.
+
+> There is however one issue I would like the authors to address. The
+> first question one would expect to be answered in such a paper is how
+> strong, robust and unmistakable the effects attributable to the scalar
+> field are. Is there a smoking gun, so to speak? Unfortunately the
+> authors avoid addressing this question both in the Abstract and in the
+> Conclusions, which is rather puzzling.
+
+We agree with the referee about this questions, and therefore we have added this paragraph to the abstract:
+
+"The sequences of magnetized, equilibrium disks around Kerr black holes with scalar hair discussed in this study are morphologically and thermodynam- ically different than their Kerr black hole counterparts, namely their vertical size is larger, the high-density central region is more extended, and the fluid is more relativistic. Therefore, we expect significant differences to appear when these sequences are used as initial data for numerical relativity codes to investigate their dynamical (non-linear) stability and used in tandem with ray-tracing codes to obtain synthetic images of black holes (i.e. shadows) in astrophysically relevant situations where the light source is provided by an emitting accretion disk."
+
+and this piece of text in the conclusions:
+
+"In particular, the morphological and thermodynamical differences we observe when comparing the solutions for KBHsSH with those for disks around Kerr BHs (i.e. a larger vertical size of the disks, a more extended high-density central region, and a more relativistic fluid) are expected to yield significantly different results when their shadows are computed. Moreover, the stability properties of such disks under perturbations are expected to be affected by the presence of the gravitational well produced by the scalar hair."
+
