@@ -1,12 +1,11 @@
 Dear PRD Editor,
 
 Thank you for sending us the report of the referee, whom we thank for
-carefully reading our manuscript and providing very useful feedback. We 
-have made changes addressing the issues raised in the report, 
-which are listed below together with our response. The changes made in 
+carefully reading our manuscript and recommending publication. Following 
+the recommendation of the referee, we have made a few changes in the 
+abstract and in the conclusions to address his/her request to point 
+out the effects attributable to the scalar field. The changes made in 
 the manuscript are highlighted in boldface, to facilitate identification. 
-We hope that with these amendments the paper will be considered 
-acceptable for publication on Physical Review D.
 
        Best wishes,
 
@@ -33,11 +32,31 @@ acceptable for publication on Physical Review D.
 > authors avoid addressing this question both in the Abstract and in the
 > Conclusions, which is rather puzzling.
 
-We agree with the referee about this questions, and therefore we have added this paragraph to the abstract:
+We agree with the referee and therefore we have added the following 
+text to the abstract and conclusions:
 
-"The sequences of magnetized, equilibrium disks around Kerr black holes with scalar hair discussed in this study are morphologically and thermodynam- ically different than their Kerr black hole counterparts, namely their vertical size is larger, the high-density central region is more extended, and the fluid is more relativistic. Therefore, we expect significant differences to appear when these sequences are used as initial data for numerical relativity codes to investigate their dynamical (non-linear) stability and used in tandem with ray-tracing codes to obtain synthetic images of black holes (i.e. shadows) in astrophysically relevant situations where the light source is provided by an emitting accretion disk."
+Abstract:
 
-and this piece of text in the conclusions:
+"The sequences of magnetized, equilibrium disks around Kerr black holes 
+with scalar hair discussed in this study are morphologically and 
+thermodynamically different than their Kerr black hole counterparts, 
+namely their vertical size is larger, the high-density central region 
+is more extended, and the fluid is more relativistic. Therefore, we 
+expect significant differences to appear when these sequences are 
+used as initial data for numerical relativity codes to investigate 
+their dynamical (non-linear) stability and used in tandem with 
+ray-tracing codes to obtain synthetic images of black holes (i.e. 
+shadows) in astrophysically relevant situations where the light 
+source is provided by an emitting accretion disk."
 
-"In particular, the morphological and thermodynamical differences we observe when comparing the solutions for KBHsSH with those for disks around Kerr BHs (i.e. a larger vertical size of the disks, a more extended high-density central region, and a more relativistic fluid) are expected to yield significantly different results when their shadows are computed. Moreover, the stability properties of such disks under perturbations are expected to be affected by the presence of the gravitational well produced by the scalar hair."
+Conclusions:
+
+"In particular, the morphological and thermodynamical differences we 
+observe when comparing the solutions for KBHsSH with those for disks 
+around Kerr BHs (i.e. a larger vertical size of the disks, a more 
+extended high-density central region, and a more relativistic fluid) 
+are expected to yield significantly different results when their 
+shadows are computed. Moreover, the stability properties of such disks 
+under perturbations are expected to be affected by the presence of the 
+gravitational well produced by the scalar hair."
 
